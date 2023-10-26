@@ -19,6 +19,11 @@ const ConjugationExercise = ({ verbs }) =>
     setIsGiveUp(false);
   }, [verbs, pronouns.length]);
 
+  const normalisedCompare = useCallback((string1, string2) =>
+  {
+    return removeAccents(string1).toLowerCase() === removeAccents(string2).toLowerCase();
+  }, []);
+
   useEffect(() =>
   {
     if (currentVerb) 
@@ -27,15 +32,28 @@ const ConjugationExercise = ({ verbs }) =>
       {
         setResults((prevResults) => 
         {
-          return prevResults.map((result, index) =>
-            currentVerb.baseForm + userInputs[index] !== currentVerb.conjugations[index] ? 'incorrect' : 'correct'
+          const updatedResults = prevResults.map((result, index) =>
+            normalisedCompare(currentVerb.baseForm + userInputs[index], currentVerb.conjugations[index]) ? 'correct' : 'incorrect'
           );
+          setUserInputs((prevUserInputs) =>  // to add back the accents, if user did not input them
+          {
+            return prevUserInputs.map((userInput, index) =>
+              updatedResults[index] === 'correct' ? currentVerb.conjugations[index].slice(currentVerb.baseForm.length) : userInputs[index]
+            );
+          });
+          return updatedResults;
         });
         setIsChecking(false);
       }
 
       if (isGiveUp)
       {
+        setResults((prevResults) => 
+        {
+          return prevResults.map((result, index) =>
+            normalisedCompare(currentVerb.baseForm + userInputs[index], currentVerb.conjugations[index]) ? 'correct' : 'incorrect'
+          );
+        });
         setUserInputs((prevUserInputs) => 
         {
           return prevUserInputs.map((userInput, index) =>
@@ -45,7 +63,7 @@ const ConjugationExercise = ({ verbs }) =>
         setIsGiveUp(false);
       }
     }
-  }, [currentVerb, pronouns, userInputs, isChecking, isGiveUp, startExercise, verbs]);
+  }, [currentVerb, pronouns, userInputs, results, isChecking, isGiveUp, startExercise, normalisedCompare, verbs]);
 
   const handleInputKeyPress = (e) => 
   {
@@ -60,9 +78,13 @@ const ConjugationExercise = ({ verbs }) =>
 
   const giveUp = () => 
   {
-    setIsChecking(true);
     setIsGiveUp(true);
   };
+
+  function removeAccents(input)
+  {
+    return input.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
 
   return (
     <div>

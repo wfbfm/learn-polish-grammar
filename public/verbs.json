@@ -1,16 +1,32 @@
 [
     {
-        "verb": "mowic",
-        "baseForm": "mow",
+        "verb": "mówić",
+        "baseForm": "mów",
+        "translation": "to speak",
         "tense": "present",
         "group": 1,
         "conjugations": [
-            "mowie",
-            "mowisz",
-            "mowi",
-            "mowimy",
-            "mowicie",
-            "mowia"
+            "mówię",
+            "mówisz",
+            "mówi",
+            "mówimy",
+            "mówicie",
+            "mówią"
+        ]
+    },
+    {
+        "verb": "słuchać",
+        "baseForm": "słuch",
+        "translation": "to listen",
+        "tense": "present",
+        "group": 1,
+        "conjugations": [
+            "słucham",
+            "słuchasz",
+            "słucha",
+            "słuchamy",
+            "słuchicie",
+            "słuchają"
         ]
     }
 ]
