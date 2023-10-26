@@ -1,47 +1,67 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
-const ConjugationExercise = ({ verbs }) => {
-  const [currentVerb, setCurrentVerb] = useState(null);
-  const [userInputs, setUserInputs] = useState(Array(6).fill(''));
-  const [results, setResults] = useState(Array(6).fill(''));
+const ConjugationExercise = ({ verbs }) =>
+{
   const pronouns = useMemo(() => ['ja', 'ty', 'on', 'my', 'wy', 'oni'], []);
+  const [currentVerb, setCurrentVerb] = useState(null);
+  const [userInputs, setUserInputs] = useState(Array(pronouns.length).fill(''));
+  const [results, setResults] = useState(Array(pronouns.length).fill(''));
   const [isChecking, setIsChecking] = useState(false);
-  const [allCorrect, setAllCorrect] = useState(false);
+  const [isGiveUp, setIsGiveUp] = useState(false);
 
-  const startExercise = useCallback(() => {
+  const startExercise = useCallback(() =>
+  {
     const randomVerb = verbs[Math.floor(Math.random() * verbs.length)];
     setCurrentVerb(randomVerb);
-    setUserInputs(Array(6).fill(''));
-    setResults(Array(6).fill(''));
+    setUserInputs(Array(pronouns.length).fill(''));
+    setResults(Array(pronouns.length).fill(''));
     setIsChecking(false);
-    setAllCorrect(false);
-  }, [verbs]);
+    setIsGiveUp(false);
+  }, [verbs, pronouns.length]);
 
-  useEffect(() => {
-    if (currentVerb) {
-      if (isChecking) {
-        const areAllCorrect = userInputs.every((input, index) => currentVerb.baseForm + input === currentVerb.conjugations[index]);
-        if (areAllCorrect) {
-        } else {
-          setResults((prevResults) => {
-            return prevResults.map((result, index) =>
-              currentVerb.baseForm + userInputs[index] !== currentVerb.conjugations[index] ? 'incorrect' : 'correct'
-            );
-          });
-        }
+  useEffect(() =>
+  {
+    if (currentVerb) 
+    {
+      if (isChecking)
+      {
+        setResults((prevResults) => 
+        {
+          return prevResults.map((result, index) =>
+            currentVerb.baseForm + userInputs[index] !== currentVerb.conjugations[index] ? 'incorrect' : 'correct'
+          );
+        });
         setIsChecking(false);
-        setAllCorrect(areAllCorrect);
+      }
+
+      if (isGiveUp)
+      {
+        setUserInputs((prevUserInputs) => 
+        {
+          return prevUserInputs.map((userInput, index) =>
+            currentVerb.conjugations[index].slice(currentVerb.baseForm.length)
+          );
+        });
+        setIsGiveUp(false);
       }
     }
-  }, [currentVerb, pronouns, userInputs, isChecking, startExercise, verbs]);
+  }, [currentVerb, pronouns, userInputs, isChecking, isGiveUp, startExercise, verbs]);
 
-  const handleInputKeyPress = (e) => {
+  const handleInputKeyPress = (e) => 
+  {
     // TODO: implement me
     return;
   };
 
-  const checkAnswer = () => {
+  const checkAnswer = () => 
+  {
     setIsChecking(true);
+  };
+
+  const giveUp = () => 
+  {
+    setIsChecking(true);
+    setIsGiveUp(true);
   };
 
   return (
@@ -61,7 +81,8 @@ const ConjugationExercise = ({ verbs }) => {
                     <input
                       type="text"
                       value={userInputs[index]}
-                      onChange={(e) => {
+                      onChange={(e) =>
+                      {
                         const updatedInputs = [...userInputs];
                         updatedInputs[index] = e.target.value;
                         setUserInputs(updatedInputs);
@@ -76,8 +97,11 @@ const ConjugationExercise = ({ verbs }) => {
               ))}
             </tbody>
           </table>
-          <button onClick={checkAnswer} disabled={isChecking || allCorrect}>
+          <button onClick={checkAnswer} disabled={isChecking}>
             Check
+          </button>
+          <button onClick={giveUp} disabled={isGiveUp}>
+            Give up
           </button>
         </div>
       )}

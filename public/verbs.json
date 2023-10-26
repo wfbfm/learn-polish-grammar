@@ -2,6 +2,8 @@
     {
         "verb": "mowic",
         "baseForm": "mow",
+        "tense": "present",
+        "group": 1,
         "conjugations": [
             "mowie",
             "mowisz",
