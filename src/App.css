@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+/* Add these styles to your CSS file */
+
+.correct {
+  background-color: #a8d28d; /* Light green background for correct answers */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.incorrect {
+  background-color: #f6a6a6; /* Light red background for incorrect answers */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.result-icon {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Define styles for specific icons if you're using FontAwesome */
+.result-icon.correct::before {
+  content: '\f00c'; /* Checkmark icon in FontAwesome */
+  color: green;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result-icon.incorrect::before {
+  content: '\f00d'; /* Cross icon in FontAwesome */
+  color: red;
 }
