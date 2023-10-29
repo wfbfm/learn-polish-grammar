@@ -1,10 +1,70 @@
 [
     {
+        "verb": "kopać",
+        "baseForm": "kop",
+        "translation": "to kick/dig",
+        "tense": "present",
+        "group": 1,
+        "conjugations": [
+            "kopię",
+            "kopiesz",
+            "kopie",
+            "kopiemy",
+            "kopiecie",
+            "kopią"
+        ]
+    },
+    {
+        "verb": "robić",
+        "baseForm": "rob",
+        "translation": "to do",
+        "tense": "present",
+        "group": 2,
+        "conjugations": [
+            "robię",
+            "robisz",
+            "robi",
+            "robimy",
+            "robicie",
+            "robią"
+        ]
+    },
+    {
+        "verb": "grać",
+        "baseForm": "gr",
+        "translation": "to play",
+        "tense": "present",
+        "group": 3,
+        "conjugations": [
+            "gram",
+            "grasz",
+            "gra",
+            "gramy",
+            "gracie",
+            "grają"
+        ]
+    },
+    {
+        "verb": "wiedzieć",
+        "baseForm": "wi",
+        "translation": "to know",
+        "tense": "present",
+        "group": 4,
+        "conjugations": [
+            "wiem",
+            "wiesz",
+            "wie",
+            "wiemy",
+            "wiecie",
+            "wiedzą"
+        ]
+    },
+    {
         "verb": "mówić",
         "baseForm": "mów",
         "translation": "to speak",
         "tense": "present",
-        "group": 1,
+        "group": 2,
         "conjugations": [
             "mówię",
             "mówisz",
@@ -19,13 +79,13 @@
         "baseForm": "słuch",
         "translation": "to listen",
         "tense": "present",
-        "group": 1,
+        "group": 3,
         "conjugations": [
             "słucham",
             "słuchasz",
             "słucha",
             "słuchamy",
-            "słuchicie",
+            "słuchacie",
             "słuchają"
         ]
     }
