@@ -26,19 +26,22 @@ const ConjugationExercise = ({ verbs }) =>
 
   useEffect(() =>
   {
+    // FIXME - this is currently hardcoded to look at present tense only.
+    // Some verbs don't even have the present tense, so we need to handle those cases too.
     if (currentVerb) 
     {
+      console.log(currentVerb);
       if (isChecking)
       {
         setResults((prevResults) => 
         {
           const updatedResults = prevResults.map((result, index) =>
-            normalisedCompare(currentVerb.baseForm + userInputs[index], currentVerb.conjugations[index]) ? 'correct' : 'incorrect'
+            normalisedCompare(currentVerb.tenses["Present tense"].baseForm + userInputs[index], currentVerb.tenses["Present tense"].conjugations[index]) ? 'correct' : 'incorrect'
           );
           setUserInputs((prevUserInputs) =>  // to add back the accents, if user did not input them
           {
             return prevUserInputs.map((userInput, index) =>
-              updatedResults[index] === 'correct' ? currentVerb.conjugations[index].slice(currentVerb.baseForm.length) : userInputs[index]
+              updatedResults[index] === 'correct' ? currentVerb.tenses["Present tense"].conjugations[index].slice(currentVerb.tenses["Present tense"].baseForm.length) : userInputs[index]
             );
           });
           return updatedResults;
@@ -51,13 +54,13 @@ const ConjugationExercise = ({ verbs }) =>
         setResults((prevResults) => 
         {
           return prevResults.map((result, index) =>
-            normalisedCompare(currentVerb.baseForm + userInputs[index], currentVerb.conjugations[index]) ? 'correct' : 'incorrect'
+            normalisedCompare(currentVerb.tenses["Present tense"].baseForm + userInputs[index], currentVerb.tenses["Present tense"].conjugations[index]) ? 'correct' : 'incorrect'
           );
         });
         setUserInputs((prevUserInputs) => 
         {
           return prevUserInputs.map((userInput, index) =>
-            currentVerb.conjugations[index].slice(currentVerb.baseForm.length)
+            currentVerb.tenses["Present tense"].conjugations[index].slice(currentVerb.tenses["Present tense"].baseForm.length)
           );
         });
         setIsGiveUp(false);
@@ -99,7 +102,7 @@ const ConjugationExercise = ({ verbs }) =>
                 <tr key={index}>
                   <td>{pronoun}</td>
                   <td>
-                    {currentVerb.baseForm}
+                    {currentVerb.tenses["Present tense"].baseForm}
                     <input
                       type="text"
                       value={userInputs[index]}

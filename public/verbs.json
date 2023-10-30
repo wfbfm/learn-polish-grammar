@@ -1,92 +1,4032 @@
 [
     {
-        "verb": "kopać",
-        "baseForm": "kop",
-        "translation": "to kick/dig",
-        "tense": "present",
-        "group": 1,
-        "conjugations": [
-            "kopię",
-            "kopiesz",
-            "kopie",
-            "kopiemy",
-            "kopiecie",
-            "kopią"
-        ]
-    },
-    {
-        "verb": "robić",
-        "baseForm": "rob",
-        "translation": "to do",
-        "tense": "present",
-        "group": 2,
-        "conjugations": [
-            "robię",
-            "robisz",
-            "robi",
-            "robimy",
-            "robicie",
-            "robią"
-        ]
-    },
-    {
-        "verb": "grać",
-        "baseForm": "gr",
-        "translation": "to play",
-        "tense": "present",
-        "group": 3,
-        "conjugations": [
-            "gram",
-            "grasz",
-            "gra",
-            "gramy",
-            "gracie",
-            "grają"
-        ]
-    },
-    {
         "verb": "wiedzieć",
-        "baseForm": "wi",
         "translation": "to know",
-        "tense": "present",
-        "group": 4,
-        "conjugations": [
-            "wiem",
-            "wiesz",
-            "wie",
-            "wiemy",
-            "wiecie",
-            "wiedzą"
-        ]
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "wiem",
+                    "wiesz",
+                    "wie",
+                    "wiemy",
+                    "wiecie",
+                    "wiedzą"
+                ],
+                "translations": [
+                    "I know",
+                    "you know",
+                    "he/she/it knows",
+                    "we know",
+                    "you all know",
+                    "they know"
+                ],
+                "baseForm": "wi"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę wiedzieć",
+                    "będziesz wiedzieć",
+                    "będzie wiedzieć",
+                    "będziemy wiedzieć",
+                    "będziecie wiedzieć",
+                    "będą wiedzieć"
+                ],
+                "translations": [
+                    "I will know",
+                    "you will know",
+                    "he/she/it will know",
+                    "we will know",
+                    "you all will know",
+                    "they will know"
+                ],
+                "baseForm": "wiedzieć"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "wiedz",
+                    "niech wie",
+                    "wiedzmy",
+                    "wiedzcie",
+                    "niech wiedzą"
+                ],
+                "translations": [
+                    "",
+                    "you know!",
+                    "let him/her/it know",
+                    "let's know",
+                    "you all know",
+                    "let them know"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "wiedziałam",
+                    "wiedziałaś",
+                    "wiedziała",
+                    "wiedziałyśmy",
+                    "wiedziałyście",
+                    "wiedziały"
+                ],
+                "translations": [
+                    "I knew",
+                    "you knew",
+                    "she knew",
+                    "we knew",
+                    "you all knew",
+                    "they knew"
+                ],
+                "baseForm": "wiedział"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę wiedziała",
+                    "będziesz wiedziała",
+                    "będzie wiedziała",
+                    "będziemy wiedziały",
+                    "będziecie wiedziały",
+                    "będą wiedziały"
+                ],
+                "translations": [
+                    "I will know",
+                    "you will know",
+                    "she will know",
+                    "we will know",
+                    "you all will know",
+                    "they will know"
+                ],
+                "baseForm": "wiedział"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "wiedziałabym",
+                    "wiedziałabyś",
+                    "wiedziałaby",
+                    "wiedziałybyśmy",
+                    "wiedziałybyście",
+                    "wiedziałyby"
+                ],
+                "translations": [
+                    "I would know",
+                    "you would know",
+                    "she would know",
+                    "we would know",
+                    "you all would know",
+                    "they would know"
+                ],
+                "baseForm": "wiedział"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "wiedziałabym była",
+                    "wiedziałabyś była",
+                    "wiedziałaby była",
+                    "wiedziałybyśmy były",
+                    "wiedziałybyście były",
+                    "wiedziałyby były"
+                ],
+                "translations": [
+                    "I would have known",
+                    "you would have known",
+                    "she would have known",
+                    "we would have known",
+                    "you all would have known",
+                    "they would have known"
+                ],
+                "baseForm": "wiedział"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "wiedziałem",
+                    "wiedziałeś",
+                    "wiedział",
+                    "wiedzieliśmy",
+                    "wiedzieliście",
+                    "wiedzieli"
+                ],
+                "translations": [
+                    "I knew",
+                    "you knew",
+                    "he knew",
+                    "we knew",
+                    "you all knew",
+                    "they knew"
+                ],
+                "baseForm": "wiedzi"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę wiedział",
+                    "będziesz wiedział",
+                    "będzie wiedział",
+                    "będziemy wiedzieli",
+                    "będziecie wiedzieli",
+                    "będą wiedzieli"
+                ],
+                "translations": [
+                    "I will know",
+                    "you will know",
+                    "he will know",
+                    "we will know",
+                    "you all will know",
+                    "they will know"
+                ],
+                "baseForm": "wiedzi"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "wiedziałbym",
+                    "wiedziałbyś",
+                    "wiedziałby",
+                    "wiedzielibyśmy",
+                    "wiedzielibyście",
+                    "wiedzieliby"
+                ],
+                "translations": [
+                    "I would know",
+                    "you would know",
+                    "he would know",
+                    "we would know",
+                    "you all would know",
+                    "they would know"
+                ],
+                "baseForm": "wiedzi"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "wiedziałbym był",
+                    "wiedziałbyś był",
+                    "wiedziałby był",
+                    "wiedzielibyśmy byli",
+                    "wiedzielibyście byli",
+                    "wiedzieliby byli"
+                ],
+                "translations": [
+                    "I would have known",
+                    "you would have known",
+                    "he would have known",
+                    "we would have known",
+                    "you all would have known",
+                    "they would have known"
+                ],
+                "baseForm": "wiedzi"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "wiedziano by",
+                    "wiedziano by"
+                ],
+                "translations": [
+                    "there would be known",
+                    "there would be known"
+                ],
+                "baseForm": "wiedzian"
+            }
+        }
     },
     {
-        "verb": "mówić",
-        "baseForm": "mów",
-        "translation": "to speak",
-        "tense": "present",
-        "group": 2,
-        "conjugations": [
-            "mówię",
-            "mówisz",
-            "mówi",
-            "mówimy",
-            "mówicie",
-            "mówią"
-        ]
+        "verb": "kopać",
+        "translation": "to dig",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "kopię",
+                    "kopiesz",
+                    "kopie",
+                    "kopiemy",
+                    "kopiecie",
+                    "kopią"
+                ],
+                "translations": [
+                    "I dig",
+                    "you dig",
+                    "he/she/it digs",
+                    "we dig",
+                    "you all dig",
+                    "they dig"
+                ],
+                "baseForm": "kopi"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę kopać",
+                    "będziesz kopać",
+                    "będzie kopać",
+                    "będziemy kopać",
+                    "będziecie kopać",
+                    "będą kopać"
+                ],
+                "translations": [
+                    "I will dig",
+                    "you will dig",
+                    "he/she/it will dig",
+                    "we will dig",
+                    "you all will dig",
+                    "they will dig"
+                ],
+                "baseForm": "kopać"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "kop",
+                    "niech kopie",
+                    "kopmy",
+                    "kopcie",
+                    "niech kopią"
+                ],
+                "translations": [
+                    "",
+                    "you dig!",
+                    "let him/her/it dig",
+                    "let's dig",
+                    "you all dig",
+                    "let them dig"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "kopałam",
+                    "kopałaś",
+                    "kopała",
+                    "kopałyśmy",
+                    "kopałyście",
+                    "kopały"
+                ],
+                "translations": [
+                    "I dug",
+                    "you dug",
+                    "she dug",
+                    "we dug",
+                    "you all dug",
+                    "they dug"
+                ],
+                "baseForm": "kopał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę kopała",
+                    "będziesz kopała",
+                    "będzie kopała",
+                    "będziemy kopały",
+                    "będziecie kopały",
+                    "będą kopały"
+                ],
+                "translations": [
+                    "I will dig",
+                    "you will dig",
+                    "she will dig",
+                    "we will dig",
+                    "you all will dig",
+                    "they will dig"
+                ],
+                "baseForm": "kopał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "kopałabym",
+                    "kopałabyś",
+                    "kopałaby",
+                    "kopałybyśmy",
+                    "kopałybyście",
+                    "kopałyby"
+                ],
+                "translations": [
+                    "I would dig",
+                    "you would dig",
+                    "she would dig",
+                    "we would dig",
+                    "you all would dig",
+                    "they would dig"
+                ],
+                "baseForm": "kopał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "kopałabym była",
+                    "kopałabyś była",
+                    "kopałaby była",
+                    "kopałybyśmy były",
+                    "kopałybyście były",
+                    "kopałyby były"
+                ],
+                "translations": [
+                    "I would have dug",
+                    "you would have dug",
+                    "she would have dug",
+                    "we would have dug",
+                    "you all would have dug",
+                    "they would have dug"
+                ],
+                "baseForm": "kopał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "kopałem",
+                    "kopałeś",
+                    "kopał",
+                    "kopaliśmy",
+                    "kopaliście",
+                    "kopali"
+                ],
+                "translations": [
+                    "I dug",
+                    "you dug",
+                    "he dug",
+                    "we dug",
+                    "you all dug",
+                    "they dug"
+                ],
+                "baseForm": "kopa"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę kopał",
+                    "będziesz kopał",
+                    "będzie kopał",
+                    "będziemy kopali",
+                    "będziecie kopali",
+                    "będą kopali"
+                ],
+                "translations": [
+                    "I will dig",
+                    "you will dig",
+                    "he will dig",
+                    "we will dig",
+                    "you all will dig",
+                    "they will dig"
+                ],
+                "baseForm": "kopa"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "kopałbym",
+                    "kopałbyś",
+                    "kopałby",
+                    "kopalibyśmy",
+                    "kopalibyście",
+                    "kopaliby"
+                ],
+                "translations": [
+                    "I would dig",
+                    "you would dig",
+                    "he would dig",
+                    "we would dig",
+                    "you all would dig",
+                    "they would dig"
+                ],
+                "baseForm": "kopa"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "kopałbym był",
+                    "kopałbyś był",
+                    "kopałby był",
+                    "kopalibyśmy byli",
+                    "kopalibyście byli",
+                    "kopaliby byli"
+                ],
+                "translations": [
+                    "I would have dug",
+                    "you would have dug",
+                    "he would have dug",
+                    "we would have dug",
+                    "you all would have dug",
+                    "they would have dug"
+                ],
+                "baseForm": "kopa"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "kopano by",
+                    "kopano by"
+                ],
+                "translations": [
+                    "there would be dug",
+                    "there would be dug"
+                ],
+                "baseForm": "kopan"
+            }
+        }
     },
     {
-        "verb": "słuchać",
-        "baseForm": "słuch",
-        "translation": "to listen",
-        "tense": "present",
-        "group": 3,
-        "conjugations": [
-            "słucham",
-            "słuchasz",
-            "słucha",
-            "słuchamy",
-            "słuchacie",
-            "słuchają"
-        ]
+        "verb": "zjeść",
+        "translation": "to eat",
+        "tenses": {
+            "Perfective future tense": {
+                "conjugations": [
+                    "zjem",
+                    "zjesz",
+                    "zje",
+                    "zjemy",
+                    "zjecie",
+                    "zjedzą"
+                ],
+                "translations": [
+                    "I will eat",
+                    "you will eat",
+                    "he will eat",
+                    "we will eat",
+                    "you all will eat",
+                    "they will eat"
+                ],
+                "baseForm": "zj"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "zjedz",
+                    "niech zje",
+                    "zjedzmy",
+                    "zjedzcie",
+                    "niech zjedzą"
+                ],
+                "translations": [
+                    "",
+                    "you eat!",
+                    "let him/her/it eat",
+                    "let's eat",
+                    "you all eat",
+                    "let them eat"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "zjadłam",
+                    "zjadłaś",
+                    "zjadła",
+                    "zjadłyśmy",
+                    "zjadłyście",
+                    "zjadły"
+                ],
+                "translations": [
+                    "I ate",
+                    "you ate",
+                    "she ate",
+                    "we ate",
+                    "you all ate",
+                    "they ate"
+                ],
+                "baseForm": "zjadł"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "zjem",
+                    "zjesz",
+                    "zje",
+                    "zjemy",
+                    "zjecie",
+                    "zjedzą"
+                ],
+                "translations": [
+                    "I will eat",
+                    "you will eat",
+                    "she will eat",
+                    "we will eat",
+                    "you all will eat",
+                    "they will eat"
+                ],
+                "baseForm": "zj"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "zjadłabym",
+                    "zjadłabyś",
+                    "zjadłaby",
+                    "zjadłybyśmy",
+                    "zjadłybyście",
+                    "zjadłyby"
+                ],
+                "translations": [
+                    "I would eat",
+                    "you would eat",
+                    "she would eat",
+                    "we would eat",
+                    "you all would eat",
+                    "they would eat"
+                ],
+                "baseForm": "zjadł"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "zjadłabym była",
+                    "zjadłabyś była",
+                    "zjadłaby była",
+                    "zjadłybyśmy były",
+                    "zjadłybyście były",
+                    "zjadłyby były"
+                ],
+                "translations": [
+                    "I would have eaten",
+                    "you would have eaten",
+                    "she would have eaten",
+                    "we would have eaten",
+                    "you all would have eaten",
+                    "they would have eaten"
+                ],
+                "baseForm": "zjadł"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "zjadłem",
+                    "zjadłeś",
+                    "zjadł",
+                    "zjedliśmy",
+                    "zjedliście",
+                    "zjedli"
+                ],
+                "translations": [
+                    "I ate",
+                    "you ate",
+                    "he ate",
+                    "we ate",
+                    "you all ate",
+                    "they ate"
+                ],
+                "baseForm": "zj"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "zjem",
+                    "zjesz",
+                    "zje",
+                    "zjemy",
+                    "zjecie",
+                    "zjedzą"
+                ],
+                "translations": [
+                    "I will eat",
+                    "you will eat",
+                    "he will eat",
+                    "we will eat",
+                    "you all will eat",
+                    "they will eat"
+                ],
+                "baseForm": "zj"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "zjadłbym",
+                    "zjadłbyś",
+                    "zjadłby",
+                    "zjedlibyśmy",
+                    "zjedlibyście",
+                    "zjedliby"
+                ],
+                "translations": [
+                    "I would eat",
+                    "you would eat",
+                    "he would eat",
+                    "we would eat",
+                    "you all would eat",
+                    "they would eat"
+                ],
+                "baseForm": "zj"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "zjadłbym był",
+                    "zjadłbyś był",
+                    "zjadłby był",
+                    "zjedlibyśmy byli",
+                    "zjedlibyście byli",
+                    "zjedliby byli"
+                ],
+                "translations": [
+                    "I would have eaten",
+                    "you would have eaten",
+                    "he would have eaten",
+                    "we would have eaten",
+                    "you all would have eaten",
+                    "they would have eaten"
+                ],
+                "baseForm": "zj"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "zjedzono by",
+                    "zjedzono by"
+                ],
+                "translations": [
+                    "there would be eaten",
+                    "there would be eaten"
+                ],
+                "baseForm": "zjedzon"
+            }
+        }
+    },
+    {
+        "verb": "iść",
+        "translation": "to go",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "idę",
+                    "idziesz",
+                    "idzie",
+                    "idziemy",
+                    "idziecie",
+                    "idą"
+                ],
+                "translations": [
+                    "I go",
+                    "you go",
+                    "he/she/it goes",
+                    "we go",
+                    "you all go",
+                    "they go"
+                ],
+                "baseForm": "id"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę iść",
+                    "będziesz iść",
+                    "będzie iść",
+                    "będziemy iść",
+                    "będziecie iść",
+                    "będą iść"
+                ],
+                "translations": [
+                    "I will go",
+                    "you will go",
+                    "he/she/it will go",
+                    "we will go",
+                    "you all will go",
+                    "they will go"
+                ],
+                "baseForm": "iść"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "idź",
+                    "niech idzie",
+                    "idźmy",
+                    "idźcie",
+                    "niech idą"
+                ],
+                "translations": [
+                    "",
+                    "you go!",
+                    "let him/her/it go",
+                    "let's go",
+                    "you all go",
+                    "let them go"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "szłam",
+                    "szłaś",
+                    "szła",
+                    "szłyśmy",
+                    "szłyście",
+                    "szły"
+                ],
+                "translations": [
+                    "I went",
+                    "you went",
+                    "she went",
+                    "we went",
+                    "you all went",
+                    "they went"
+                ],
+                "baseForm": "szł"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę szła",
+                    "będziesz szła",
+                    "będzie szła",
+                    "będziemy szły",
+                    "będziecie szły",
+                    "będą szły"
+                ],
+                "translations": [
+                    "I will go",
+                    "you will go",
+                    "she will go",
+                    "we will go",
+                    "you all will go",
+                    "they will go"
+                ],
+                "baseForm": "szł"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "szłabym",
+                    "szłabyś",
+                    "szłaby",
+                    "szłybyśmy",
+                    "szłybyście",
+                    "szłyby"
+                ],
+                "translations": [
+                    "I would go",
+                    "you would go",
+                    "she would go",
+                    "we would go",
+                    "you all would go",
+                    "they would go"
+                ],
+                "baseForm": "szł"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "szłabym była",
+                    "szłabyś była",
+                    "szłaby była",
+                    "szłybyśmy były",
+                    "szłybyście były",
+                    "szłyby były"
+                ],
+                "translations": [
+                    "I would have gone",
+                    "you would have gone",
+                    "she would have gone",
+                    "we would have gone",
+                    "you all would have gone",
+                    "they would have gone"
+                ],
+                "baseForm": "szł"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "szedłem",
+                    "szedłeś",
+                    "szedł",
+                    "szliśmy",
+                    "szliście",
+                    "szli"
+                ],
+                "translations": [
+                    "I went",
+                    "you went",
+                    "he went",
+                    "we went",
+                    "you all went",
+                    "they went"
+                ],
+                "baseForm": "sz"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę szedł",
+                    "będziesz szedł",
+                    "będzie szedł",
+                    "będziemy szli",
+                    "będziecie szli",
+                    "będą szli"
+                ],
+                "translations": [
+                    "I will go",
+                    "you will go",
+                    "he will go",
+                    "we will go",
+                    "you all will go",
+                    "they will go"
+                ],
+                "baseForm": "sz"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "szedłbym",
+                    "szedłbyś",
+                    "szedłby",
+                    "szlibyśmy",
+                    "szlibyście",
+                    "szliby"
+                ],
+                "translations": [
+                    "I would go",
+                    "you would go",
+                    "he would go",
+                    "we would go",
+                    "you all would go",
+                    "they would go"
+                ],
+                "baseForm": "sz"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "szedłbym był",
+                    "szedłbyś był",
+                    "szedłby był",
+                    "szlibyśmy byli",
+                    "szlibyście byli",
+                    "szliby byli"
+                ],
+                "translations": [
+                    "I would have gone",
+                    "you would have gone",
+                    "he would have gone",
+                    "we would have gone",
+                    "you all would have gone",
+                    "they would have gone"
+                ],
+                "baseForm": "sz"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "- by",
+                    "- by"
+                ],
+                "translations": [
+                    "there would be gone",
+                    "there would be gone"
+                ],
+                "baseForm": ""
+            }
+        }
+    },
+    {
+        "verb": "pisać",
+        "translation": "to write",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "piszę",
+                    "piszesz",
+                    "pisze",
+                    "piszemy",
+                    "piszecie",
+                    "piszą"
+                ],
+                "translations": [
+                    "I write",
+                    "you write",
+                    "he/she/it writes",
+                    "we write",
+                    "you all write",
+                    "they write"
+                ],
+                "baseForm": "pisz"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę pisać",
+                    "będziesz pisać",
+                    "będzie pisać",
+                    "będziemy pisać",
+                    "będziecie pisać",
+                    "będą pisać"
+                ],
+                "translations": [
+                    "I will write",
+                    "you will write",
+                    "he/she/it will write",
+                    "we will write",
+                    "you all will write",
+                    "they will write"
+                ],
+                "baseForm": "pisać"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "pisz",
+                    "niech pisze",
+                    "piszmy",
+                    "piszcie",
+                    "niech piszą"
+                ],
+                "translations": [
+                    "",
+                    "you write!",
+                    "let him/her/it write",
+                    "let's write",
+                    "you all write",
+                    "let them write"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "pisałam",
+                    "pisałaś",
+                    "pisała",
+                    "pisałyśmy",
+                    "pisałyście",
+                    "pisały"
+                ],
+                "translations": [
+                    "I wrote",
+                    "you wrote",
+                    "she wrote",
+                    "we wrote",
+                    "you all wrote",
+                    "they wrote"
+                ],
+                "baseForm": "pisał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę pisała",
+                    "będziesz pisała",
+                    "będzie pisała",
+                    "będziemy pisały",
+                    "będziecie pisały",
+                    "będą pisały"
+                ],
+                "translations": [
+                    "I will write",
+                    "you will write",
+                    "she will write",
+                    "we will write",
+                    "you all will write",
+                    "they will write"
+                ],
+                "baseForm": "pisał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "pisałabym",
+                    "pisałabyś",
+                    "pisałaby",
+                    "pisałybyśmy",
+                    "pisałybyście",
+                    "pisałyby"
+                ],
+                "translations": [
+                    "I would write",
+                    "you would write",
+                    "she would write",
+                    "we would write",
+                    "you all would write",
+                    "they would write"
+                ],
+                "baseForm": "pisał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "pisałabym była",
+                    "pisałabyś była",
+                    "pisałaby była",
+                    "pisałybyśmy były",
+                    "pisałybyście były",
+                    "pisałyby były"
+                ],
+                "translations": [
+                    "I would have written",
+                    "you would have written",
+                    "she would have written",
+                    "we would have written",
+                    "you all would have written",
+                    "they would have written"
+                ],
+                "baseForm": "pisał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "pisałem",
+                    "pisałeś",
+                    "pisał",
+                    "pisaliśmy",
+                    "pisaliście",
+                    "pisali"
+                ],
+                "translations": [
+                    "I wrote",
+                    "you wrote",
+                    "he wrote",
+                    "we wrote",
+                    "you all wrote",
+                    "they wrote"
+                ],
+                "baseForm": "pisa"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę pisał",
+                    "będziesz pisał",
+                    "będzie pisał",
+                    "będziemy pisali",
+                    "będziecie pisali",
+                    "będą pisali"
+                ],
+                "translations": [
+                    "I will write",
+                    "you will write",
+                    "he will write",
+                    "we will write",
+                    "you all will write",
+                    "they will write"
+                ],
+                "baseForm": "pisa"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "pisałbym",
+                    "pisałbyś",
+                    "pisałby",
+                    "pisalibyśmy",
+                    "pisalibyście",
+                    "pisaliby"
+                ],
+                "translations": [
+                    "I would write",
+                    "you would write",
+                    "he would write",
+                    "we would write",
+                    "you all would write",
+                    "they would write"
+                ],
+                "baseForm": "pisa"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "pisałbym był",
+                    "pisałbyś był",
+                    "pisałby był",
+                    "pisalibyśmy byli",
+                    "pisalibyście byli",
+                    "pisaliby byli"
+                ],
+                "translations": [
+                    "I would have written",
+                    "you would have written",
+                    "he would have written",
+                    "we would have written",
+                    "you all would have written",
+                    "they would have written"
+                ],
+                "baseForm": "pisa"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "pisano by",
+                    "pisano by"
+                ],
+                "translations": [
+                    "there would be written",
+                    "there would be written"
+                ],
+                "baseForm": "pisan"
+            }
+        }
+    },
+    {
+        "verb": "dawać",
+        "translation": "to give",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "daję",
+                    "dajesz",
+                    "daje",
+                    "dajemy",
+                    "dajecie",
+                    "dają"
+                ],
+                "translations": [
+                    "I give",
+                    "you give",
+                    "he/she/it gives",
+                    "we give",
+                    "you all give",
+                    "they give"
+                ],
+                "baseForm": "daj"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę dawać",
+                    "będziesz dawać",
+                    "będzie dawać",
+                    "będziemy dawać",
+                    "będziecie dawać",
+                    "będą dawać"
+                ],
+                "translations": [
+                    "I will give",
+                    "you will give",
+                    "he/she/it will give",
+                    "we will give",
+                    "you all will give",
+                    "they will give"
+                ],
+                "baseForm": "dawać"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "dawaj",
+                    "niech daje",
+                    "dawajmy",
+                    "dawajcie",
+                    "niech dają"
+                ],
+                "translations": [
+                    "",
+                    "you give!",
+                    "let him/her/it give",
+                    "let's give",
+                    "you all give",
+                    "let them give"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "dawałam",
+                    "dawałaś",
+                    "dawała",
+                    "dawałyśmy",
+                    "dawałyście",
+                    "dawały"
+                ],
+                "translations": [
+                    "I gave",
+                    "you gave",
+                    "she gave",
+                    "we gave",
+                    "you all gave",
+                    "they gave"
+                ],
+                "baseForm": "dawał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę dawała",
+                    "będziesz dawała",
+                    "będzie dawała",
+                    "będziemy dawały",
+                    "będziecie dawały",
+                    "będą dawały"
+                ],
+                "translations": [
+                    "I will give",
+                    "you will give",
+                    "she will give",
+                    "we will give",
+                    "you all will give",
+                    "they will give"
+                ],
+                "baseForm": "dawał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "dawałabym",
+                    "dawałabyś",
+                    "dawałaby",
+                    "dawałybyśmy",
+                    "dawałybyście",
+                    "dawałyby"
+                ],
+                "translations": [
+                    "I would give",
+                    "you would give",
+                    "she would give",
+                    "we would give",
+                    "you all would give",
+                    "they would give"
+                ],
+                "baseForm": "dawał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "dawałabym była",
+                    "dawałabyś była",
+                    "dawałaby była",
+                    "dawałybyśmy były",
+                    "dawałybyście były",
+                    "dawałyby były"
+                ],
+                "translations": [
+                    "I would have given",
+                    "you would have given",
+                    "she would have given",
+                    "we would have given",
+                    "you all would have given",
+                    "they would have given"
+                ],
+                "baseForm": "dawał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "dawałem",
+                    "dawałeś",
+                    "dawał",
+                    "dawaliśmy",
+                    "dawaliście",
+                    "dawali"
+                ],
+                "translations": [
+                    "I gave",
+                    "you gave",
+                    "he gave",
+                    "we gave",
+                    "you all gave",
+                    "they gave"
+                ],
+                "baseForm": "dawa"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę dawał",
+                    "będziesz dawał",
+                    "będzie dawał",
+                    "będziemy dawali",
+                    "będziecie dawali",
+                    "będą dawali"
+                ],
+                "translations": [
+                    "I will give",
+                    "you will give",
+                    "he will give",
+                    "we will give",
+                    "you all will give",
+                    "they will give"
+                ],
+                "baseForm": "dawa"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "dawałbym",
+                    "dawałbyś",
+                    "dawałby",
+                    "dawalibyśmy",
+                    "dawalibyście",
+                    "dawaliby"
+                ],
+                "translations": [
+                    "I would give",
+                    "you would give",
+                    "he would give",
+                    "we would give",
+                    "you all would give",
+                    "they would give"
+                ],
+                "baseForm": "dawa"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "dawałbym był",
+                    "dawałbyś był",
+                    "dawałby był",
+                    "dawalibyśmy byli",
+                    "dawalibyście byli",
+                    "dawaliby byli"
+                ],
+                "translations": [
+                    "I would have given",
+                    "you would have given",
+                    "he would have given",
+                    "we would have given",
+                    "you all would have given",
+                    "they would have given"
+                ],
+                "baseForm": "dawa"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "dawano by",
+                    "dawano by"
+                ],
+                "translations": [
+                    "there would be given",
+                    "there would be given"
+                ],
+                "baseForm": "dawan"
+            }
+        }
+    },
+    {
+        "verb": "nieść",
+        "translation": "to carry",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "niosę",
+                    "niesiesz",
+                    "niesie",
+                    "niesiemy",
+                    "niesiecie",
+                    "niosą"
+                ],
+                "translations": [
+                    "I carry",
+                    "you carry",
+                    "he/she/it carries",
+                    "we carry",
+                    "you all carry",
+                    "they carry"
+                ],
+                "baseForm": "ni"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę nieść",
+                    "będziesz nieść",
+                    "będzie nieść",
+                    "będziemy nieść",
+                    "będziecie nieść",
+                    "będą nieść"
+                ],
+                "translations": [
+                    "I will carry",
+                    "you will carry",
+                    "he/she/it will carry",
+                    "we will carry",
+                    "you all will carry",
+                    "they will carry"
+                ],
+                "baseForm": "nieść"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "nieś",
+                    "niech niesie",
+                    "nieśmy",
+                    "nieście",
+                    "niech niosą"
+                ],
+                "translations": [
+                    "",
+                    "you carry!",
+                    "let him/her/it carry",
+                    "let's carry",
+                    "you all carry",
+                    "let them carry"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "niosłam",
+                    "niosłaś",
+                    "niosła",
+                    "niosłyśmy",
+                    "niosłyście",
+                    "niosły"
+                ],
+                "translations": [
+                    "I carried",
+                    "you carried",
+                    "she carried",
+                    "we carried",
+                    "you all carried",
+                    "they carried"
+                ],
+                "baseForm": "niosł"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę niosła",
+                    "będziesz niosła",
+                    "będzie niosła",
+                    "będziemy niosły",
+                    "będziecie niosły",
+                    "będą niosły"
+                ],
+                "translations": [
+                    "I will carry",
+                    "you will carry",
+                    "she will carry",
+                    "we will carry",
+                    "you all will carry",
+                    "they will carry"
+                ],
+                "baseForm": "niosł"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "niosłabym",
+                    "niosłabyś",
+                    "niosłaby",
+                    "niosłybyśmy",
+                    "niosłybyście",
+                    "niosłyby"
+                ],
+                "translations": [
+                    "I would carry",
+                    "you would carry",
+                    "she would carry",
+                    "we would carry",
+                    "you all would carry",
+                    "they would carry"
+                ],
+                "baseForm": "niosł"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "niosłabym była",
+                    "niosłabyś była",
+                    "niosłaby była",
+                    "niosłybyśmy były",
+                    "niosłybyście były",
+                    "niosłyby były"
+                ],
+                "translations": [
+                    "I would have carried",
+                    "you would have carried",
+                    "she would have carried",
+                    "we would have carried",
+                    "you all would have carried",
+                    "they would have carried"
+                ],
+                "baseForm": "niosł"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "niosłem",
+                    "niosłeś",
+                    "niósł",
+                    "nieśliśmy",
+                    "nieśliście",
+                    "nieśli"
+                ],
+                "translations": [
+                    "I carried",
+                    "you carried",
+                    "he carried",
+                    "we carried",
+                    "you all carried",
+                    "they carried"
+                ],
+                "baseForm": "ni"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę niósł",
+                    "będziesz niósł",
+                    "będzie niósł",
+                    "będziemy nieśli",
+                    "będziecie nieśli",
+                    "będą nieśli"
+                ],
+                "translations": [
+                    "I will carry",
+                    "you will carry",
+                    "he will carry",
+                    "we will carry",
+                    "you all will carry",
+                    "they will carry"
+                ],
+                "baseForm": "ni"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "niósłbym",
+                    "niósłbyś",
+                    "niósłby",
+                    "nieślibyśmy",
+                    "nieślibyście",
+                    "nieśliby"
+                ],
+                "translations": [
+                    "I would carry",
+                    "you would carry",
+                    "he would carry",
+                    "we would carry",
+                    "you all would carry",
+                    "they would carry"
+                ],
+                "baseForm": "ni"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "niósłbym był",
+                    "niósłbyś był",
+                    "niósłby był",
+                    "nieślibyśmy byli",
+                    "nieślibyście byli",
+                    "nieśliby byli"
+                ],
+                "translations": [
+                    "I would have carried",
+                    "you would have carried",
+                    "he would have carried",
+                    "we would have carried",
+                    "you all would have carried",
+                    "they would have carried"
+                ],
+                "baseForm": "ni"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "niesiono by",
+                    "niesiono by"
+                ],
+                "translations": [
+                    "there would be carried",
+                    "there would be carried"
+                ],
+                "baseForm": "niesion"
+            }
+        }
+    },
+    {
+        "verb": "płakać",
+        "translation": "to cry",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "płaczę",
+                    "płaczesz",
+                    "płacze",
+                    "płaczemy",
+                    "płaczecie",
+                    "płaczą"
+                ],
+                "translations": [
+                    "I cry",
+                    "you cry",
+                    "he/she/it cries",
+                    "we cry",
+                    "you all cry",
+                    "they cry"
+                ],
+                "baseForm": "płacz"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę płakać",
+                    "będziesz płakać",
+                    "będzie płakać",
+                    "będziemy płakać",
+                    "będziecie płakać",
+                    "będą płakać"
+                ],
+                "translations": [
+                    "I will cry",
+                    "you will cry",
+                    "he/she/it will cry",
+                    "we will cry",
+                    "you all will cry",
+                    "they will cry"
+                ],
+                "baseForm": "płakać"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "płacz",
+                    "niech płacze",
+                    "płaczmy",
+                    "płaczcie",
+                    "niech płaczą"
+                ],
+                "translations": [
+                    "",
+                    "you cry!",
+                    "let him/her/it cry",
+                    "let's cry",
+                    "you all cry",
+                    "let them cry"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "płakałam",
+                    "płakałaś",
+                    "płakała",
+                    "płakałyśmy",
+                    "płakałyście",
+                    "płakały"
+                ],
+                "translations": [
+                    "I cried",
+                    "you cried",
+                    "she cried",
+                    "we cried",
+                    "you all cried",
+                    "they cried"
+                ],
+                "baseForm": "płakał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę płakała",
+                    "będziesz płakała",
+                    "będzie płakała",
+                    "będziemy płakały",
+                    "będziecie płakały",
+                    "będą płakały"
+                ],
+                "translations": [
+                    "I will cry",
+                    "you will cry",
+                    "she will cry",
+                    "we will cry",
+                    "you all will cry",
+                    "they will cry"
+                ],
+                "baseForm": "płakał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "płakałabym",
+                    "płakałabyś",
+                    "płakałaby",
+                    "płakałybyśmy",
+                    "płakałybyście",
+                    "płakałyby"
+                ],
+                "translations": [
+                    "I would cry",
+                    "you would cry",
+                    "she would cry",
+                    "we would cry",
+                    "you all would cry",
+                    "they would cry"
+                ],
+                "baseForm": "płakał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "płakałabym była",
+                    "płakałabyś była",
+                    "płakałaby była",
+                    "płakałybyśmy były",
+                    "płakałybyście były",
+                    "płakałyby były"
+                ],
+                "translations": [
+                    "I would have cried",
+                    "you would have cried",
+                    "she would have cried",
+                    "we would have cried",
+                    "you all would have cried",
+                    "they would have cried"
+                ],
+                "baseForm": "płakał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "płakałem",
+                    "płakałeś",
+                    "płakał",
+                    "płakaliśmy",
+                    "płakaliście",
+                    "płakali"
+                ],
+                "translations": [
+                    "I cried",
+                    "you cried",
+                    "he cried",
+                    "we cried",
+                    "you all cried",
+                    "they cried"
+                ],
+                "baseForm": "płaka"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę płakał",
+                    "będziesz płakał",
+                    "będzie płakał",
+                    "będziemy płakali",
+                    "będziecie płakali",
+                    "będą płakali"
+                ],
+                "translations": [
+                    "I will cry",
+                    "you will cry",
+                    "he will cry",
+                    "we will cry",
+                    "you all will cry",
+                    "they will cry"
+                ],
+                "baseForm": "płaka"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "płakałbym",
+                    "płakałbyś",
+                    "płakałby",
+                    "płakalibyśmy",
+                    "płakalibyście",
+                    "płakaliby"
+                ],
+                "translations": [
+                    "I would cry",
+                    "you would cry",
+                    "he would cry",
+                    "we would cry",
+                    "you all would cry",
+                    "they would cry"
+                ],
+                "baseForm": "płaka"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "płakałbym był",
+                    "płakałbyś był",
+                    "płakałby był",
+                    "płakalibyśmy byli",
+                    "płakalibyście byli",
+                    "płakaliby byli"
+                ],
+                "translations": [
+                    "I would have cried",
+                    "you would have cried",
+                    "he would have cried",
+                    "we would have cried",
+                    "you all would have cried",
+                    "they would have cried"
+                ],
+                "baseForm": "płaka"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "płakano by",
+                    "płakano by"
+                ],
+                "translations": [
+                    "there would be cried",
+                    "there would be cried"
+                ],
+                "baseForm": "płakan"
+            }
+        }
+    },
+    {
+        "verb": "płacić",
+        "translation": "to pay",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "płacę",
+                    "płacisz",
+                    "płaci",
+                    "płacimy",
+                    "płacicie",
+                    "płacą"
+                ],
+                "translations": [
+                    "I pay",
+                    "you pay",
+                    "he/she/it pays",
+                    "we pay",
+                    "you all pay",
+                    "they pay"
+                ],
+                "baseForm": "płac"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę płacić",
+                    "będziesz płacić",
+                    "będzie płacić",
+                    "będziemy płacić",
+                    "będziecie płacić",
+                    "będą płacić"
+                ],
+                "translations": [
+                    "I will pay",
+                    "you will pay",
+                    "he/she/it will pay",
+                    "we will pay",
+                    "you all will pay",
+                    "they will pay"
+                ],
+                "baseForm": "płacić"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "płać",
+                    "niech płaci",
+                    "płaćmy",
+                    "płaćcie",
+                    "niech płacą"
+                ],
+                "translations": [
+                    "",
+                    "you pay!",
+                    "let him/her/it pay",
+                    "let's pay",
+                    "you all pay",
+                    "let them pay"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "płaciłam",
+                    "płaciłaś",
+                    "płaciła",
+                    "płaciłyśmy",
+                    "płaciłyście",
+                    "płaciły"
+                ],
+                "translations": [
+                    "I paid",
+                    "you paid",
+                    "she paid",
+                    "we paid",
+                    "you all paid",
+                    "they paid"
+                ],
+                "baseForm": "płacił"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę płaciła",
+                    "będziesz płaciła",
+                    "będzie płaciła",
+                    "będziemy płaciły",
+                    "będziecie płaciły",
+                    "będą płaciły"
+                ],
+                "translations": [
+                    "I will pay",
+                    "you will pay",
+                    "she will pay",
+                    "we will pay",
+                    "you all will pay",
+                    "they will pay"
+                ],
+                "baseForm": "płacił"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "płaciłabym",
+                    "płaciłabyś",
+                    "płaciłaby",
+                    "płaciłybyśmy",
+                    "płaciłybyście",
+                    "płaciłyby"
+                ],
+                "translations": [
+                    "I would pay",
+                    "you would pay",
+                    "she would pay",
+                    "we would pay",
+                    "you all would pay",
+                    "they would pay"
+                ],
+                "baseForm": "płacił"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "płaciłabym była",
+                    "płaciłabyś była",
+                    "płaciłaby była",
+                    "płaciłybyśmy były",
+                    "płaciłybyście były",
+                    "płaciłyby były"
+                ],
+                "translations": [
+                    "I would have paid",
+                    "you would have paid",
+                    "she would have paid",
+                    "we would have paid",
+                    "you all would have paid",
+                    "they would have paid"
+                ],
+                "baseForm": "płacił"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "płaciłem",
+                    "płaciłeś",
+                    "płacił",
+                    "płaciliśmy",
+                    "płaciliście",
+                    "płacili"
+                ],
+                "translations": [
+                    "I paid",
+                    "you paid",
+                    "he paid",
+                    "we paid",
+                    "you all paid",
+                    "they paid"
+                ],
+                "baseForm": "płaci"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę płacił",
+                    "będziesz płacił",
+                    "będzie płacił",
+                    "będziemy płacili",
+                    "będziecie płacili",
+                    "będą płacili"
+                ],
+                "translations": [
+                    "I will pay",
+                    "you will pay",
+                    "he will pay",
+                    "we will pay",
+                    "you all will pay",
+                    "they will pay"
+                ],
+                "baseForm": "płaci"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "płaciłbym",
+                    "płaciłbyś",
+                    "płaciłby",
+                    "płacilibyśmy",
+                    "płacilibyście",
+                    "płaciliby"
+                ],
+                "translations": [
+                    "I would pay",
+                    "you would pay",
+                    "he would pay",
+                    "we would pay",
+                    "you all would pay",
+                    "they would pay"
+                ],
+                "baseForm": "płaci"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "płaciłbym był",
+                    "płaciłbyś był",
+                    "płaciłby był",
+                    "płacilibyśmy byli",
+                    "płacilibyście byli",
+                    "płaciliby byli"
+                ],
+                "translations": [
+                    "I would have paid",
+                    "you would have paid",
+                    "he would have paid",
+                    "we would have paid",
+                    "you all would have paid",
+                    "they would have paid"
+                ],
+                "baseForm": "płaci"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "płacono by",
+                    "płacono by"
+                ],
+                "translations": [
+                    "there would be paid",
+                    "there would be paid"
+                ],
+                "baseForm": "płacon"
+            }
+        }
+    },
+    {
+        "verb": "ganić",
+        "translation": "to reprove",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "ganię",
+                    "ganisz",
+                    "gani",
+                    "ganimy",
+                    "ganicie",
+                    "ganią"
+                ],
+                "translations": [
+                    "I reprove",
+                    "you reprove",
+                    "he/she/it reproves",
+                    "we reprove",
+                    "you all reprove",
+                    "they reprove"
+                ],
+                "baseForm": "gan"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę ganić",
+                    "będziesz ganić",
+                    "będzie ganić",
+                    "będziemy ganić",
+                    "będziecie ganić",
+                    "będą ganić"
+                ],
+                "translations": [
+                    "I will reprove",
+                    "you will reprove",
+                    "he/she/it will reprove",
+                    "we will reprove",
+                    "you all will reprove",
+                    "they will reprove"
+                ],
+                "baseForm": "ganić"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "gań",
+                    "niech gani",
+                    "gańmy",
+                    "gańcie",
+                    "niech ganią"
+                ],
+                "translations": [
+                    "",
+                    "you reprove!",
+                    "let him/her/it reprove",
+                    "let's reprove",
+                    "you all reprove",
+                    "let them reprove"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "ganiłam",
+                    "ganiłaś",
+                    "ganiła",
+                    "ganiłyśmy",
+                    "ganiłyście",
+                    "ganiły"
+                ],
+                "translations": [
+                    "I reproved",
+                    "you reproved",
+                    "she reproved",
+                    "we reproved",
+                    "you all reproved",
+                    "they reproved"
+                ],
+                "baseForm": "ganił"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę ganiła",
+                    "będziesz ganiła",
+                    "będzie ganiła",
+                    "będziemy ganiły",
+                    "będziecie ganiły",
+                    "będą ganiły"
+                ],
+                "translations": [
+                    "I will reprove",
+                    "you will reprove",
+                    "she will reprove",
+                    "we will reprove",
+                    "you all will reprove",
+                    "they will reprove"
+                ],
+                "baseForm": "ganił"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "ganiłabym",
+                    "ganiłabyś",
+                    "ganiłaby",
+                    "ganiłybyśmy",
+                    "ganiłybyście",
+                    "ganiłyby"
+                ],
+                "translations": [
+                    "I would reprove",
+                    "you would reprove",
+                    "she would reprove",
+                    "we would reprove",
+                    "you all would reprove",
+                    "they would reprove"
+                ],
+                "baseForm": "ganił"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "ganiłabym była",
+                    "ganiłabyś była",
+                    "ganiłaby była",
+                    "ganiłybyśmy były",
+                    "ganiłybyście były",
+                    "ganiłyby były"
+                ],
+                "translations": [
+                    "I would have reproved",
+                    "you would have reproved",
+                    "she would have reproved",
+                    "we would have reproved",
+                    "you all would have reproved",
+                    "they would have reproved"
+                ],
+                "baseForm": "ganił"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "ganiłem",
+                    "ganiłeś",
+                    "ganił",
+                    "ganiliśmy",
+                    "ganiliście",
+                    "ganili"
+                ],
+                "translations": [
+                    "I reproved",
+                    "you reproved",
+                    "he reproved",
+                    "we reproved",
+                    "you all reproved",
+                    "they reproved"
+                ],
+                "baseForm": "gani"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę ganił",
+                    "będziesz ganił",
+                    "będzie ganił",
+                    "będziemy ganili",
+                    "będziecie ganili",
+                    "będą ganili"
+                ],
+                "translations": [
+                    "I will reprove",
+                    "you will reprove",
+                    "he will reprove",
+                    "we will reprove",
+                    "you all will reprove",
+                    "they will reprove"
+                ],
+                "baseForm": "gani"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "ganiłbym",
+                    "ganiłbyś",
+                    "ganiłby",
+                    "ganilibyśmy",
+                    "ganilibyście",
+                    "ganiliby"
+                ],
+                "translations": [
+                    "I would reprove",
+                    "you would reprove",
+                    "he would reprove",
+                    "we would reprove",
+                    "you all would reprove",
+                    "they would reprove"
+                ],
+                "baseForm": "gani"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "ganiłbym był",
+                    "ganiłbyś był",
+                    "ganiłby był",
+                    "ganilibyśmy byli",
+                    "ganilibyście byli",
+                    "ganiliby byli"
+                ],
+                "translations": [
+                    "I would have reproved",
+                    "you would have reproved",
+                    "he would have reproved",
+                    "we would have reproved",
+                    "you all would have reproved",
+                    "they would have reproved"
+                ],
+                "baseForm": "gani"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "ganiono by",
+                    "ganiono by"
+                ],
+                "translations": [
+                    "there would be reproved",
+                    "there would be reproved"
+                ],
+                "baseForm": "ganion"
+            }
+        }
+    },
+    {
+        "verb": "wrócić",
+        "translation": "to come",
+        "tenses": {
+            "Perfective future tense": {
+                "conjugations": [
+                    "wrócę",
+                    "wrócisz",
+                    "wróci",
+                    "wrócimy",
+                    "wrócicie",
+                    "wrócą"
+                ],
+                "translations": [
+                    "I will come",
+                    "you will come",
+                    "he will come",
+                    "we will come",
+                    "you all will come",
+                    "they will come"
+                ],
+                "baseForm": "wróc"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "wróć",
+                    "niech wróci",
+                    "wróćmy",
+                    "wróćcie",
+                    "niech wrócą"
+                ],
+                "translations": [
+                    "",
+                    "you come!",
+                    "let him/her/it come",
+                    "let's come",
+                    "you all come",
+                    "let them come"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "wróciłam",
+                    "wróciłaś",
+                    "wróciła",
+                    "wróciłyśmy",
+                    "wróciłyście",
+                    "wróciły"
+                ],
+                "translations": [
+                    "I came",
+                    "you came",
+                    "she came",
+                    "we came",
+                    "you all came",
+                    "they came"
+                ],
+                "baseForm": "wrócił"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "wrócę",
+                    "wrócisz",
+                    "wróci",
+                    "wrócimy",
+                    "wrócicie",
+                    "wrócą"
+                ],
+                "translations": [
+                    "I will come",
+                    "you will come",
+                    "she will come",
+                    "we will come",
+                    "you all will come",
+                    "they will come"
+                ],
+                "baseForm": "wróc"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "wróciłabym",
+                    "wróciłabyś",
+                    "wróciłaby",
+                    "wróciłybyśmy",
+                    "wróciłybyście",
+                    "wróciłyby"
+                ],
+                "translations": [
+                    "I would come",
+                    "you would come",
+                    "she would come",
+                    "we would come",
+                    "you all would come",
+                    "they would come"
+                ],
+                "baseForm": "wrócił"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "wróciłabym była",
+                    "wróciłabyś była",
+                    "wróciłaby była",
+                    "wróciłybyśmy były",
+                    "wróciłybyście były",
+                    "wróciłyby były"
+                ],
+                "translations": [
+                    "I would have come",
+                    "you would have come",
+                    "she would have come",
+                    "we would have come",
+                    "you all would have come",
+                    "they would have come"
+                ],
+                "baseForm": "wrócił"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "wróciłem",
+                    "wróciłeś",
+                    "wrócił",
+                    "wróciliśmy",
+                    "wróciliście",
+                    "wrócili"
+                ],
+                "translations": [
+                    "I came",
+                    "you came",
+                    "he came",
+                    "we came",
+                    "you all came",
+                    "they came"
+                ],
+                "baseForm": "wróci"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "wrócę",
+                    "wrócisz",
+                    "wróci",
+                    "wrócimy",
+                    "wrócicie",
+                    "wrócą"
+                ],
+                "translations": [
+                    "I will come",
+                    "you will come",
+                    "he will come",
+                    "we will come",
+                    "you all will come",
+                    "they will come"
+                ],
+                "baseForm": "wróc"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "wróciłbym",
+                    "wróciłbyś",
+                    "wróciłby",
+                    "wrócilibyśmy",
+                    "wrócilibyście",
+                    "wróciliby"
+                ],
+                "translations": [
+                    "I would come",
+                    "you would come",
+                    "he would come",
+                    "we would come",
+                    "you all would come",
+                    "they would come"
+                ],
+                "baseForm": "wróci"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "wróciłbym był",
+                    "wróciłbyś był",
+                    "wróciłby był",
+                    "wrócilibyśmy byli",
+                    "wrócilibyście byli",
+                    "wróciliby byli"
+                ],
+                "translations": [
+                    "I would have come",
+                    "you would have come",
+                    "he would have come",
+                    "we would have come",
+                    "you all would have come",
+                    "they would have come"
+                ],
+                "baseForm": "wróci"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "wrócono by",
+                    "wrócono by"
+                ],
+                "translations": [
+                    "there would be come",
+                    "there would be come"
+                ],
+                "baseForm": "wrócon"
+            }
+        }
+    },
+    {
+        "verb": "suszyć",
+        "translation": "to dry",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "suszę",
+                    "suszysz",
+                    "suszy",
+                    "suszymy",
+                    "suszycie",
+                    "suszą"
+                ],
+                "translations": [
+                    "I dry",
+                    "you dry",
+                    "he/she/it dries",
+                    "we dry",
+                    "you all dry",
+                    "they dry"
+                ],
+                "baseForm": "susz"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę suszyć",
+                    "będziesz suszyć",
+                    "będzie suszyć",
+                    "będziemy suszyć",
+                    "będziecie suszyć",
+                    "będą suszyć"
+                ],
+                "translations": [
+                    "I will dry",
+                    "you will dry",
+                    "he/she/it will dry",
+                    "we will dry",
+                    "you all will dry",
+                    "they will dry"
+                ],
+                "baseForm": "suszyć"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "susz",
+                    "niech suszy",
+                    "suszmy",
+                    "suszcie",
+                    "niech suszą"
+                ],
+                "translations": [
+                    "",
+                    "you dry!",
+                    "let him/her/it dry",
+                    "let's dry",
+                    "you all dry",
+                    "let them dry"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "suszyłam",
+                    "suszyłaś",
+                    "suszyła",
+                    "suszyłyśmy",
+                    "suszyłyście",
+                    "suszyły"
+                ],
+                "translations": [
+                    "I dried",
+                    "you dried",
+                    "she dried",
+                    "we dried",
+                    "you all dried",
+                    "they dried"
+                ],
+                "baseForm": "suszył"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę suszyła",
+                    "będziesz suszyła",
+                    "będzie suszyła",
+                    "będziemy suszyły",
+                    "będziecie suszyły",
+                    "będą suszyły"
+                ],
+                "translations": [
+                    "I will dry",
+                    "you will dry",
+                    "she will dry",
+                    "we will dry",
+                    "you all will dry",
+                    "they will dry"
+                ],
+                "baseForm": "suszył"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "suszyłabym",
+                    "suszyłabyś",
+                    "suszyłaby",
+                    "suszyłybyśmy",
+                    "suszyłybyście",
+                    "suszyłyby"
+                ],
+                "translations": [
+                    "I would dry",
+                    "you would dry",
+                    "she would dry",
+                    "we would dry",
+                    "you all would dry",
+                    "they would dry"
+                ],
+                "baseForm": "suszył"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "suszyłabym była",
+                    "suszyłabyś była",
+                    "suszyłaby była",
+                    "suszyłybyśmy były",
+                    "suszyłybyście były",
+                    "suszyłyby były"
+                ],
+                "translations": [
+                    "I would have dried",
+                    "you would have dried",
+                    "she would have dried",
+                    "we would have dried",
+                    "you all would have dried",
+                    "they would have dried"
+                ],
+                "baseForm": "suszył"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "suszyłem",
+                    "suszyłeś",
+                    "suszył",
+                    "suszyliśmy",
+                    "suszyliście",
+                    "suszyli"
+                ],
+                "translations": [
+                    "I dried",
+                    "you dried",
+                    "he dried",
+                    "we dried",
+                    "you all dried",
+                    "they dried"
+                ],
+                "baseForm": "suszy"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę suszył",
+                    "będziesz suszył",
+                    "będzie suszył",
+                    "będziemy suszyli",
+                    "będziecie suszyli",
+                    "będą suszyli"
+                ],
+                "translations": [
+                    "I will dry",
+                    "you will dry",
+                    "he will dry",
+                    "we will dry",
+                    "you all will dry",
+                    "they will dry"
+                ],
+                "baseForm": "suszy"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "suszyłbym",
+                    "suszyłbyś",
+                    "suszyłby",
+                    "suszylibyśmy",
+                    "suszylibyście",
+                    "suszyliby"
+                ],
+                "translations": [
+                    "I would dry",
+                    "you would dry",
+                    "he would dry",
+                    "we would dry",
+                    "you all would dry",
+                    "they would dry"
+                ],
+                "baseForm": "suszy"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "suszyłbym był",
+                    "suszyłbyś był",
+                    "suszyłby był",
+                    "suszylibyśmy byli",
+                    "suszylibyście byli",
+                    "suszyliby byli"
+                ],
+                "translations": [
+                    "I would have dried",
+                    "you would have dried",
+                    "he would have dried",
+                    "we would have dried",
+                    "you all would have dried",
+                    "they would have dried"
+                ],
+                "baseForm": "suszy"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "suszono by",
+                    "suszono by"
+                ],
+                "translations": [
+                    "there would be dried",
+                    "there would be dried"
+                ],
+                "baseForm": "suszon"
+            }
+        }
+    },
+    {
+        "verb": "czytać",
+        "translation": "to read",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "czytam",
+                    "czytasz",
+                    "czyta",
+                    "czytamy",
+                    "czytacie",
+                    "czytają"
+                ],
+                "translations": [
+                    "I read",
+                    "you read",
+                    "he/she/it reads",
+                    "we read",
+                    "you all read",
+                    "they read"
+                ],
+                "baseForm": "czyt"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę czytać",
+                    "będziesz czytać",
+                    "będzie czytać",
+                    "będziemy czytać",
+                    "będziecie czytać",
+                    "będą czytać"
+                ],
+                "translations": [
+                    "I will read",
+                    "you will read",
+                    "he/she/it will read",
+                    "we will read",
+                    "you all will read",
+                    "they will read"
+                ],
+                "baseForm": "czytać"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "czytaj",
+                    "niech czyta",
+                    "czytajmy",
+                    "czytajcie",
+                    "niech czytają"
+                ],
+                "translations": [
+                    "",
+                    "you read!",
+                    "let him/her/it read",
+                    "let's read",
+                    "you all read",
+                    "let them read"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "czytałam",
+                    "czytałaś",
+                    "czytała",
+                    "czytałyśmy",
+                    "czytałyście",
+                    "czytały"
+                ],
+                "translations": [
+                    "I read",
+                    "you read",
+                    "she read",
+                    "we read",
+                    "you all read",
+                    "they read"
+                ],
+                "baseForm": "czytał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę czytała",
+                    "będziesz czytała",
+                    "będzie czytała",
+                    "będziemy czytały",
+                    "będziecie czytały",
+                    "będą czytały"
+                ],
+                "translations": [
+                    "I will read",
+                    "you will read",
+                    "she will read",
+                    "we will read",
+                    "you all will read",
+                    "they will read"
+                ],
+                "baseForm": "czytał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "czytałabym",
+                    "czytałabyś",
+                    "czytałaby",
+                    "czytałybyśmy",
+                    "czytałybyście",
+                    "czytałyby"
+                ],
+                "translations": [
+                    "I would read",
+                    "you would read",
+                    "she would read",
+                    "we would read",
+                    "you all would read",
+                    "they would read"
+                ],
+                "baseForm": "czytał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "czytałabym była",
+                    "czytałabyś była",
+                    "czytałaby była",
+                    "czytałybyśmy były",
+                    "czytałybyście były",
+                    "czytałyby były"
+                ],
+                "translations": [
+                    "I would have read",
+                    "you would have read",
+                    "she would have read",
+                    "we would have read",
+                    "you all would have read",
+                    "they would have read"
+                ],
+                "baseForm": "czytał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "czytałem",
+                    "czytałeś",
+                    "czytał",
+                    "czytaliśmy",
+                    "czytaliście",
+                    "czytali"
+                ],
+                "translations": [
+                    "I read",
+                    "you read",
+                    "he read",
+                    "we read",
+                    "you all read",
+                    "they read"
+                ],
+                "baseForm": "czyta"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę czytał",
+                    "będziesz czytał",
+                    "będzie czytał",
+                    "będziemy czytali",
+                    "będziecie czytali",
+                    "będą czytali"
+                ],
+                "translations": [
+                    "I will read",
+                    "you will read",
+                    "he will read",
+                    "we will read",
+                    "you all will read",
+                    "they will read"
+                ],
+                "baseForm": "czyta"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "czytałbym",
+                    "czytałbyś",
+                    "czytałby",
+                    "czytalibyśmy",
+                    "czytalibyście",
+                    "czytaliby"
+                ],
+                "translations": [
+                    "I would read",
+                    "you would read",
+                    "he would read",
+                    "we would read",
+                    "you all would read",
+                    "they would read"
+                ],
+                "baseForm": "czyta"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "czytałbym był",
+                    "czytałbyś był",
+                    "czytałby był",
+                    "czytalibyśmy byli",
+                    "czytalibyście byli",
+                    "czytaliby byli"
+                ],
+                "translations": [
+                    "I would have read",
+                    "you would have read",
+                    "he would have read",
+                    "we would have read",
+                    "you all would have read",
+                    "they would have read"
+                ],
+                "baseForm": "czyta"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "czytano by",
+                    "czytano by"
+                ],
+                "translations": [
+                    "there would be read",
+                    "there would be read"
+                ],
+                "baseForm": "czytan"
+            }
+        }
+    },
+    {
+        "verb": "mieć",
+        "translation": "to have",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "mam",
+                    "masz",
+                    "ma",
+                    "mamy",
+                    "macie",
+                    "mają"
+                ],
+                "translations": [
+                    "I have",
+                    "you have",
+                    "he/she/it has",
+                    "we have",
+                    "you all have",
+                    "they have"
+                ],
+                "baseForm": "m"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę mieć",
+                    "będziesz mieć",
+                    "będzie mieć",
+                    "będziemy mieć",
+                    "będziecie mieć",
+                    "będą mieć"
+                ],
+                "translations": [
+                    "I will have",
+                    "you will have",
+                    "he/she/it will have",
+                    "we will have",
+                    "you all will have",
+                    "they will have"
+                ],
+                "baseForm": "mieć"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "miej",
+                    "niech ma",
+                    "miejmy",
+                    "miejcie",
+                    "niech mają"
+                ],
+                "translations": [
+                    "",
+                    "you have!",
+                    "let him/her/it have",
+                    "let's have",
+                    "you all have",
+                    "let them have"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "miałam",
+                    "miałaś",
+                    "miała",
+                    "miałyśmy",
+                    "miałyście",
+                    "miały"
+                ],
+                "translations": [
+                    "I had",
+                    "you had",
+                    "she had",
+                    "we had",
+                    "you all had",
+                    "they had"
+                ],
+                "baseForm": "miał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę miała",
+                    "będziesz miała",
+                    "będzie miała",
+                    "będziemy miały",
+                    "będziecie miały",
+                    "będą miały"
+                ],
+                "translations": [
+                    "I will have",
+                    "you will have",
+                    "she will have",
+                    "we will have",
+                    "you all will have",
+                    "they will have"
+                ],
+                "baseForm": "miał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "miałabym",
+                    "miałabyś",
+                    "miałaby",
+                    "miałybyśmy",
+                    "miałybyście",
+                    "miałyby"
+                ],
+                "translations": [
+                    "I would have",
+                    "you would have",
+                    "she would have",
+                    "we would have",
+                    "you all would have",
+                    "they would have"
+                ],
+                "baseForm": "miał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "miałabym była",
+                    "miałabyś była",
+                    "miałaby była",
+                    "miałybyśmy były",
+                    "miałybyście były",
+                    "miałyby były"
+                ],
+                "translations": [
+                    "I would have had",
+                    "you would have had",
+                    "she would have had",
+                    "we would have had",
+                    "you all would have had",
+                    "they would have had"
+                ],
+                "baseForm": "miał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "miałem",
+                    "miałeś",
+                    "miał",
+                    "mieliśmy",
+                    "mieliście",
+                    "mieli"
+                ],
+                "translations": [
+                    "I had",
+                    "you had",
+                    "he had",
+                    "we had",
+                    "you all had",
+                    "they had"
+                ],
+                "baseForm": "mi"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę miał",
+                    "będziesz miał",
+                    "będzie miał",
+                    "będziemy mieli",
+                    "będziecie mieli",
+                    "będą mieli"
+                ],
+                "translations": [
+                    "I will have",
+                    "you will have",
+                    "he will have",
+                    "we will have",
+                    "you all will have",
+                    "they will have"
+                ],
+                "baseForm": "mi"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "miałbym",
+                    "miałbyś",
+                    "miałby",
+                    "mielibyśmy",
+                    "mielibyście",
+                    "mieliby"
+                ],
+                "translations": [
+                    "I would have",
+                    "you would have",
+                    "he would have",
+                    "we would have",
+                    "you all would have",
+                    "they would have"
+                ],
+                "baseForm": "mi"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "miałbym był",
+                    "miałbyś był",
+                    "miałby był",
+                    "mielibyśmy byli",
+                    "mielibyście byli",
+                    "mieliby byli"
+                ],
+                "translations": [
+                    "I would have had",
+                    "you would have had",
+                    "he would have had",
+                    "we would have had",
+                    "you all would have had",
+                    "they would have had"
+                ],
+                "baseForm": "mi"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "miano by",
+                    "miano by"
+                ],
+                "translations": [
+                    "there would be had",
+                    "there would be had"
+                ],
+                "baseForm": "mian"
+            }
+        }
+    },
+    {
+        "verb": "padać",
+        "translation": "to rain",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "padam",
+                    "padasz",
+                    "pada",
+                    "padamy",
+                    "padacie",
+                    "padają"
+                ],
+                "translations": [
+                    "I rain",
+                    "you rain",
+                    "he/she/it rains",
+                    "we rain",
+                    "you all rain",
+                    "they rain"
+                ],
+                "baseForm": "pad"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę padać",
+                    "będziesz padać",
+                    "będzie padać",
+                    "będziemy padać",
+                    "będziecie padać",
+                    "będą padać"
+                ],
+                "translations": [
+                    "I will rain",
+                    "you will rain",
+                    "he/she/it will rain",
+                    "we will rain",
+                    "you all will rain",
+                    "they will rain"
+                ],
+                "baseForm": "padać"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "padaj",
+                    "niech pada",
+                    "padajmy",
+                    "padajcie",
+                    "niech padają"
+                ],
+                "translations": [
+                    "",
+                    "you rain!",
+                    "let him/her/it rain",
+                    "let's rain",
+                    "you all rain",
+                    "let them rain"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "padałam",
+                    "padałaś",
+                    "padała",
+                    "padałyśmy",
+                    "padałyście",
+                    "padały"
+                ],
+                "translations": [
+                    "I rained",
+                    "you rained",
+                    "she rained",
+                    "we rained",
+                    "you all rained",
+                    "they rained"
+                ],
+                "baseForm": "padał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę padała",
+                    "będziesz padała",
+                    "będzie padała",
+                    "będziemy padały",
+                    "będziecie padały",
+                    "będą padały"
+                ],
+                "translations": [
+                    "I will rain",
+                    "you will rain",
+                    "she will rain",
+                    "we will rain",
+                    "you all will rain",
+                    "they will rain"
+                ],
+                "baseForm": "padał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "padałabym",
+                    "padałabyś",
+                    "padałaby",
+                    "padałybyśmy",
+                    "padałybyście",
+                    "padałyby"
+                ],
+                "translations": [
+                    "I would rain",
+                    "you would rain",
+                    "she would rain",
+                    "we would rain",
+                    "you all would rain",
+                    "they would rain"
+                ],
+                "baseForm": "padał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "padałabym była",
+                    "padałabyś była",
+                    "padałaby była",
+                    "padałybyśmy były",
+                    "padałybyście były",
+                    "padałyby były"
+                ],
+                "translations": [
+                    "I would have rained",
+                    "you would have rained",
+                    "she would have rained",
+                    "we would have rained",
+                    "you all would have rained",
+                    "they would have rained"
+                ],
+                "baseForm": "padał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "padałem",
+                    "padałeś",
+                    "padał",
+                    "padaliśmy",
+                    "padaliście",
+                    "padali"
+                ],
+                "translations": [
+                    "I rained",
+                    "you rained",
+                    "he rained",
+                    "we rained",
+                    "you all rained",
+                    "they rained"
+                ],
+                "baseForm": "pada"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę padał",
+                    "będziesz padał",
+                    "będzie padał",
+                    "będziemy padali",
+                    "będziecie padali",
+                    "będą padali"
+                ],
+                "translations": [
+                    "I will rain",
+                    "you will rain",
+                    "he will rain",
+                    "we will rain",
+                    "you all will rain",
+                    "they will rain"
+                ],
+                "baseForm": "pada"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "padałbym",
+                    "padałbyś",
+                    "padałby",
+                    "padalibyśmy",
+                    "padalibyście",
+                    "padaliby"
+                ],
+                "translations": [
+                    "I would rain",
+                    "you would rain",
+                    "he would rain",
+                    "we would rain",
+                    "you all would rain",
+                    "they would rain"
+                ],
+                "baseForm": "pada"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "padałbym był",
+                    "padałbyś był",
+                    "padałby był",
+                    "padalibyśmy byli",
+                    "padalibyście byli",
+                    "padaliby byli"
+                ],
+                "translations": [
+                    "I would have rained",
+                    "you would have rained",
+                    "he would have rained",
+                    "we would have rained",
+                    "you all would have rained",
+                    "they would have rained"
+                ],
+                "baseForm": "pada"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "padano by",
+                    "padano by"
+                ],
+                "translations": [
+                    "there would be rained",
+                    "there would be rained"
+                ],
+                "baseForm": "padan"
+            }
+        }
+    },
+    {
+        "verb": "wołać",
+        "translation": "to call",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "wołam",
+                    "wołasz",
+                    "woła",
+                    "wołamy",
+                    "wołacie",
+                    "wołają"
+                ],
+                "translations": [
+                    "I call",
+                    "you call",
+                    "he/she/it calls",
+                    "we call",
+                    "you all call",
+                    "they call"
+                ],
+                "baseForm": "woł"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę wołać",
+                    "będziesz wołać",
+                    "będzie wołać",
+                    "będziemy wołać",
+                    "będziecie wołać",
+                    "będą wołać"
+                ],
+                "translations": [
+                    "I will call",
+                    "you will call",
+                    "he/she/it will call",
+                    "we will call",
+                    "you all will call",
+                    "they will call"
+                ],
+                "baseForm": "wołać"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "wołaj",
+                    "niech woła",
+                    "wołajmy",
+                    "wołajcie",
+                    "niech wołają"
+                ],
+                "translations": [
+                    "",
+                    "you call!",
+                    "let him/her/it call",
+                    "let's call",
+                    "you all call",
+                    "let them call"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "wołałam",
+                    "wołałaś",
+                    "wołała",
+                    "wołałyśmy",
+                    "wołałyście",
+                    "wołały"
+                ],
+                "translations": [
+                    "I called",
+                    "you called",
+                    "she called",
+                    "we called",
+                    "you all called",
+                    "they called"
+                ],
+                "baseForm": "wołał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę wołała",
+                    "będziesz wołała",
+                    "będzie wołała",
+                    "będziemy wołały",
+                    "będziecie wołały",
+                    "będą wołały"
+                ],
+                "translations": [
+                    "I will call",
+                    "you will call",
+                    "she will call",
+                    "we will call",
+                    "you all will call",
+                    "they will call"
+                ],
+                "baseForm": "wołał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "wołałabym",
+                    "wołałabyś",
+                    "wołałaby",
+                    "wołałybyśmy",
+                    "wołałybyście",
+                    "wołałyby"
+                ],
+                "translations": [
+                    "I would call",
+                    "you would call",
+                    "she would call",
+                    "we would call",
+                    "you all would call",
+                    "they would call"
+                ],
+                "baseForm": "wołał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "wołałabym była",
+                    "wołałabyś była",
+                    "wołałaby była",
+                    "wołałybyśmy były",
+                    "wołałybyście były",
+                    "wołałyby były"
+                ],
+                "translations": [
+                    "I would have called",
+                    "you would have called",
+                    "she would have called",
+                    "we would have called",
+                    "you all would have called",
+                    "they would have called"
+                ],
+                "baseForm": "wołał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "wołałem",
+                    "wołałeś",
+                    "wołał",
+                    "wołaliśmy",
+                    "wołaliście",
+                    "wołali"
+                ],
+                "translations": [
+                    "I called",
+                    "you called",
+                    "he called",
+                    "we called",
+                    "you all called",
+                    "they called"
+                ],
+                "baseForm": "woła"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę wołał",
+                    "będziesz wołał",
+                    "będzie wołał",
+                    "będziemy wołali",
+                    "będziecie wołali",
+                    "będą wołali"
+                ],
+                "translations": [
+                    "I will call",
+                    "you will call",
+                    "he will call",
+                    "we will call",
+                    "you all will call",
+                    "they will call"
+                ],
+                "baseForm": "woła"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "wołałbym",
+                    "wołałbyś",
+                    "wołałby",
+                    "wołalibyśmy",
+                    "wołalibyście",
+                    "wołaliby"
+                ],
+                "translations": [
+                    "I would call",
+                    "you would call",
+                    "he would call",
+                    "we would call",
+                    "you all would call",
+                    "they would call"
+                ],
+                "baseForm": "woła"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "wołałbym był",
+                    "wołałbyś był",
+                    "wołałby był",
+                    "wołalibyśmy byli",
+                    "wołalibyście byli",
+                    "wołaliby byli"
+                ],
+                "translations": [
+                    "I would have called",
+                    "you would have called",
+                    "he would have called",
+                    "we would have called",
+                    "you all would have called",
+                    "they would have called"
+                ],
+                "baseForm": "woła"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "wołano by",
+                    "wołano by"
+                ],
+                "translations": [
+                    "there would be called",
+                    "there would be called"
+                ],
+                "baseForm": "wołan"
+            }
+        }
+    },
+    {
+        "verb": "jeść",
+        "translation": "to eat",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "jem",
+                    "jesz",
+                    "je",
+                    "jemy",
+                    "jecie",
+                    "jedzą"
+                ],
+                "translations": [
+                    "I eat",
+                    "you eat",
+                    "he/she/it eats",
+                    "we eat",
+                    "you all eat",
+                    "they eat"
+                ],
+                "baseForm": "j"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę jeść",
+                    "będziesz jeść",
+                    "będzie jeść",
+                    "będziemy jeść",
+                    "będziecie jeść",
+                    "będą jeść"
+                ],
+                "translations": [
+                    "I will eat",
+                    "you will eat",
+                    "he/she/it will eat",
+                    "we will eat",
+                    "you all will eat",
+                    "they will eat"
+                ],
+                "baseForm": "jeść"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "jedz",
+                    "niech je",
+                    "jedzmy",
+                    "jedzcie",
+                    "niech jedzą"
+                ],
+                "translations": [
+                    "",
+                    "you eat!",
+                    "let him/her/it eat",
+                    "let's eat",
+                    "you all eat",
+                    "let them eat"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "jadłam",
+                    "jadłaś",
+                    "jadła",
+                    "jadłyśmy",
+                    "jadłyście",
+                    "jadły"
+                ],
+                "translations": [
+                    "I ate",
+                    "you ate",
+                    "she ate",
+                    "we ate",
+                    "you all ate",
+                    "they ate"
+                ],
+                "baseForm": "jadł"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę jadła",
+                    "będziesz jadła",
+                    "będzie jadła",
+                    "będziemy jadły",
+                    "będziecie jadły",
+                    "będą jadły"
+                ],
+                "translations": [
+                    "I will eat",
+                    "you will eat",
+                    "she will eat",
+                    "we will eat",
+                    "you all will eat",
+                    "they will eat"
+                ],
+                "baseForm": "jadł"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "jadłabym",
+                    "jadłabyś",
+                    "jadłaby",
+                    "jadłybyśmy",
+                    "jadłybyście",
+                    "jadłyby"
+                ],
+                "translations": [
+                    "I would eat",
+                    "you would eat",
+                    "she would eat",
+                    "we would eat",
+                    "you all would eat",
+                    "they would eat"
+                ],
+                "baseForm": "jadł"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "jadłabym była",
+                    "jadłabyś była",
+                    "jadłaby była",
+                    "jadłybyśmy były",
+                    "jadłybyście były",
+                    "jadłyby były"
+                ],
+                "translations": [
+                    "I would have eaten",
+                    "you would have eaten",
+                    "she would have eaten",
+                    "we would have eaten",
+                    "you all would have eaten",
+                    "they would have eaten"
+                ],
+                "baseForm": "jadł"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "jadłem",
+                    "jadłeś",
+                    "jadł",
+                    "jedliśmy",
+                    "jedliście",
+                    "jedli"
+                ],
+                "translations": [
+                    "I ate",
+                    "you ate",
+                    "he ate",
+                    "we ate",
+                    "you all ate",
+                    "they ate"
+                ],
+                "baseForm": "j"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę jadł",
+                    "będziesz jadł",
+                    "będzie jadł",
+                    "będziemy jedli",
+                    "będziecie jedli",
+                    "będą jedli"
+                ],
+                "translations": [
+                    "I will eat",
+                    "you will eat",
+                    "he will eat",
+                    "we will eat",
+                    "you all will eat",
+                    "they will eat"
+                ],
+                "baseForm": "j"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "jadłbym",
+                    "jadłbyś",
+                    "jadłby",
+                    "jedlibyśmy",
+                    "jedlibyście",
+                    "jedliby"
+                ],
+                "translations": [
+                    "I would eat",
+                    "you would eat",
+                    "he would eat",
+                    "we would eat",
+                    "you all would eat",
+                    "they would eat"
+                ],
+                "baseForm": "j"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "jadłbym był",
+                    "jadłbyś był",
+                    "jadłby był",
+                    "jedlibyśmy byli",
+                    "jedlibyście byli",
+                    "jedliby byli"
+                ],
+                "translations": [
+                    "I would have eaten",
+                    "you would have eaten",
+                    "he would have eaten",
+                    "we would have eaten",
+                    "you all would have eaten",
+                    "they would have eaten"
+                ],
+                "baseForm": "j"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "jedzono by",
+                    "jedzono by"
+                ],
+                "translations": [
+                    "there would be eaten",
+                    "there would be eaten"
+                ],
+                "baseForm": "jedzon"
+            }
+        }
+    },
+    {
+        "verb": "umieć",
+        "translation": "to be able to",
+        "tenses": {
+            "Present tense": {
+                "conjugations": [
+                    "umiem",
+                    "umiesz",
+                    "umie",
+                    "umiemy",
+                    "umiecie",
+                    "umieją"
+                ],
+                "translations": [
+                    "I am able to",
+                    "you are able to",
+                    "is able to",
+                    "we are able to",
+                    "you all are able to",
+                    "they are able to"
+                ],
+                "baseForm": "umi"
+            },
+            "Imperfective future tense": {
+                "conjugations": [
+                    "będę umieć",
+                    "będziesz umieć",
+                    "będzie umieć",
+                    "będziemy umieć",
+                    "będziecie umieć",
+                    "będą umieć"
+                ],
+                "translations": [
+                    "I will be able to",
+                    "you will be able to",
+                    "will be able to",
+                    "we will be able to",
+                    "you all will be able to",
+                    "they will be able to"
+                ],
+                "baseForm": "umieć"
+            },
+            "Imperative": {
+                "conjugations": [
+                    "-",
+                    "umiej",
+                    "niech umie",
+                    "umiejmy",
+                    "umiejcie",
+                    "niech umieją"
+                ],
+                "translations": [
+                    "",
+                    "you be able to",
+                    "let him/her/it be able to",
+                    "let's be able to",
+                    "you all be able to",
+                    "let them be able to"
+                ],
+                "baseForm": ""
+            },
+            "Past feminine tense": {
+                "conjugations": [
+                    "umiałam",
+                    "umiałaś",
+                    "umiała",
+                    "umiałyśmy",
+                    "umiałyście",
+                    "umiały"
+                ],
+                "translations": [
+                    "I was able to",
+                    "you were able to",
+                    "she was able to",
+                    "we were able to",
+                    "you all were able to",
+                    "they were able to"
+                ],
+                "baseForm": "umiał"
+            },
+            "Future feminine tense": {
+                "conjugations": [
+                    "będę umiała",
+                    "będziesz umiała",
+                    "będzie umiała",
+                    "będziemy umiały",
+                    "będziecie umiały",
+                    "będą umiały"
+                ],
+                "translations": [
+                    "I will be able to",
+                    "you will be able to",
+                    "she will be able to",
+                    "we will be able to",
+                    "you all will be able to",
+                    "they will be able to"
+                ],
+                "baseForm": "umiał"
+            },
+            "Conditional feminine tense": {
+                "conjugations": [
+                    "umiałabym",
+                    "umiałabyś",
+                    "umiałaby",
+                    "umiałybyśmy",
+                    "umiałybyście",
+                    "umiałyby"
+                ],
+                "translations": [
+                    "I would be able to",
+                    "you would be able to",
+                    "she would be able to",
+                    "we would be able to",
+                    "you all would be able to",
+                    "they would be able to"
+                ],
+                "baseForm": "umiał"
+            },
+            "Conditional perfective feminine tense": {
+                "conjugations": [
+                    "umiałabym była",
+                    "umiałabyś była",
+                    "umiałaby była",
+                    "umiałybyśmy były",
+                    "umiałybyście były",
+                    "umiałyby były"
+                ],
+                "translations": [
+                    "I would be able to",
+                    "you would be able to",
+                    "she would be able to",
+                    "we would be able to",
+                    "you all would be able to",
+                    "they would be able to"
+                ],
+                "baseForm": "umiał"
+            },
+            "Past masculine tense": {
+                "conjugations": [
+                    "umiałem",
+                    "umiałeś",
+                    "umiał",
+                    "umieliśmy",
+                    "umieliście",
+                    "umieli"
+                ],
+                "translations": [
+                    "I was able to",
+                    "you were able to",
+                    "he was able to",
+                    "we were able to",
+                    "you all were able to",
+                    "they were able to"
+                ],
+                "baseForm": "umi"
+            },
+            "Future masculine tense": {
+                "conjugations": [
+                    "będę umiał",
+                    "będziesz umiał",
+                    "będzie umiał",
+                    "będziemy umieli",
+                    "będziecie umieli",
+                    "będą umieli"
+                ],
+                "translations": [
+                    "I will be able to",
+                    "you will be able to",
+                    "he will be able to",
+                    "we will be able to",
+                    "you all will be able to",
+                    "they will be able to"
+                ],
+                "baseForm": "umi"
+            },
+            "Conditional masculine tense": {
+                "conjugations": [
+                    "umiałbym",
+                    "umiałbyś",
+                    "umiałby",
+                    "umielibyśmy",
+                    "umielibyście",
+                    "umieliby"
+                ],
+                "translations": [
+                    "I would be able to",
+                    "you would be able to",
+                    "he would be able to",
+                    "we would be able to",
+                    "you all would be able to",
+                    "they would be able to"
+                ],
+                "baseForm": "umi"
+            },
+            "Conditional perfective masculine tense": {
+                "conjugations": [
+                    "umiałbym był",
+                    "umiałbyś był",
+                    "umiałby był",
+                    "umielibyśmy byli",
+                    "umielibyście byli",
+                    "umieliby byli"
+                ],
+                "translations": [
+                    "I would be able to",
+                    "you would be able to",
+                    "he would be able to",
+                    "we would be able to",
+                    "you all would be able to",
+                    "they would be able to"
+                ],
+                "baseForm": "umi"
+            },
+            "Impersonal": {
+                "conjugations": [
+                    "umiano by",
+                    "umiano by"
+                ],
+                "translations": [
+                    "be able to",
+                    "be able to"
+                ],
+                "baseForm": "umian"
+            }
+        }
     }
 ]
