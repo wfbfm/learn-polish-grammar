@@ -1,0 +1,55 @@
+{
+    "Present": [
+        {
+            "internal": "Present Tense",
+            "display": "Present"
+        }
+    ],
+    "Future": [
+        {
+            "internal": "Imperfective future tense",
+            "display": "Future (Imperfect)"
+        },
+        {
+            "internal": "Future masculine tense",
+            "display": "Future (M)"
+        },
+        {
+            "internal": "Future feminine tense",
+            "display": "Future (F)"
+        }
+    ],
+    "Past": [
+        {
+            "internal": "Past masculine tense",
+            "display": "Past (M)"
+        },
+        {
+            "internal": "Past feminine tense",
+            "display": "Past (F)"
+        }
+    ],
+    "Conditional": [
+        {
+            "internal": "Conditional masculine tense",
+            "display": "Conditional (M)"
+        },
+        {
+            "internal": "Conditional feminine tense",
+            "display": "Conditional (F)"
+        }
+    ],
+    "Past Conditional": [
+        {
+            "internal": "Conditional perfective masculine tense",
+            "display": "Past Conditional (M)"
+        },
+        {
+            "internal": "Conditional perfective feminine tense",
+            "display": "Past Conditional (F)"
+        }
+    ],
+    "Imperative": [
+        "Imperative"
+    ]
+}

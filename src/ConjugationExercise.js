@@ -1,13 +1,14 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 
-const ConjugationExercise = ({ verbs }) =>
+const ConjugationExercise = ({ verbs, tenses }) =>
 {
-  const pronouns = useMemo(() => ['ja', 'ty', 'on', 'my', 'wy', 'oni'], []);
+  const pronouns = useMemo(() => ['ja', 'ty', 'on/ona', 'my', 'wy', 'oni'], []);
   const [currentVerb, setCurrentVerb] = useState(null);
   const [userInputs, setUserInputs] = useState(Array(pronouns.length).fill(''));
   const [results, setResults] = useState(Array(pronouns.length).fill(''));
   const [isChecking, setIsChecking] = useState(false);
   const [isGiveUp, setIsGiveUp] = useState(false);
+  const [selectedTense, setSelectedTense] = useState('Present tense');
 
   const startExercise = useCallback(() =>
   {
@@ -26,22 +27,22 @@ const ConjugationExercise = ({ verbs }) =>
 
   useEffect(() =>
   {
-    // FIXME - this is currently hardcoded to look at present tense only.
-    // Some verbs don't even have the present tense, so we need to handle those cases too.
-    if (currentVerb) 
+    console.log("Current verb", currentVerb);
+    console.log("Current tense", selectedTense);
+    if (currentVerb)
     {
-      console.log(currentVerb);
+      const conjugation = currentVerb.tenses[selectedTense];
       if (isChecking)
       {
-        setResults((prevResults) => 
+        setResults((prevResults) =>
         {
           const updatedResults = prevResults.map((result, index) =>
-            normalisedCompare(currentVerb.tenses["Present tense"].baseForm + userInputs[index], currentVerb.tenses["Present tense"].conjugations[index]) ? 'correct' : 'incorrect'
+            normalisedCompare(conjugation.baseForm + userInputs[index], conjugation.conjugations[index]) ? 'correct' : 'incorrect'
           );
-          setUserInputs((prevUserInputs) =>  // to add back the accents, if user did not input them
+          setUserInputs((prevUserInputs) =>
           {
             return prevUserInputs.map((userInput, index) =>
-              updatedResults[index] === 'correct' ? currentVerb.tenses["Present tense"].conjugations[index].slice(currentVerb.tenses["Present tense"].baseForm.length) : userInputs[index]
+              updatedResults[index] === 'correct' ? conjugation.conjugations[index].slice(conjugation.baseForm.length) : userInputs[index]
             );
           });
           return updatedResults;
@@ -51,35 +52,35 @@ const ConjugationExercise = ({ verbs }) =>
 
       if (isGiveUp)
       {
-        setResults((prevResults) => 
+        setResults((prevResults) =>
         {
           return prevResults.map((result, index) =>
-            normalisedCompare(currentVerb.tenses["Present tense"].baseForm + userInputs[index], currentVerb.tenses["Present tense"].conjugations[index]) ? 'correct' : 'incorrect'
+            normalisedCompare(conjugation.baseForm + userInputs[index], conjugation.conjugations[index]) ? 'correct' : 'incorrect'
           );
         });
-        setUserInputs((prevUserInputs) => 
+        setUserInputs((prevUserInputs) =>
         {
           return prevUserInputs.map((userInput, index) =>
-            currentVerb.tenses["Present tense"].conjugations[index].slice(currentVerb.tenses["Present tense"].baseForm.length)
+            conjugation.conjugations[index].slice(conjugation.baseForm.length)
           );
         });
         setIsGiveUp(false);
       }
     }
-  }, [currentVerb, pronouns, userInputs, results, isChecking, isGiveUp, startExercise, normalisedCompare, verbs]);
+  }, [currentVerb, pronouns, userInputs, results, isChecking, isGiveUp, startExercise, normalisedCompare, verbs, selectedTense]);
 
-  const handleInputKeyPress = (e) => 
+  const handleInputKeyPress = (e) =>
   {
     // TODO: implement me
     return;
   };
 
-  const checkAnswer = () => 
+  const checkAnswer = () =>
   {
     setIsChecking(true);
   };
 
-  const giveUp = () => 
+  const giveUp = () =>
   {
     setIsGiveUp(true);
   };
@@ -92,6 +93,19 @@ const ConjugationExercise = ({ verbs }) =>
   return (
     <div>
       <h2>Polish Verb Conjugation Exercise</h2>
+      <div>
+        <label>Select Tense:</label>
+        <select
+          value={selectedTense}
+          onChange={(e) => setSelectedTense(e.target.value)}
+        >
+          {Object.keys(tenses).map((tense) => (
+            <option key={tense} value={tenses[tense][0].internal}>
+              {tenses[tense][0].display}
+            </option>
+          ))}
+        </select>
+      </div>
       <button onClick={startExercise}>Start</button>
       {currentVerb && (
         <div>
@@ -102,7 +116,7 @@ const ConjugationExercise = ({ verbs }) =>
                 <tr key={index}>
                   <td>{pronoun}</td>
                   <td>
-                    {currentVerb.tenses["Present tense"].baseForm}
+                    {currentVerb.tenses[selectedTense].baseForm}
                     <input
                       type="text"
                       value={userInputs[index]}
@@ -113,10 +127,20 @@ const ConjugationExercise = ({ verbs }) =>
                         setUserInputs(updatedInputs);
                       }}
                       onKeyPress={handleInputKeyPress}
-                      className={results[index] === 'correct' ? 'correct' : results[index] === 'incorrect' ? 'incorrect' : ''}
+                      className={
+                        results[index] === 'correct'
+                          ? 'correct'
+                          : results[index] === 'incorrect'
+                            ? 'incorrect'
+                            : ''
+                      }
                       disabled={results[index] === 'correct' || isChecking}
                     />
-                    {results[index] === 'correct' ? <span className="result-icon">&#10004;</span> : results[index] === 'incorrect' ? <span className="result-icon">&#10006;</span> : null}
+                    {results[index] === 'correct' ? (
+                      <span className="result-icon">&#10004;</span>
+                    ) : results[index] === 'incorrect' ? (
+                      <span className="result-icon">&#10006;</span>
+                    ) : null}
                   </td>
                 </tr>
               ))}
