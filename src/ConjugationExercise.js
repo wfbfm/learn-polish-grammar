@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import
 {
-  Box, Button, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer
+  Box, Button, Flex, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer, Spacer
 } from '@chakra-ui/react'
 
 const ConjugationExercise = ({ verbs, tenses }) =>
@@ -15,7 +15,7 @@ const ConjugationExercise = ({ verbs, tenses }) =>
   const [isChecking, setIsChecking] = useState(false);
   const [isGiveUp, setIsGiveUp] = useState(false);
 
-  const startExercise = useCallback(() =>
+  const startExercise = useCallback((retryVerb) =>
   {
     if (!selectedTense)
     {
@@ -23,12 +23,20 @@ const ConjugationExercise = ({ verbs, tenses }) =>
       console.log("No selected tense");
       return;
     }
-    const verbsWithSelectedTense = verbs.filter((verb) =>
+    console.log("Retry verb", retryVerb);
+    if (retryVerb)
     {
-      return selectedTense in verb.tenses;
-    });
-    const randomVerb = verbsWithSelectedTense[Math.floor(Math.random() * verbsWithSelectedTense.length)];
-    setCurrentVerb(randomVerb);
+      setCurrentVerb(retryVerb);
+    }
+    else
+    {
+      const verbsWithSelectedTense = verbs.filter((verb) =>
+      {
+        return selectedTense in verb.tenses;
+      });
+      const randomVerb = verbsWithSelectedTense[Math.floor(Math.random() * verbsWithSelectedTense.length)];
+      setCurrentVerb(randomVerb);
+    }
     setCurrentTense(selectedTense);
     setUserInputs(Array(pronouns.length).fill(''));
     setResults(Array(pronouns.length).fill(''));
@@ -99,6 +107,11 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     setIsGiveUp(true);
   };
 
+  const retry = () =>
+  {
+    startExercise(currentVerb);
+  };
+
   function removeAccents(input)
   {
     return input.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -113,18 +126,31 @@ const ConjugationExercise = ({ verbs, tenses }) =>
 
   return (
     <Box>
-      <h2>Polish Verb Conjugation Exercise</h2>
-      <Select
-        value={selectedTense}
-        onChange={handleTenseSelect}
-        placeholder="Select a tense">
-        {Object.entries(tenses).map(([display, internal]) => (
-          <option key={internal} value={internal}>
-            {display}
-          </option>
-        ))}
-      </Select>
-      <Button onClick={startExercise}>Start</Button>
+      <Box>
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+          <Select
+            value={selectedTense}
+            onChange={handleTenseSelect}
+            placeholder="Select a tense">
+            {Object.entries(tenses).map(([display, internal]) => (
+              <option key={internal} value={internal}>
+                {display}
+              </option>
+            ))}
+          </Select>
+          <Button onClick={() => startExercise(null)}>Start</Button>
+          <Button onClick={checkAnswer} disabled={isChecking}>
+            Check
+          </Button>
+          <Button onClick={giveUp} disabled={isGiveUp}>
+            Give up
+          </Button>
+          <Button onClick={retry}>
+            Retry
+          </Button>
+          <Spacer></Spacer>
+        </Flex>
+      </Box>
       {currentVerb && currentTense && (
         <Box>
           <Box>
@@ -167,14 +193,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                 </Tbody>
               </Table>
             </TableContainer>
-          </Box>
-          <Box>
-            <Button onClick={checkAnswer} disabled={isChecking}>
-              Check
-            </Button>
-            <Button onClick={giveUp} disabled={isGiveUp}>
-              Give up
-            </Button>
           </Box>
         </Box>
       )}
