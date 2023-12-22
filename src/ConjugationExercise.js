@@ -1,12 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import
 {
-  Box, Button, Flex, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer, Spacer, HStack,
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
-  Kbd
+  Box, Button, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd
 } from '@chakra-ui/react'
 
 const ConjugationExercise = ({ verbs, tenses }) =>
