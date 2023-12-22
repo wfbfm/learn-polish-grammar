@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import
 {
-  Box, Button, Flex, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer, Spacer
+  Box, Button, Flex, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer, Spacer, HStack,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+  Kbd
 } from '@chakra-ui/react'
 
 const ConjugationExercise = ({ verbs, tenses }) =>
@@ -14,6 +19,7 @@ const ConjugationExercise = ({ verbs, tenses }) =>
   const [results, setResults] = useState(Array(pronouns.length).fill(''));
   const [isChecking, setIsChecking] = useState(false);
   const [isGiveUp, setIsGiveUp] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
   const startExercise = useCallback((retryVerb) =>
   {
@@ -21,8 +27,10 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     {
       // TODO: add a warning banner
       console.log("No selected tense");
+      setShowAlert(true);
       return;
     }
+    setShowAlert(false);
     console.log("Retry verb", retryVerb);
     if (retryVerb)
     {
@@ -127,8 +135,9 @@ const ConjugationExercise = ({ verbs, tenses }) =>
   return (
     <Box>
       <Box>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+        <HStack h={16} spacing='24px'>
           <Select
+            w='300px'
             value={selectedTense}
             onChange={handleTenseSelect}
             placeholder="Select a tense">
@@ -138,19 +147,30 @@ const ConjugationExercise = ({ verbs, tenses }) =>
               </option>
             ))}
           </Select>
-          <Button onClick={() => startExercise(null)}>Start</Button>
-          <Button onClick={checkAnswer} disabled={isChecking}>
-            Check
+          <Button w='200px' p='4' onClick={() => startExercise(null)}>
+            <Text p={2}>Start</Text>
+            <Kbd>Ctrl</Kbd> + <Kbd>Enter</Kbd>
           </Button>
-          <Button onClick={giveUp} disabled={isGiveUp}>
-            Give up
+          <Button w='200px' onClick={checkAnswer} disabled={isChecking}>
+            <Text p={2}>Check</Text>
+            <Kbd>Alt</Kbd> + <Kbd>Enter</Kbd>
           </Button>
-          <Button onClick={retry}>
-            Retry
+          <Button w='200px' onClick={giveUp} disabled={isGiveUp}>
+            <Text p={2}>Give Up</Text>
+            <Kbd>Ctrl</Kbd> + <Kbd>G</Kbd>
           </Button>
-          <Spacer></Spacer>
-        </Flex>
+          <Button w='200px' onClick={retry}>
+            <Text p={2}>Retry</Text>
+            <Kbd>Alt</Kbd> + <Kbd>G</Kbd>
+          </Button>
+        </HStack>
       </Box>
+      {showAlert && (
+        <Alert status="warning">
+          <AlertIcon />
+          Please select the tense you want to practise!
+        </Alert>
+      )}
       {currentVerb && currentTense && (
         <Box>
           <Box>
