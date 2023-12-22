@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
-const ConjugationExercise = ({ verbs, tenses }) =>
+const ConjugationExercise = ({ verbs, selectedTense }) =>
 {
   const pronouns = useMemo(() => ['ja', 'ty', 'on/ona', 'my', 'wy', 'oni'], []);
   const [currentVerb, setCurrentVerb] = useState(null);
@@ -8,7 +8,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
   const [results, setResults] = useState(Array(pronouns.length).fill(''));
   const [isChecking, setIsChecking] = useState(false);
   const [isGiveUp, setIsGiveUp] = useState(false);
-  const [selectedTense, setSelectedTense] = useState('Present tense');
 
   const startExercise = useCallback(() =>
   {
@@ -18,7 +17,9 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     setResults(Array(pronouns.length).fill(''));
     setIsChecking(false);
     setIsGiveUp(false);
-  }, [verbs, pronouns.length]);
+    console.log("Selected Tense", selectedTense);
+    console.log("Selected Verb", currentVerb);
+  }, [verbs, pronouns.length, selectedTense]);
 
   const normalisedCompare = useCallback((string1, string2) =>
   {
@@ -27,8 +28,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
 
   useEffect(() =>
   {
-    console.log("Current verb", currentVerb);
-    console.log("Current tense", selectedTense);
     if (currentVerb)
     {
       const conjugation = currentVerb.tenses[selectedTense];
@@ -93,19 +92,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
   return (
     <div>
       <h2>Polish Verb Conjugation Exercise</h2>
-      <div>
-        <label>Select Tense:</label>
-        <select
-          value={selectedTense}
-          onChange={(e) => setSelectedTense(e.target.value)}
-        >
-          {Object.keys(tenses).map((tense) => (
-            <option key={tense} value={tenses[tense][0].internal}>
-              {tenses[tense][0].display}
-            </option>
-          ))}
-        </select>
-      </div>
       <button onClick={startExercise}>Start</button>
       {currentVerb && (
         <div>

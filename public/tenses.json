@@ -50,6 +50,9 @@
         }
     ],
     "Imperative": [
-        "Imperative"
+        {
+            "internal": "Imperative",
+            "display": "Imperative"
+        }
     ]
 }
