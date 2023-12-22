@@ -1,58 +1,13 @@
 {
-    "Present": [
-        {
-            "internal": "Present Tense",
-            "display": "Present"
-        }
-    ],
-    "Future": [
-        {
-            "internal": "Imperfective future tense",
-            "display": "Future (Imperfect)"
-        },
-        {
-            "internal": "Future masculine tense",
-            "display": "Future (M)"
-        },
-        {
-            "internal": "Future feminine tense",
-            "display": "Future (F)"
-        }
-    ],
-    "Past": [
-        {
-            "internal": "Past masculine tense",
-            "display": "Past (M)"
-        },
-        {
-            "internal": "Past feminine tense",
-            "display": "Past (F)"
-        }
-    ],
-    "Conditional": [
-        {
-            "internal": "Conditional masculine tense",
-            "display": "Conditional (M)"
-        },
-        {
-            "internal": "Conditional feminine tense",
-            "display": "Conditional (F)"
-        }
-    ],
-    "Past Conditional": [
-        {
-            "internal": "Conditional perfective masculine tense",
-            "display": "Past Conditional (M)"
-        },
-        {
-            "internal": "Conditional perfective feminine tense",
-            "display": "Past Conditional (F)"
-        }
-    ],
-    "Imperative": [
-        {
-            "internal": "Imperative",
-            "display": "Imperative"
-        }
-    ]
+    "Present": "Present tense",
+    "Future (Imperfect)": "Imperfective future tense",
+    "Future (Perfect - Masc.)": "Future masculine tense",
+    "Future (Perfect - Fem.)": "Future feminine tense",
+    "Past (M)": "Past masculine tense",
+    "Past (F)": "Past feminine tense",
+    "Conditional (M)": "Conditional masculine tense",
+    "Conditional (F)": "Conditional feminine tense",
+    "Past Conditional (M)": "Conditional perfective masculine tense",
+    "Past Conditional (F)": "Conditional perfective feminine tense",
+    "Imperative": "Imperative"
 }
