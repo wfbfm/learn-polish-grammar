@@ -14,7 +14,17 @@ const ConjugationExercise = ({ verbs, tenses }) =>
 
   const startExercise = useCallback(() =>
   {
-    const randomVerb = verbs[Math.floor(Math.random() * verbs.length)];
+    if (!selectedTense)
+    {
+      // TODO: add a warning banner
+      console.log("No selected tense");
+      return;
+    }
+    const verbsWithSelectedTense = verbs.filter((verb) =>
+    {
+      return selectedTense in verb.tenses;
+    });
+    const randomVerb = verbsWithSelectedTense[Math.floor(Math.random() * verbsWithSelectedTense.length)];
     setCurrentVerb(randomVerb);
     setCurrentTense(selectedTense);
     setUserInputs(Array(pronouns.length).fill(''));
