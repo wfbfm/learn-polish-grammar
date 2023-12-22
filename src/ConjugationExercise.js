@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import { Box, Button, Select } from '@chakra-ui/react'
+import
+{
+  Box, Button, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer
+} from '@chakra-ui/react'
 
 const ConjugationExercise = ({ verbs, tenses }) =>
 {
@@ -125,43 +128,45 @@ const ConjugationExercise = ({ verbs, tenses }) =>
       {currentVerb && currentTense && (
         <Box>
           <Box>
-            <p>Verb: {currentVerb.verb}</p>
-            <table>
-              <tbody>
-                {pronouns.map((pronoun, index) => (
-                  <tr key={index}>
-                    <td>{pronoun}</td>
-                    <td>
-                      {currentVerb.tenses[currentTense].baseForm}
-                      <input
-                        type="text"
-                        value={userInputs[index]}
-                        onChange={(e) =>
-                        {
-                          const updatedInputs = [...userInputs];
-                          updatedInputs[index] = e.target.value;
-                          setUserInputs(updatedInputs);
-                        }}
-                        onKeyPress={handleInputKeyPress}
-                        className={
-                          results[index] === 'correct'
-                            ? 'correct'
-                            : results[index] === 'incorrect'
-                              ? 'incorrect'
-                              : ''
-                        }
-                        disabled={results[index] === 'correct' || isChecking}
-                      />
-                      {results[index] === 'correct' ? (
-                        <span className="result-icon">&#10004;</span>
-                      ) : results[index] === 'incorrect' ? (
-                        <span className="result-icon">&#10006;</span>
-                      ) : null}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <Text>Verb: {currentVerb.verb}</Text>
+            <TableContainer>
+              <Table variant='simple'>
+                <Tbody>
+                  {pronouns.map((pronoun, index) => (
+                    <Tr key={index}>
+                      <Td>{pronoun}</Td>
+                      <Td>
+                        {currentVerb.tenses[currentTense].baseForm}
+                        <Input
+                          type="text"
+                          value={userInputs[index]}
+                          onChange={(e) =>
+                          {
+                            const updatedInputs = [...userInputs];
+                            updatedInputs[index] = e.target.value;
+                            setUserInputs(updatedInputs);
+                          }}
+                          onKeyPress={handleInputKeyPress}
+                          className={
+                            results[index] === 'correct'
+                              ? 'correct'
+                              : results[index] === 'incorrect'
+                                ? 'incorrect'
+                                : ''
+                          }
+                          disabled={results[index] === 'correct' || isChecking}
+                        />
+                        {results[index] === 'correct' ? (
+                          <span className="result-icon">&#10004;</span>
+                        ) : results[index] === 'incorrect' ? (
+                          <span className="result-icon">&#10006;</span>
+                        ) : null}
+                      </Td>
+                    </Tr>
+                  ))}
+                </Tbody>
+              </Table>
+            </TableContainer>
           </Box>
           <Box>
             <Button onClick={checkAnswer} disabled={isChecking}>
