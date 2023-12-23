@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import
 {
   Box, Button, Flex, Input, Select, Heading, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd, Spacer, Stat, StatLabel, StatNumber, StatHelpText, VStack, TableCaption,
@@ -8,7 +8,9 @@ import { CheckCircleIcon, CheckIcon, QuestionOutlineIcon, TimeIcon, WarningTwoIc
 
 const ConjugationExercise = ({ verbs, tenses }) =>
 {
-  const pronouns = useMemo(() => ['ja', 'ty', 'on/ona', 'my', 'wy', 'oni'], []);
+  const pronouns = ['ja', 'ty', 'on/ona', 'my', 'wy', 'oni'];
+  const tensesWithTwoWords = ["Imperfective future tense", "Future masculine tense", "Future feminine tense"]
+  const tensesWithTwoWordsAndBaseForm = ["Conditional perfective masculine tense", "Conditional perfective feminine tense"];
   const [inputRefs, setInputRefs] = useState([]);
   const [currentVerb, setCurrentVerb] = useState(null);
   const [selectedTense, setSelectedTense] = useState('');
@@ -18,18 +20,17 @@ const ConjugationExercise = ({ verbs, tenses }) =>
   const [isChecking, setIsChecking] = useState(false);
   const [isGiveUp, setIsGiveUp] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+  const [isTwoWords, setIsTwoWords] = useState(false);
+  const [isTwoWordsAndBaseForm, setIsTwoWordsAndBaseForm] = useState(false);
 
   const startExercise = useCallback((retryVerb) =>
   {
     if (!selectedTense)
     {
-      // TODO: add a warning banner
-      console.log("No selected tense");
       setShowAlert(true);
       return;
     }
     setShowAlert(false);
-    console.log("Retry verb", retryVerb);
     if (retryVerb)
     {
       setCurrentVerb(retryVerb);
@@ -48,7 +49,9 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     setResults(Array(pronouns.length).fill(''));
     setIsChecking(false);
     setIsGiveUp(false);
-  }, [verbs, selectedTense, pronouns.length]);
+    setIsTwoWords(tensesWithTwoWords.includes(selectedTense));
+    setIsTwoWordsAndBaseForm(tensesWithTwoWordsAndBaseForm.includes(selectedTense));
+  }, [verbs, selectedTense, pronouns.length, tensesWithTwoWords]);
 
   const normalisedCompare = useCallback((string1, string2) =>
   {
@@ -119,8 +122,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
 
   const handleTenseSelect = (event) =>
   {
-    console.log(event);
-    console.log(event.target.value);
     setSelectedTense(event.target.value);
   };
 
@@ -142,10 +143,11 @@ const ConjugationExercise = ({ verbs, tenses }) =>
         retry();
       } else if (e.key === 'Enter')
       {
-      const emptyIndex = findFirstEmptyInputIndex();
-      if (emptyIndex !== -1 && inputRefs[emptyIndex]) {
-        inputRefs[emptyIndex].focus();
-      }
+        const emptyIndex = findFirstEmptyInputIndex();
+        if (emptyIndex !== -1 && inputRefs[emptyIndex])
+        {
+          inputRefs[emptyIndex].focus();
+        }
       }
     };
     // Attach the event listener
@@ -158,8 +160,9 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     };
   }, [startExercise, checkAnswer, giveUp, retry]);
 
-    // Function to find the index of the first empty input
-  const findFirstEmptyInputIndex = () => {
+  // Function to find the index of the first empty input
+  const findFirstEmptyInputIndex = () =>
+  {
     return userInputs.findIndex((input) => input.trim() === '');
   };
 
@@ -234,28 +237,58 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                         <Td>{pronoun}</Td>
                         <Td>
                           <HStack>
-                            <Text>{currentVerb.tenses[currentTense].baseForm}</Text>
-                            <Input
-                              w='90px'
-                              type="text"
-                              value={userInputs[index]}
-                              onChange={(e) =>
-                              {
-                                const updatedInputs = [...userInputs];
-                                updatedInputs[index] = e.target.value;
-                                setUserInputs(updatedInputs);
-                              }}
-                              className={
-                                results[index] === 'correct'
-                                  ? 'correct'
-                                  : results[index] === 'incorrect'
-                                    ? 'incorrect'
-                                    : ''
-                              }
-                              bg={getBgColor(results[index])}
-                              disabled={results[index] === 'correct' || isChecking}
-                              ref={(el) => (inputRefs[index] = el)}
-                            />
+                            {(isTwoWords || isTwoWordsAndBaseForm) ? (
+                              <>
+                                {isTwoWordsAndBaseForm ? (<><Text>{currentVerb.tenses[currentTense].baseForm}</Text></>) : (<></>)}
+                                <Input
+                                  w='120px'
+                                  type="text"
+                                  value={userInputs[index]}
+                                  onChange={(e) =>
+                                  {
+                                    const updatedInputs = [...userInputs];
+                                    updatedInputs[index] = e.target.value;
+                                    setUserInputs(updatedInputs);
+                                  }}
+                                  className={
+                                    results[index] === 'correct'
+                                      ? 'correct'
+                                      : results[index] === 'incorrect'
+                                        ? 'incorrect'
+                                        : ''
+                                  }
+                                  bg={getBgColor(results[index])}
+                                  disabled={results[index] === 'correct' || isChecking}
+                                  ref={(el) => (inputRefs[index] = el)}
+                                />
+                                <Text>{currentVerb.tenses[currentTense].conjugations[index].split(' ').slice(1).join(' ')}</Text>
+                              </>
+                            ) : (
+                              <>
+                                <Text>{currentVerb.tenses[currentTense].baseForm}</Text>
+                                <Input
+                                  w='120px'
+                                  type="text"
+                                  value={userInputs[index]}
+                                  onChange={(e) =>
+                                  {
+                                    const updatedInputs = [...userInputs];
+                                    updatedInputs[index] = e.target.value;
+                                    setUserInputs(updatedInputs);
+                                  }}
+                                  className={
+                                    results[index] === 'correct'
+                                      ? 'correct'
+                                      : results[index] === 'incorrect'
+                                        ? 'incorrect'
+                                        : ''
+                                  }
+                                  bg={getBgColor(results[index])}
+                                  disabled={results[index] === 'correct' || isChecking}
+                                  ref={(el) => (inputRefs[index] = el)}
+                                />
+                              </>
+                            )}
                             {results[index] === 'correct' ? (
                               <CheckCircleIcon color={correctColour}></CheckCircleIcon>
                             ) : results[index] === 'incorrect' ? (
