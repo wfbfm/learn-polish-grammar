@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import
 {
   Box, Button, Flex, Input, Select, Heading, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd, Spacer, Stat, StatLabel, StatNumber, StatHelpText, VStack, TableCaption,
-  useColorModeValue
+  useColorModeValue,
+  Icon,
+  Center
 } from '@chakra-ui/react'
-import { CheckCircleIcon, CheckIcon, QuestionOutlineIcon, TimeIcon, WarningTwoIcon } from '@chakra-ui/icons';
+import { AddIcon, CheckCircleIcon, CheckIcon, CloseIcon, QuestionOutlineIcon, RepeatIcon, TimeIcon, WarningTwoIcon } from '@chakra-ui/icons';
 
 const ConjugationExercise = ({ verbs, tenses }) =>
 {
@@ -205,9 +207,9 @@ const ConjugationExercise = ({ verbs, tenses }) =>
   return (
     <Box>
       <Box>
-        <HStack h={16} spacing='24px'>
+        <HStack spacing='24px' alignItems='center'>
           <Select
-            w='300px'
+            w='220px'
             value={selectedTense}
             onChange={handleTenseSelect}
             placeholder="Select a tense">
@@ -217,22 +219,47 @@ const ConjugationExercise = ({ verbs, tenses }) =>
               </option>
             ))}
           </Select>
-          <Button w='200px' p='4' onClick={() => startExercise(null)}>
-            <Text p={2}>Start</Text>
-            <Kbd>Ctrl</Kbd> + <Kbd>Enter</Kbd>
-          </Button>
-          <Button w='200px' onClick={checkAnswer} disabled={isChecking}>
+          <VStack>
+            <Button 
+            bgGradient='linear(to-tr, blue.300, blue.400)' _hover={{bgGradient: 'linear(to-tr, blue.500, blue.900)'}}
+            color='white' w='150px' onClick={() => startExercise(null)}>
+              <AddIcon></AddIcon>
+              <Text p={2}>Start</Text>
+            </Button>
+          </VStack>
+          <Button
+            bgGradient='linear(to-tr, green.300, green.400)' _hover={{bgGradient: 'linear(to-tr, green.500, green.900)'}}
+            color='white' w='150px' onClick={checkAnswer} disabled={isChecking}>
+            <CheckIcon></CheckIcon>
             <Text p={2}>Check</Text>
-            <Kbd>Alt</Kbd> + <Kbd>Enter</Kbd>
           </Button>
-          <Button w='200px' onClick={giveUp} disabled={isGiveUp}>
+          <Button 
+            bgGradient='linear(to-tr, red.300, red.400)' _hover={{bgGradient: 'linear(to-tr, red.500, red.900)'}}
+            color='white' w='150px' onClick={giveUp} disabled={isGiveUp}>
+            <CloseIcon></CloseIcon>
             <Text p={2}>Give Up</Text>
-            <Kbd>Alt</Kbd> + <Kbd>G</Kbd>
           </Button>
-          <Button w='200px' onClick={retry}>
+          <Button 
+            bgGradient='linear(to-tr, purple.300, purple.400)' _hover={{bgGradient: 'linear(to-tr, purple.500, purple.900)'}}
+            color='white' w='150px' onClick={retry}>
+            <RepeatIcon></RepeatIcon>
             <Text p={2}>Retry</Text>
-            <Kbd>Alt</Kbd> + <Kbd>R</Kbd>
           </Button>
+        </HStack>
+        <HStack spacing='24px' alignItems='center'>
+          <Box w='220px'></Box>
+          <Center w='150px' p='2'>
+            <Kbd>Ctrl</Kbd><Kbd>Enter</Kbd>
+          </Center>
+          <Center w='150px'>
+            <Kbd>Alt</Kbd> + <Kbd>Enter</Kbd>
+          </Center>
+          <Center w='150px'>
+            <Kbd>Alt</Kbd> + <Kbd>G</Kbd>
+          </Center>
+          <Center w='150px'>
+            <Kbd>Alt</Kbd> + <Kbd>R</Kbd>
+          </Center>
         </HStack>
       </Box>
       {showAlert && (
