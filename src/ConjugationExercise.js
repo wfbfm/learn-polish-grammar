@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import
 {
   Box, Button, Flex, Input, Select, Heading, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd, Spacer, Stat, StatLabel, StatNumber, StatHelpText, VStack, TableCaption,
@@ -9,6 +9,7 @@ import { CheckCircleIcon, CheckIcon, QuestionOutlineIcon, TimeIcon, WarningTwoIc
 const ConjugationExercise = ({ verbs, tenses }) =>
 {
   const pronouns = useMemo(() => ['ja', 'ty', 'on/ona', 'my', 'wy', 'oni'], []);
+  const [inputRefs, setInputRefs] = useState([]);
   const [currentVerb, setCurrentVerb] = useState(null);
   const [selectedTense, setSelectedTense] = useState('');
   const [currentTense, setCurrentTense] = useState('');
@@ -123,6 +124,45 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     setSelectedTense(event.target.value);
   };
 
+  useEffect(() =>
+  {
+    const handleKeyDown = (e) =>
+    {
+      if (e.ctrlKey && e.key === 'Enter')
+      {
+        startExercise(null);
+      } else if (e.altKey && e.key === 'Enter')
+      {
+        checkAnswer();
+      } else if (e.altKey && e.key === 'g')
+      {
+        giveUp();
+      } else if (e.altKey && e.key === 'r')
+      {
+        retry();
+      } else if (e.key === 'Enter')
+      {
+      const emptyIndex = findFirstEmptyInputIndex();
+      if (emptyIndex !== -1 && inputRefs[emptyIndex]) {
+        inputRefs[emptyIndex].focus();
+      }
+      }
+    };
+    // Attach the event listener
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Detach the event listener when the component unmounts
+    return () =>
+    {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [startExercise, checkAnswer, giveUp, retry]);
+
+    // Function to find the index of the first empty input
+  const findFirstEmptyInputIndex = () => {
+    return userInputs.findIndex((input) => input.trim() === '');
+  };
+
   const correctColour = useColorModeValue('green.200', 'green.900');
   const incorrectColour = useColorModeValue('red.200', 'red.900');
 
@@ -164,11 +204,11 @@ const ConjugationExercise = ({ verbs, tenses }) =>
           </Button>
           <Button w='200px' onClick={giveUp} disabled={isGiveUp}>
             <Text p={2}>Give Up</Text>
-            <Kbd>Ctrl</Kbd> + <Kbd>G</Kbd>
+            <Kbd>Alt</Kbd> + <Kbd>G</Kbd>
           </Button>
           <Button w='200px' onClick={retry}>
             <Text p={2}>Retry</Text>
-            <Kbd>Alt</Kbd> + <Kbd>G</Kbd>
+            <Kbd>Alt</Kbd> + <Kbd>R</Kbd>
           </Button>
         </HStack>
       </Box>
@@ -184,11 +224,10 @@ const ConjugationExercise = ({ verbs, tenses }) =>
             <VStack>
               <HStack>
                 <Text fontSize='2xl' p='4'> <b>{currentVerb.verb}</b> - {currentVerb.translation}</Text>
-                <Box w='150px'></Box>
-
               </HStack>
               <TableContainer minW='700px' p='4'>
                 <Table variant='simple'>
+                  <TableCaption>Tip: Press <Kbd>Enter</Kbd> to quickly move to the next word!</TableCaption>
                   <Tbody>
                     {pronouns.map((pronoun, index) => (
                       <Tr key={index}>
@@ -215,6 +254,7 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                               }
                               bg={getBgColor(results[index])}
                               disabled={results[index] === 'correct' || isChecking}
+                              ref={(el) => (inputRefs[index] = el)}
                             />
                             {results[index] === 'correct' ? (
                               <CheckCircleIcon color={correctColour}></CheckCircleIcon>
@@ -224,7 +264,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                               <QuestionOutlineIcon></QuestionOutlineIcon>}
                           </HStack>
                         </Td>
-                        <Td></Td>
                         <Td>
                           <Text fontSize={'sm'} as='i'>{currentVerb.tenses[currentTense].translations[index]}</Text>
                         </Td>
