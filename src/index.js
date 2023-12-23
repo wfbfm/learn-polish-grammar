@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { useColorModeValue, Flex, Box, ChakraProvider, Tab, Tabs, TabList, TabPanel, TabPanels, Text, Divider } from '@chakra-ui/react';
 import NavBar from "./NavBar";
 import ConjugationExercise from './ConjugationExercise';
+import theme from "./theme";
 
 function App()
 {
@@ -25,7 +26,7 @@ function App()
   return (
     <>
       <NavBar></NavBar>
-      <Tabs isFitted variant='enclosed-colored'>
+      <Tabs isFitted variant='enclosed-colored' colorScheme='red'>
         <TabList mb='1em'>
           <Tab>Verb Conjugation</Tab>
           <Tab>Noun & Adjective Declension</Tab>
@@ -53,7 +54,7 @@ const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
   </React.StrictMode>
