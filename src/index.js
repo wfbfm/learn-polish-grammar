@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import { useColorModeValue, Flex, Box, ChakraProvider, Tab, Tabs, TabList, TabPanel, TabPanels, Divider } from '@chakra-ui/react';
 import NavBar from "./NavBar";
 import ConjugationExercise from './ConjugationExercise';
-import './App.css'; // Import the CSS file
 
 function App()
 {

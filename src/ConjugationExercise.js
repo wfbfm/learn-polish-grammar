@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import
 {
-  Box, Button, Flex, Input, Select, Heading, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd, Spacer, Stat, StatLabel, StatNumber, StatHelpText, VStack, TableCaption
+  Box, Button, Flex, Input, Select, Heading, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd, Spacer, Stat, StatLabel, StatNumber, StatHelpText, VStack, TableCaption,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { CheckCircleIcon, CheckIcon, QuestionOutlineIcon, TimeIcon, WarningTwoIcon } from '@chakra-ui/icons';
 
@@ -95,12 +96,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     }
   }, [currentVerb, pronouns, userInputs, results, isChecking, isGiveUp, startExercise, normalisedCompare, verbs, tenses, currentTense]);
 
-  const handleInputKeyPress = (e) =>
-  {
-    // TODO: implement me
-    return;
-  };
-
   const checkAnswer = () =>
   {
     setIsChecking(true);
@@ -126,6 +121,22 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     console.log(event);
     console.log(event.target.value);
     setSelectedTense(event.target.value);
+  };
+
+  const correctColour = useColorModeValue('green.200', 'green.900');
+  const incorrectColour = useColorModeValue('red.200', 'red.900');
+
+  const getBgColor = (result) =>
+  {
+    switch (result)
+    {
+      case 'correct':
+        return correctColour;
+      case 'incorrect':
+        return incorrectColour;
+      default:
+        return undefined;
+    }
   };
 
   return (
@@ -195,7 +206,6 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                                 updatedInputs[index] = e.target.value;
                                 setUserInputs(updatedInputs);
                               }}
-                              onKeyPress={handleInputKeyPress}
                               className={
                                 results[index] === 'correct'
                                   ? 'correct'
@@ -203,12 +213,13 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                                     ? 'incorrect'
                                     : ''
                               }
+                              bg={getBgColor(results[index])}
                               disabled={results[index] === 'correct' || isChecking}
                             />
                             {results[index] === 'correct' ? (
-                              <CheckCircleIcon></CheckCircleIcon>
+                              <CheckCircleIcon color={correctColour}></CheckCircleIcon>
                             ) : results[index] === 'incorrect' ? (
-                              <WarningTwoIcon></WarningTwoIcon>
+                              <WarningTwoIcon color={incorrectColour}></WarningTwoIcon>
                             ) :
                               <QuestionOutlineIcon></QuestionOutlineIcon>}
                           </HStack>
