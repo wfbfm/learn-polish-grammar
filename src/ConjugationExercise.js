@@ -58,22 +58,39 @@ const ConjugationExercise = ({ verbs, tenses }) =>
     return removeAccents(string1).toLowerCase() === removeAccents(string2).toLowerCase();
   }, []);
 
+  const getUserConjugation = (baseForm, userInput, correctConjugation) =>
+  {
+    return isTwoWords ? 'będ' + userInput + ' ' + correctConjugation.split(' ')[1]
+      : isTwoWordsAndBaseForm ? baseForm + userInput + ' ' + correctConjugation.split(' ')[1]
+        : baseForm + userInput;
+  }
+
+  const getCorrectedInput = (baseForm, correctConjugation) =>
+  {
+    return isTwoWords ? correctConjugation.split(' ')[0].slice('będ'.length)
+      : isTwoWordsAndBaseForm ? correctConjugation.split(' ')[0].slice(baseForm.length)
+        : correctConjugation.slice(baseForm.length);
+  }
+
   useEffect(() =>
   {
     if (currentVerb)
     {
-      const conjugation = currentVerb.tenses[currentTense];
+      const conjugationData = currentVerb.tenses[currentTense];
       if (isChecking)
       {
         setResults((prevResults) =>
         {
           const updatedResults = prevResults.map((result, index) =>
-            normalisedCompare(conjugation.baseForm + userInputs[index], conjugation.conjugations[index]) ? 'correct' : 'incorrect'
-          );
-          setUserInputs((prevUserInputs) =>
+          {
+            const correctConjugation = conjugationData.conjugations[index];
+            const userConjugation = getUserConjugation(conjugationData.baseForm, userInputs[index], correctConjugation);
+            return normalisedCompare(userConjugation, correctConjugation) ? 'correct' : 'incorrect'
+          });
+          setUserInputs((prevUserInputs) => // override the correct answers with the correct conjugation, since this will add any missing accents.
           {
             return prevUserInputs.map((userInput, index) =>
-              updatedResults[index] === 'correct' ? conjugation.conjugations[index].slice(conjugation.baseForm.length) : userInputs[index]
+              updatedResults[index] === 'correct' ? getCorrectedInput(conjugationData.baseForm, conjugationData.conjugations[index]) : userInputs[index]
             );
           });
           return updatedResults;
@@ -86,13 +103,16 @@ const ConjugationExercise = ({ verbs, tenses }) =>
         setResults((prevResults) =>
         {
           return prevResults.map((result, index) =>
-            normalisedCompare(conjugation.baseForm + userInputs[index], conjugation.conjugations[index]) ? 'correct' : 'incorrect'
-          );
+          {
+            const correctConjugation = conjugationData.conjugations[index];
+            const userConjugation = getUserConjugation(conjugationData.baseForm, userInputs[index], correctConjugation);
+            return normalisedCompare(userConjugation, correctConjugation) ? 'correct' : 'incorrect';
+          });
         });
         setUserInputs((prevUserInputs) =>
         {
           return prevUserInputs.map((userInput, index) =>
-            conjugation.conjugations[index].slice(conjugation.baseForm.length)
+            getCorrectedInput(conjugationData.baseForm, conjugationData.conjugations[index])
           );
         });
         setIsGiveUp(false);
@@ -239,7 +259,8 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                           <HStack>
                             {(isTwoWords || isTwoWordsAndBaseForm) ? (
                               <>
-                                {isTwoWordsAndBaseForm ? (<><Text>{currentVerb.tenses[currentTense].baseForm}</Text></>) : (<></>)}
+                                {isTwoWordsAndBaseForm ? (<><Text>{currentVerb.tenses[currentTense].baseForm}</Text></>)
+                                  : (<><Text>będ</Text></>)}
                                 <Input
                                   w='120px'
                                   type="text"
