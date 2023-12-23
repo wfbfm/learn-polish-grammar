@@ -18,11 +18,10 @@ import logo from './resources/bilingo-high-resolution-logo-white-transparent.svg
 export default function NavBar()
 {
     const { colorMode, toggleColorMode } = useColorMode();
-    const bannerColour = colorMode === 'light' ? 'linear(to-tl, red.400, red.600)' : 'linear(to-tl, red.600, red.800)'
+    const bannerColour = colorMode === 'light' ? 'linear(to-tl, red.400, red.600)' : 'linear(to-tl, grey.100, grey.800)'
     return (
         <>
-            <Box px={10} color='white' bgGradient={bannerColour}
-            >
+            <Box px={10} color='white' bgGradient={bannerColour}>
                 <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
                     <Box>
                         <Image
