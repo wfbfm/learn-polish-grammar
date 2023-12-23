@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import
 {
-  Box, Button, Input, Select, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd
+  Box, Button, Flex, Input, Select, Heading, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd, Spacer, Stat, StatLabel, StatNumber, StatHelpText, VStack, TableCaption
 } from '@chakra-ui/react'
+import { CheckCircleIcon, CheckIcon, QuestionOutlineIcon, TimeIcon, WarningTwoIcon } from '@chakra-ui/icons';
 
 const ConjugationExercise = ({ verbs, tenses }) =>
 {
@@ -168,47 +169,61 @@ const ConjugationExercise = ({ verbs, tenses }) =>
       )}
       {currentVerb && currentTense && (
         <Box>
-          <Box>
-            <Text>Verb: {currentVerb.verb}</Text>
-            <TableContainer>
-              <Table variant='simple'>
-                <Tbody>
-                  {pronouns.map((pronoun, index) => (
-                    <Tr key={index}>
-                      <Td>{pronoun}</Td>
-                      <Td>
-                        {currentVerb.tenses[currentTense].baseForm}
-                        <Input
-                          type="text"
-                          value={userInputs[index]}
-                          onChange={(e) =>
-                          {
-                            const updatedInputs = [...userInputs];
-                            updatedInputs[index] = e.target.value;
-                            setUserInputs(updatedInputs);
-                          }}
-                          onKeyPress={handleInputKeyPress}
-                          className={
-                            results[index] === 'correct'
-                              ? 'correct'
-                              : results[index] === 'incorrect'
-                                ? 'incorrect'
-                                : ''
-                          }
-                          disabled={results[index] === 'correct' || isChecking}
-                        />
-                        {results[index] === 'correct' ? (
-                          <span className="result-icon">&#10004;</span>
-                        ) : results[index] === 'incorrect' ? (
-                          <span className="result-icon">&#10006;</span>
-                        ) : null}
-                      </Td>
-                    </Tr>
-                  ))}
-                </Tbody>
-              </Table>
-            </TableContainer>
-          </Box>
+          <Flex>
+            <VStack>
+              <HStack>
+                <Text fontSize='2xl' p='4'> <b>{currentVerb.verb}</b> - {currentVerb.translation}</Text>
+                <Box w='150px'></Box>
+
+              </HStack>
+              <TableContainer minW='700px' p='4'>
+                <Table variant='simple'>
+                  <Tbody>
+                    {pronouns.map((pronoun, index) => (
+                      <Tr key={index}>
+                        <Td>{pronoun}</Td>
+                        <Td>
+                          <HStack>
+                            <Text>{currentVerb.tenses[currentTense].baseForm}</Text>
+                            <Input
+                              w='90px'
+                              type="text"
+                              value={userInputs[index]}
+                              onChange={(e) =>
+                              {
+                                const updatedInputs = [...userInputs];
+                                updatedInputs[index] = e.target.value;
+                                setUserInputs(updatedInputs);
+                              }}
+                              onKeyPress={handleInputKeyPress}
+                              className={
+                                results[index] === 'correct'
+                                  ? 'correct'
+                                  : results[index] === 'incorrect'
+                                    ? 'incorrect'
+                                    : ''
+                              }
+                              disabled={results[index] === 'correct' || isChecking}
+                            />
+                            {results[index] === 'correct' ? (
+                              <CheckCircleIcon></CheckCircleIcon>
+                            ) : results[index] === 'incorrect' ? (
+                              <WarningTwoIcon></WarningTwoIcon>
+                            ) :
+                              <QuestionOutlineIcon></QuestionOutlineIcon>}
+                          </HStack>
+                        </Td>
+                        <Td></Td>
+                        <Td>
+                          <Text fontSize={'sm'} as='i'>{currentVerb.tenses[currentTense].translations[index]}</Text>
+                        </Td>
+                      </Tr>
+                    ))}
+                  </Tbody>
+                </Table>
+              </TableContainer>
+            </VStack>
+          </Flex>
         </Box>
       )}
     </Box>

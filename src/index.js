@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { useColorModeValue, Flex, Box, ChakraProvider, Tab, Tabs, TabList, TabPanel, TabPanels } from '@chakra-ui/react';
+import { useColorModeValue, Flex, Box, ChakraProvider, Tab, Tabs, TabList, TabPanel, TabPanels, Divider } from '@chakra-ui/react';
 import NavBar from "./NavBar";
 import ConjugationExercise from './ConjugationExercise';
 import './App.css'; // Import the CSS file
@@ -33,6 +33,7 @@ function App()
         </TabList>
         <TabPanels>
           <TabPanel>
+            <Divider></Divider>
             <Box p='4'>
               <ConjugationExercise verbs={verbs} tenses={tenses} />
             </Box>
