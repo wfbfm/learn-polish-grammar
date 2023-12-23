@@ -222,42 +222,42 @@ const ConjugationExercise = ({ verbs, tenses }) =>
           <VStack>
             <Button 
             bgGradient='linear(to-tr, blue.300, blue.400)' _hover={{bgGradient: 'linear(to-tr, blue.500, blue.900)'}}
-            color='white' w='150px' onClick={() => startExercise(null)}>
+            color='white' w='115px' onClick={() => startExercise(null)}>
               <AddIcon></AddIcon>
               <Text p={2}>Start</Text>
             </Button>
           </VStack>
           <Button
             bgGradient='linear(to-tr, green.300, green.400)' _hover={{bgGradient: 'linear(to-tr, green.500, green.900)'}}
-            color='white' w='150px' onClick={checkAnswer} disabled={isChecking}>
+            color='white' w='115px' onClick={checkAnswer} disabled={isChecking}>
             <CheckIcon></CheckIcon>
             <Text p={2}>Check</Text>
           </Button>
           <Button 
             bgGradient='linear(to-tr, red.300, red.400)' _hover={{bgGradient: 'linear(to-tr, red.500, red.900)'}}
-            color='white' w='150px' onClick={giveUp} disabled={isGiveUp}>
+            color='white' w='115px' onClick={giveUp} disabled={isGiveUp}>
             <CloseIcon></CloseIcon>
             <Text p={2}>Give Up</Text>
           </Button>
           <Button 
             bgGradient='linear(to-tr, purple.300, purple.400)' _hover={{bgGradient: 'linear(to-tr, purple.500, purple.900)'}}
-            color='white' w='150px' onClick={retry}>
+            color='white' w='115px' onClick={retry}>
             <RepeatIcon></RepeatIcon>
             <Text p={2}>Retry</Text>
           </Button>
         </HStack>
         <HStack spacing='24px' alignItems='center'>
           <Box w='220px'></Box>
-          <Center w='150px' p='2'>
+          <Center w='115px' p='2'>
             <Kbd>Ctrl</Kbd> + <Kbd>Enter</Kbd>
           </Center>
-          <Center w='150px'>
+          <Center w='115px'>
             <Kbd>Alt</Kbd> + <Kbd>Enter</Kbd>
           </Center>
-          <Center w='150px'>
+          <Center w='115px'>
             <Kbd>Alt</Kbd> + <Kbd>G</Kbd>
           </Center>
-          <Center w='150px'>
+          <Center w='115px'>
             <Kbd>Alt</Kbd> + <Kbd>R</Kbd>
           </Center>
         </HStack>

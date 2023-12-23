@@ -26,7 +26,7 @@ function App()
   return (
     <>
       <NavBar></NavBar>
-      <Tabs isFitted variant='enclosed-colored'>
+      <Tabs isFitted variant='enclosed-colored' colorScheme='red'>
         <TabList mb='1em'>
           <Tab>Verb Conjugation</Tab>
           <Tab>Noun & Adjective Declension</Tab>
