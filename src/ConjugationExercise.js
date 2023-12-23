@@ -249,7 +249,7 @@ const ConjugationExercise = ({ verbs, tenses }) =>
         <HStack spacing='24px' alignItems='center'>
           <Box w='220px'></Box>
           <Center w='150px' p='2'>
-            <Kbd>Ctrl</Kbd><Kbd>Enter</Kbd>
+            <Kbd>Ctrl</Kbd> + <Kbd>Enter</Kbd>
           </Center>
           <Center w='150px'>
             <Kbd>Alt</Kbd> + <Kbd>Enter</Kbd>
