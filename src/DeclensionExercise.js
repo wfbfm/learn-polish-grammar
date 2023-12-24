@@ -43,7 +43,7 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
       {
         const nounsWithSelectedGender = nouns.filter((noun) =>
         {
-          return noun.gender === selectedGender;
+          return noun.gender === selectedGender && noun.grammar[randomCount].declensions.nominative !== '-';
         })
         const randomNoun = nounsWithSelectedGender[Math.floor(Math.random() * nounsWithSelectedGender.length)];
         setCurrentNoun(randomNoun);
@@ -51,7 +51,11 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
       }
       else
       {
-        const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
+        const possibleNouns = nouns.filter((noun) =>
+        {
+          return noun.grammar[randomCount].declensions.nominative !== '-';
+        })
+        const randomNoun = possibleNouns[Math.floor(Math.random() * possibleNouns.length)];
         setCurrentNoun(randomNoun);
         randomCount === 'singular' ? setCurrentGender(randomNoun.gender.toLowerCase()) : setCurrentGender(randomNoun.virility ?? 'non-virile');
       }
@@ -290,14 +294,15 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
           </Center>
         </HStack>
       </Box>
-      {currentNoun && currentAdjective && currentGender && (
+      {currentNoun && currentAdjective && currentGender && currentCount && (
         <Box>
           <Flex>
             <VStack>
               <HStack>
-                <Text fontSize='2xl' p='4'>Decline the following as <i>{currentCount}</i>:
-                  <b>{currentAdjective.adjective} {currentNoun.noun}</b> - {currentAdjective.translation} {currentNoun.translation}</Text>
+                <Text fontSize='2xl' p='4'>
+                  <b>{currentAdjective.grammar[currentCount][currentGender].declensions.nominative} {currentNoun.grammar[currentCount].declensions.nominative}</b> - {currentAdjective.translation} {currentNoun.translation}</Text>
               </HStack>
+              <Text>Decline as <i>{currentCount}</i></Text>
               <TableContainer minW='700px' p='4'>
                 <Table variant='simple'>
                   <TableCaption>Tip: Press <Kbd>Enter</Kbd> to quickly move to the next word!</TableCaption>
