@@ -17,6 +17,7 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
   const [currentCount, setCurrentCount] = useState(null);
   const [currentAdjective, setCurrentAdjective] = useState(null);
   const [currentNoun, setCurrentNoun] = useState(null);
+  const [selectedGender, setSelectedGender] = useState('');
   const [currentGender, setCurrentGender] = useState(null);
   const [userInputAdjectives, setUserInputAdjectives] = useState(Array(cases.length).fill(''));
   const [userInputNouns, setUserInputNouns] = useState(Array(cases.length).fill(''));
@@ -27,20 +28,39 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
 
   const startExercise = useCallback((retryAdjective, retryNoun, retryCount) =>
   {
+    console.log("selected gender", selectedGender);
     if (retryAdjective)
     {
       setCurrentAdjective(retryAdjective);
       setCurrentNoun(retryNoun);
       setCurrentGender(retryNoun.gender.toLowerCase());
+      setCurrentCount(retryCount);
     }
     else
     {
+      if (selectedGender && !["Any", "Select a gender"].includes(selectedGender))
+      {
+        const nounsWithSelectedGender = nouns.filter((noun) =>
+        {
+          return noun.gender === selectedGender;
+        })
+        const randomNoun = nounsWithSelectedGender[Math.floor(Math.random() * nounsWithSelectedGender.length)];
+        setCurrentNoun(randomNoun);
+        setCurrentGender(randomNoun.gender.toLowerCase());
+        console.log("Noun", randomNoun);
+        console.log("Gender", randomNoun.gender.toLowerCase());
+      }
+      else
+      {
+        const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
+        setCurrentNoun(randomNoun);
+        setCurrentGender(randomNoun.gender.toLowerCase());
+      }
       const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
       setCurrentAdjective(randomAdjective);
-      const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
-      setCurrentNoun(randomNoun);
-      setCurrentGender(randomNoun.gender.toLowerCase());
-      const randomCount = possibleCounts[Math.floor(Math.random()) * possibleCounts.length];
+      console.log("Adjective", randomAdjective);
+      // const randomCount = possibleCounts[Math.floor(Math.random()) * possibleCounts.length];
+      const randomCount = 'singular';
       setCurrentCount(randomCount);
     }
     setUserInputAdjectives(Array(cases.length).fill(''));
@@ -49,7 +69,7 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
     setNounResults(Array(cases.length).fill(''));
     setIsChecking(false);
     setIsGiveUp(false);
-  }, [adjectives, nouns, cases.length]);
+  }, [adjectives, nouns, cases.length, selectedGender]);
 
   const normalisedCompare = useCallback((string1, string2) =>
   {
@@ -213,10 +233,25 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
     }
   };
 
+  const handleGenderSelect = (event) =>
+  {
+    setSelectedGender(event.target.value);
+  };
+
   return (
     <Box>
       <Box>
         <HStack spacing='24px' alignItems='center'>
+          <Select
+            w='220px'
+            value={selectedGender}
+            onChange={handleGenderSelect}
+            placeholder="Select a gender">
+            <option value="Any">Any</option>
+            <option value="Masculine">Masculine</option>
+            <option value="Feminine">Feminine</option>
+            <option value="Neuter">Neuter</option>
+          </Select>
           <VStack>
             <Button
               bgGradient='linear(to-tr, blue.300, blue.400)' _hover={{ bgGradient: 'linear(to-tr, blue.500, blue.900)' }}
@@ -260,7 +295,7 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
           </Center>
         </HStack>
       </Box>
-      {currentNoun && currentAdjective && (
+      {currentNoun && currentAdjective && currentGender && (
         <Box>
           <Flex>
             <VStack>
