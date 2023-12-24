@@ -281,7 +281,7 @@ const ConjugationExercise = ({ verbs, tenses }) =>
                   <Tbody>
                     {pronouns.map((pronoun, index) => (
                       <Tr key={index}>
-                        <Td>{pronoun}</Td>
+                        <Td><b>{pronoun}</b></Td>
                         <Td>
                           <HStack>
                             {(isTwoWords || isTwoWordsAndBaseForm) ? (

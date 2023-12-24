@@ -1,0 +1,1467 @@
+[
+    {
+        "noun": "książka",
+        "translation": "book",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "książka",
+                    "genitive": "książki",
+                    "dative": "książce",
+                    "accusative": "książkę",
+                    "instrumental": "książką",
+                    "locative": "książce",
+                    "vocative": "książko"
+                },
+                "baseForm": "książ"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "książki",
+                    "genitive": "książek",
+                    "dative": "książkom",
+                    "accusative": "książki",
+                    "instrumental": "książkami",
+                    "locative": "książkach",
+                    "vocative": "książki"
+                },
+                "baseForm": "książ"
+            }
+        }
+    },
+    {
+        "noun": "pies",
+        "translation": "dog",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "pies",
+                    "genitive": "psa",
+                    "dative": "psu",
+                    "accusative": "psa",
+                    "instrumental": "psem",
+                    "locative": "psie",
+                    "vocative": "psie!"
+                },
+                "baseForm": "p"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "psy",
+                    "genitive": "psów",
+                    "dative": "psom",
+                    "accusative": "psy",
+                    "instrumental": "psami",
+                    "locative": "psach",
+                    "vocative": "psy!"
+                },
+                "baseForm": "ps"
+            }
+        }
+    },
+    {
+        "noun": "kot",
+        "translation": "cat",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "kot",
+                    "genitive": "kota",
+                    "dative": "kotu",
+                    "accusative": "kota",
+                    "instrumental": "kotem",
+                    "locative": "kocie",
+                    "vocative": "kocie"
+                },
+                "baseForm": "ko"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "koty",
+                    "genitive": "kotów",
+                    "dative": "kotom",
+                    "accusative": "koty",
+                    "instrumental": "kotami",
+                    "locative": "kotach",
+                    "vocative": "koty"
+                },
+                "baseForm": "kot"
+            }
+        }
+    },
+    {
+        "noun": "zamek",
+        "translation": "castle",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "zamek",
+                    "genitive": "zamku",
+                    "dative": "zamkowi",
+                    "accusative": "zamek",
+                    "instrumental": "zamkiem",
+                    "locative": "zamku",
+                    "vocative": "zamku"
+                },
+                "baseForm": "zam"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "zamki",
+                    "genitive": "zamków",
+                    "dative": "zamkom",
+                    "accusative": "zamki",
+                    "instrumental": "zamkami",
+                    "locative": "zamkach",
+                    "vocative": "zamki"
+                },
+                "baseForm": "zamk"
+            }
+        }
+    },
+    {
+        "noun": "ulica",
+        "translation": "street",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "ulica",
+                    "genitive": "ulicy",
+                    "dative": "ulicy",
+                    "accusative": "ulicę",
+                    "instrumental": "ulicą",
+                    "locative": "ulicy",
+                    "vocative": "ulico"
+                },
+                "baseForm": "ulic"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "ulice",
+                    "genitive": "ulic",
+                    "dative": "ulicom",
+                    "accusative": "ulice",
+                    "instrumental": "ulicami",
+                    "locative": "ulicach",
+                    "vocative": "ulice"
+                },
+                "baseForm": "ulic"
+            }
+        }
+    },
+    {
+        "noun": "dziewczynka",
+        "translation": "girl",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "dziewczynka",
+                    "genitive": "dziewczynki",
+                    "dative": "dziewczynce",
+                    "accusative": "dziewczynkę",
+                    "instrumental": "dziewczynką",
+                    "locative": "dziewczynce",
+                    "vocative": "dziewczynko"
+                },
+                "baseForm": "dziewczyn"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "dziewczynki",
+                    "genitive": "dziewczynek",
+                    "dative": "dziewczynkom",
+                    "accusative": "dziewczynki",
+                    "instrumental": "dziewczynkami",
+                    "locative": "dziewczynkach",
+                    "vocative": "dziewczynki"
+                },
+                "baseForm": "dziewczyn"
+            }
+        }
+    },
+    {
+        "noun": "kobieta",
+        "translation": "woman",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "kobieta",
+                    "genitive": "kobiety",
+                    "dative": "kobiecie",
+                    "accusative": "kobietę",
+                    "instrumental": "kobietą",
+                    "locative": "kobiecie",
+                    "vocative": "kobieto"
+                },
+                "baseForm": "kobie"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "kobiety",
+                    "genitive": "kobiet",
+                    "dative": "kobietom",
+                    "accusative": "kobiety",
+                    "instrumental": "kobietami",
+                    "locative": "kobietach",
+                    "vocative": "kobiety"
+                },
+                "baseForm": "kobiet"
+            }
+        }
+    },
+    {
+        "noun": "dziecko",
+        "translation": "kid",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "dziecko",
+                    "genitive": "dziecka",
+                    "dative": "dziecku",
+                    "accusative": "dziecko",
+                    "instrumental": "dzieckiem",
+                    "locative": "dziecku",
+                    "vocative": "dziecko!"
+                },
+                "baseForm": "dzieck"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "dzieci",
+                    "genitive": "dzieci",
+                    "dative": "dzieciom",
+                    "accusative": "dzieci",
+                    "instrumental": "dziećmi",
+                    "locative": "dzieciach",
+                    "vocative": "dzieci!"
+                },
+                "baseForm": "dzie"
+            }
+        }
+    },
+    {
+        "noun": "chłopiec",
+        "translation": "boy",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "chłopiec",
+                    "genitive": "chłopca",
+                    "dative": "chłopcu",
+                    "accusative": "chłopca",
+                    "instrumental": "chłopcem",
+                    "locative": "chłopcu",
+                    "vocative": "chłopcze"
+                },
+                "baseForm": "chłop"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "chłopcy",
+                    "genitive": "chłopców",
+                    "dative": "chłopcom",
+                    "accusative": "chłopców",
+                    "instrumental": "chłopcami",
+                    "locative": "chłopcach",
+                    "vocative": "chłopcy"
+                },
+                "baseForm": "chłopc"
+            }
+        }
+    },
+    {
+        "noun": "mężczyzna",
+        "translation": "men",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "mężczyzna",
+                    "genitive": "mężczyzny",
+                    "dative": "mężczyźnie",
+                    "accusative": "mężczyznę",
+                    "instrumental": "mężczyzną",
+                    "locative": "mężczyźnie",
+                    "vocative": "mężczyzno"
+                },
+                "baseForm": "mężczy"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "mężczyźni",
+                    "genitive": "mężczyzn",
+                    "dative": "mężczyznom",
+                    "accusative": "mężczyzn",
+                    "instrumental": "mężczyznami",
+                    "locative": "mężczyznach",
+                    "vocative": "mężczyźni"
+                },
+                "baseForm": "mężczy"
+            }
+        }
+    },
+    {
+        "noun": "adres",
+        "translation": "address",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "adres",
+                    "genitive": "adresu",
+                    "dative": "adresowi",
+                    "accusative": "adres",
+                    "instrumental": "adresem",
+                    "locative": "adresie",
+                    "vocative": "adresie"
+                },
+                "baseForm": "adres"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "adresy",
+                    "genitive": "adresów",
+                    "dative": "adresom",
+                    "accusative": "adresy",
+                    "instrumental": "adresami",
+                    "locative": "adresom",
+                    "vocative": "adresy"
+                },
+                "baseForm": "adres"
+            }
+        }
+    },
+    {
+        "noun": "aktor",
+        "translation": "actor",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "aktor",
+                    "genitive": "aktora",
+                    "dative": "aktorowi",
+                    "accusative": "aktora",
+                    "instrumental": "aktorem",
+                    "locative": "aktorze",
+                    "vocative": "aktorze"
+                },
+                "baseForm": "aktor"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "aktorzy",
+                    "genitive": "aktorów",
+                    "dative": "aktoram",
+                    "accusative": "aktorów",
+                    "instrumental": "aktorami",
+                    "locative": "aktorach",
+                    "vocative": "aktorzy"
+                },
+                "baseForm": "aktor"
+            }
+        }
+    },
+    {
+        "noun": "aktorką",
+        "translation": "actress",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "aktorka",
+                    "genitive": "aktorki",
+                    "dative": "aktorce",
+                    "accusative": "aktorkę",
+                    "instrumental": "aktorką",
+                    "locative": "aktorce",
+                    "vocative": "aktorko"
+                },
+                "baseForm": "aktor"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "aktorki",
+                    "genitive": "aktorek",
+                    "dative": "aktorkam",
+                    "accusative": "aktorki",
+                    "instrumental": "aktorkami",
+                    "locative": "aktorkach",
+                    "vocative": "aktorki"
+                },
+                "baseForm": "aktor"
+            }
+        }
+    },
+    {
+        "noun": "badanie",
+        "translation": "examination",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "badanie",
+                    "genitive": "badania",
+                    "dative": "badaniu",
+                    "accusative": "badanie",
+                    "instrumental": "badaniem",
+                    "locative": "badaniu",
+                    "vocative": "badanie"
+                },
+                "baseForm": "badani"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "badania",
+                    "genitive": "badań",
+                    "dative": "badaniom",
+                    "accusative": "badania",
+                    "instrumental": "badaniami",
+                    "locative": "badaniach",
+                    "vocative": "badania"
+                },
+                "baseForm": "bada"
+            }
+        }
+    },
+    {
+        "noun": "bilet",
+        "translation": "ticket",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "bilet",
+                    "genitive": "biletu",
+                    "dative": "biletowi",
+                    "accusative": "bilet",
+                    "instrumental": "biletem",
+                    "locative": "bilecie",
+                    "vocative": "bilecie"
+                },
+                "baseForm": "bile"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "bilety",
+                    "genitive": "biletów",
+                    "dative": "biletom",
+                    "accusative": "bilety",
+                    "instrumental": "biletami",
+                    "locative": "biletach",
+                    "vocative": "bilety"
+                },
+                "baseForm": "bilet"
+            }
+        }
+    },
+    {
+        "noun": "centrum",
+        "translation": "centre",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "centrum",
+                    "genitive": "centrum",
+                    "dative": "centrum",
+                    "accusative": "centrum",
+                    "instrumental": "centrum",
+                    "locative": "centrum",
+                    "vocative": "centrum"
+                },
+                "baseForm": "centrum"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "centra",
+                    "genitive": "centrów",
+                    "dative": "centrom",
+                    "accusative": "centra",
+                    "instrumental": "centrami",
+                    "locative": "centrach",
+                    "vocative": "centra"
+                },
+                "baseForm": "centr"
+            }
+        }
+    },
+    {
+        "noun": "chleb",
+        "translation": "bread",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "chleb",
+                    "genitive": "chleba",
+                    "dative": "chlebowi",
+                    "accusative": "chleb",
+                    "instrumental": "chlebem",
+                    "locative": "chlebie",
+                    "vocative": "chlebie"
+                },
+                "baseForm": "chleb"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "chleby",
+                    "genitive": "chlebów",
+                    "dative": "chlebom",
+                    "accusative": "chleby",
+                    "instrumental": "chlebami",
+                    "locative": "chlebach",
+                    "vocative": "chleby"
+                },
+                "baseForm": "chleb"
+            }
+        }
+    },
+    {
+        "noun": "chwila",
+        "translation": "moment",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "chwila",
+                    "genitive": "chwili",
+                    "dative": "chwili",
+                    "accusative": "chwilę",
+                    "instrumental": "chwilą",
+                    "locative": "chwili",
+                    "vocative": "chwilo"
+                },
+                "baseForm": "chwil"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "chwile",
+                    "genitive": "chwil",
+                    "dative": "chilom",
+                    "accusative": "chwile",
+                    "instrumental": "chwilami",
+                    "locative": "chwilach",
+                    "vocative": "chwile"
+                },
+                "baseForm": "ch"
+            }
+        }
+    },
+    {
+        "noun": "chłopak",
+        "translation": "boy",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "chłopak",
+                    "genitive": "chłopaka",
+                    "dative": "chłopakowi",
+                    "accusative": "chłopaka",
+                    "instrumental": "chłopakiem",
+                    "locative": "chłopaku",
+                    "vocative": "chłopaku"
+                },
+                "baseForm": "chłopak"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "chłopaki",
+                    "genitive": "chłopaków",
+                    "dative": "chłopakom",
+                    "accusative": "chłopaków",
+                    "instrumental": "chłopakami",
+                    "locative": "chłopakach",
+                    "vocative": "chłopaki"
+                },
+                "baseForm": "chłopak"
+            }
+        }
+    },
+    {
+        "noun": "ciasteczko",
+        "translation": "cookie",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "ciasteczko",
+                    "genitive": "ciasteczka",
+                    "dative": "ciasteczku",
+                    "accusative": "ciasteczko",
+                    "instrumental": "ciasteczkiem",
+                    "locative": "ciasteczku",
+                    "vocative": "ciasteczko"
+                },
+                "baseForm": "ciasteczk"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "ciasteczka",
+                    "genitive": "ciasteczek",
+                    "dative": "ciasteczkom",
+                    "accusative": "ciasteczka",
+                    "instrumental": "ciasteczkami",
+                    "locative": "ciasteczkach",
+                    "vocative": "ciasteczka"
+                },
+                "baseForm": "ciastecz"
+            }
+        }
+    },
+    {
+        "noun": "czas",
+        "translation": "time",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "czas",
+                    "genitive": "czasu",
+                    "dative": "czasowi",
+                    "accusative": "czas",
+                    "instrumental": "czasem",
+                    "locative": "czasie",
+                    "vocative": "czas"
+                },
+                "baseForm": "czas"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "czasy",
+                    "genitive": "czasów",
+                    "dative": "czasom",
+                    "accusative": "czasy",
+                    "instrumental": "czasami",
+                    "locative": "czasach",
+                    "vocative": "czasy"
+                },
+                "baseForm": "czas"
+            }
+        }
+    },
+    {
+        "noun": "człowiek",
+        "translation": "man",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "człowiek",
+                    "genitive": "człowieka",
+                    "dative": "człowiekowi",
+                    "accusative": "człowieka",
+                    "instrumental": "człowiekiem",
+                    "locative": "człowieku",
+                    "vocative": "człowieku!"
+                },
+                "baseForm": "człowiek"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "ludzie",
+                    "genitive": "ludzi",
+                    "dative": "ludziom",
+                    "accusative": "ludzi",
+                    "instrumental": "ludźmi",
+                    "locative": "ludziach",
+                    "vocative": "ludzie!"
+                },
+                "baseForm": "lud"
+            }
+        }
+    },
+    {
+        "noun": "farmie",
+        "translation": "farm",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "farma",
+                    "genitive": "farmy",
+                    "dative": "farmie",
+                    "accusative": "farmę",
+                    "instrumental": "farmą",
+                    "locative": "farmie",
+                    "vocative": "farmo"
+                },
+                "baseForm": "farm"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "farmy",
+                    "genitive": "farm",
+                    "dative": "farmom",
+                    "accusative": "farmy",
+                    "instrumental": "farmami",
+                    "locative": "farmach",
+                    "vocative": "farmy"
+                },
+                "baseForm": "farm"
+            }
+        }
+    },
+    {
+        "noun": "godzina",
+        "translation": "hour",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "godzina",
+                    "genitive": "godziny",
+                    "dative": "godzinie",
+                    "accusative": "godzinę",
+                    "instrumental": "godziną",
+                    "locative": "godzinie",
+                    "vocative": "godzino"
+                },
+                "baseForm": "godzin"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "godziny",
+                    "genitive": "godzin",
+                    "dative": "godzinom",
+                    "accusative": "godzin",
+                    "instrumental": "godzinami",
+                    "locative": "godzinach",
+                    "vocative": "godziny"
+                },
+                "baseForm": "godzin"
+            }
+        }
+    },
+    {
+        "noun": "granica",
+        "translation": "border",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "granica",
+                    "genitive": "granicy",
+                    "dative": "granicy",
+                    "accusative": "granicę",
+                    "instrumental": "granicą",
+                    "locative": "granicy",
+                    "vocative": "granico!"
+                },
+                "baseForm": "granic"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "granice",
+                    "genitive": "granic",
+                    "dative": "granicom",
+                    "accusative": "granice",
+                    "instrumental": "granicami",
+                    "locative": "granicach",
+                    "vocative": "granice!"
+                },
+                "baseForm": "granic"
+            }
+        }
+    },
+    {
+        "noun": "głos",
+        "translation": "voice",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "głos",
+                    "genitive": "głosu",
+                    "dative": "głosowi",
+                    "accusative": "głos",
+                    "instrumental": "głosem",
+                    "locative": "głosie",
+                    "vocative": "głosie"
+                },
+                "baseForm": "głos"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "głosy",
+                    "genitive": "głosów",
+                    "dative": "głosom",
+                    "accusative": "głosy",
+                    "instrumental": "głosami",
+                    "locative": "głosach",
+                    "vocative": "głosy"
+                },
+                "baseForm": "głos"
+            }
+        }
+    },
+    {
+        "noun": "herbata",
+        "translation": "tea",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "herbata",
+                    "genitive": "herbaty",
+                    "dative": "harbacie",
+                    "accusative": "herbatę",
+                    "instrumental": "herbatą",
+                    "locative": "herbacie",
+                    "vocative": "herbato"
+                },
+                "baseForm": "h"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "herbaty",
+                    "genitive": "herbat",
+                    "dative": "herbatom",
+                    "accusative": "herbaty",
+                    "instrumental": "herbatami",
+                    "locative": "herbatach",
+                    "vocative": "herbaty"
+                },
+                "baseForm": "herbat"
+            }
+        }
+    },
+    {
+        "noun": "impreza",
+        "translation": "event",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "impreza",
+                    "genitive": "imprezy",
+                    "dative": "imprezie",
+                    "accusative": "imprezę",
+                    "instrumental": "imprezą",
+                    "locative": "imprezie",
+                    "vocative": "imprezo"
+                },
+                "baseForm": "imprez"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "imprezy",
+                    "genitive": "imprez",
+                    "dative": "imprezom",
+                    "accusative": "imprezy",
+                    "instrumental": "imprezami",
+                    "locative": "imprezach",
+                    "vocative": "imprezy"
+                },
+                "baseForm": "imprez"
+            }
+        }
+    },
+    {
+        "noun": "inżynier",
+        "translation": "engineer",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "inżynier",
+                    "genitive": "inżyniera",
+                    "dative": "inżynierowi",
+                    "accusative": "inżyniera",
+                    "instrumental": "inżynierem",
+                    "locative": "inżynierze",
+                    "vocative": "inżynierze"
+                },
+                "baseForm": "inżynier"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "inżynierowie",
+                    "genitive": "inżynierów",
+                    "dative": "inżynierom",
+                    "accusative": "inżynierów",
+                    "instrumental": "inżynierami",
+                    "locative": "inżynierach",
+                    "vocative": "inżynierowie"
+                },
+                "baseForm": "inżynier"
+            }
+        }
+    },
+    {
+        "noun": "jabłko",
+        "translation": "apple",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "jabłko",
+                    "genitive": "jabłka",
+                    "dative": "jabłku",
+                    "accusative": "jabłko",
+                    "instrumental": "jabłkiem",
+                    "locative": "jabłku",
+                    "vocative": "jabłko"
+                },
+                "baseForm": "jabłk"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "jabłka",
+                    "genitive": "jabłek",
+                    "dative": "jabłkom",
+                    "accusative": "jabłka",
+                    "instrumental": "jabłkami",
+                    "locative": "jabłkach",
+                    "vocative": "jabłka"
+                },
+                "baseForm": "jabł"
+            }
+        }
+    },
+    {
+        "noun": "kaczka",
+        "translation": "duck",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "kaczka",
+                    "genitive": "kaczki",
+                    "dative": "kaczce",
+                    "accusative": "kaczkę",
+                    "instrumental": "kaczką",
+                    "locative": "kaczce",
+                    "vocative": "kaczko"
+                },
+                "baseForm": "kacz"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "kaczki",
+                    "genitive": "kaczek",
+                    "dative": "kaczkom",
+                    "accusative": "kaczki",
+                    "instrumental": "kaczkami",
+                    "locative": "kaczkach",
+                    "vocative": "kaczki"
+                },
+                "baseForm": "kacz"
+            }
+        }
+    },
+    {
+        "noun": "kalendarz",
+        "translation": "calendar",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "kalendarz",
+                    "genitive": "kalendarza",
+                    "dative": "kalendarzowi",
+                    "accusative": "kalendarz",
+                    "instrumental": "kalendarzem",
+                    "locative": "kalendarzu",
+                    "vocative": "klaendarzu"
+                },
+                "baseForm": "k"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "kalendarze",
+                    "genitive": "kalendarzy",
+                    "dative": "kalendarzom",
+                    "accusative": "kalendarze",
+                    "instrumental": "kalendarzami",
+                    "locative": "kalendarzach",
+                    "vocative": "kalendarze"
+                },
+                "baseForm": "kalendarz"
+            }
+        }
+    },
+    {
+        "noun": "kawa",
+        "translation": "coffee",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "kawa",
+                    "genitive": "kawy",
+                    "dative": "kawie",
+                    "accusative": "kawę",
+                    "instrumental": "kawą",
+                    "locative": "kawie",
+                    "vocative": "kawo"
+                },
+                "baseForm": "kaw"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "kawy",
+                    "genitive": "kaw",
+                    "dative": "kawom",
+                    "accusative": "kawy",
+                    "instrumental": "kawami",
+                    "locative": "kawach",
+                    "vocative": "kawy"
+                },
+                "baseForm": "kaw"
+            }
+        }
+    },
+    {
+        "noun": "konie",
+        "translation": "horse",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "koń",
+                    "genitive": "konia",
+                    "dative": "koniowi",
+                    "accusative": "konia",
+                    "instrumental": "koniem",
+                    "locative": "koniu",
+                    "vocative": "koniu!"
+                },
+                "baseForm": "ko"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "konie",
+                    "genitive": "koni",
+                    "dative": "koniom",
+                    "accusative": "konie",
+                    "instrumental": "końmi",
+                    "locative": "koniach",
+                    "vocative": "konie!"
+                },
+                "baseForm": "ko"
+            }
+        }
+    },
+    {
+        "noun": "kolacja",
+        "translation": "supper",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "kolacja",
+                    "genitive": "kolacji",
+                    "dative": "kolacji",
+                    "accusative": "kolację",
+                    "instrumental": "kolacją",
+                    "locative": "kolacji",
+                    "vocative": "kolacjo"
+                },
+                "baseForm": "kolacj"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "kolacje",
+                    "genitive": "kolacji",
+                    "dative": "kolacjom",
+                    "accusative": "kolacje",
+                    "instrumental": "kolacjami",
+                    "locative": "kolacjach",
+                    "vocative": "kolacje"
+                },
+                "baseForm": "kolacj"
+            }
+        }
+    },
+    {
+        "noun": "krab",
+        "translation": "crab",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "krab",
+                    "genitive": "kraba",
+                    "dative": "krabowi",
+                    "accusative": "kraba",
+                    "instrumental": "krabem",
+                    "locative": "krabie",
+                    "vocative": "krabie"
+                },
+                "baseForm": "krab"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "kraby",
+                    "genitive": "krabów",
+                    "dative": "krabom",
+                    "accusative": "kraby",
+                    "instrumental": "krabami",
+                    "locative": "krabach",
+                    "vocative": "kraby"
+                },
+                "baseForm": "krab"
+            }
+        }
+    },
+    {
+        "noun": "kuchni",
+        "translation": "kitchen",
+        "gender": "Feminine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "kuchnia",
+                    "genitive": "kuchni",
+                    "dative": "kuchni",
+                    "accusative": "kuchnię",
+                    "instrumental": "kuchnią",
+                    "locative": "kuchni",
+                    "vocative": "kuchnio"
+                },
+                "baseForm": "kuchni"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "kuchnie",
+                    "genitive": "kuchni",
+                    "dative": "kuchniom",
+                    "accusative": "kuchnie",
+                    "instrumental": "kuchniami",
+                    "locative": "kuchniach",
+                    "vocative": "kuchnie"
+                },
+                "baseForm": "kuchni"
+            }
+        }
+    },
+    {
+        "noun": "lew",
+        "translation": "Leo",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "lew",
+                    "genitive": "lwa",
+                    "dative": "lwu",
+                    "accusative": "lwa",
+                    "instrumental": "lwem",
+                    "locative": "lwie",
+                    "vocative": "lwie"
+                },
+                "baseForm": "l"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "lwy",
+                    "genitive": "lwów",
+                    "dative": "lwom",
+                    "accusative": "lwy",
+                    "instrumental": "lwami",
+                    "locative": "lwach",
+                    "vocative": "lwy"
+                },
+                "baseForm": "lw"
+            }
+        }
+    },
+    {
+        "noun": "mleko",
+        "translation": "milk",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "mleko",
+                    "genitive": "mleka",
+                    "dative": "mleku",
+                    "accusative": "mleko",
+                    "instrumental": "mlekiem",
+                    "locative": "mleku",
+                    "vocative": "mleko"
+                },
+                "baseForm": "mlek"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "-",
+                    "genitive": "-",
+                    "dative": "-",
+                    "accusative": "-",
+                    "instrumental": "-",
+                    "locative": "-",
+                    "vocative": "-"
+                },
+                "baseForm": "-"
+            }
+        }
+    },
+    {
+        "noun": "naród",
+        "translation": "nation",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "naród",
+                    "genitive": "narodu",
+                    "dative": "narodowi",
+                    "accusative": "naród",
+                    "instrumental": "narodem",
+                    "locative": "narodzie",
+                    "vocative": "narodzie"
+                },
+                "baseForm": "nar"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "narody",
+                    "genitive": "narodów",
+                    "dative": "narodom",
+                    "accusative": "narody",
+                    "instrumental": "narodami",
+                    "locative": "narodach",
+                    "vocative": "narody"
+                },
+                "baseForm": "narod"
+            }
+        }
+    },
+    {
+        "noun": "obiad",
+        "translation": "dinner",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "obiad",
+                    "genitive": "obiadu",
+                    "dative": "obiadowi",
+                    "accusative": "obiad",
+                    "instrumental": "obiadem",
+                    "locative": "obiedzie",
+                    "vocative": "obiedzie"
+                },
+                "baseForm": "obi"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "obiady",
+                    "genitive": "obiadów",
+                    "dative": "obiadom",
+                    "accusative": "obiady",
+                    "instrumental": "obiadami",
+                    "locative": "obiadach",
+                    "vocative": "obiady"
+                },
+                "baseForm": "obiad"
+            }
+        }
+    },
+    {
+        "noun": "owoc",
+        "translation": "fruit",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "owoc",
+                    "genitive": "owocu",
+                    "dative": "owocowi",
+                    "accusative": "owoc",
+                    "instrumental": "owocem",
+                    "locative": "owocu",
+                    "vocative": "owocu"
+                },
+                "baseForm": "owoc"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "owoce",
+                    "genitive": "owoców",
+                    "dative": "owocom",
+                    "accusative": "owoce",
+                    "instrumental": "owocami",
+                    "locative": "owocach",
+                    "vocative": "owoce"
+                },
+                "baseForm": "owoc"
+            }
+        }
+    },
+    {
+        "noun": "państwa",
+        "translation": "state",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "państwo",
+                    "genitive": "państwa",
+                    "dative": "państwu",
+                    "accusative": "państwo",
+                    "instrumental": "państwem",
+                    "locative": "państwie",
+                    "vocative": "państwo"
+                },
+                "baseForm": "państw"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "państwa",
+                    "genitive": "państw",
+                    "dative": "państwom",
+                    "accusative": "państwa",
+                    "instrumental": "państwami",
+                    "locative": "państwach",
+                    "vocative": "państwa"
+                },
+                "baseForm": "państw"
+            }
+        }
+    },
+    {
+        "noun": "personel",
+        "translation": "staff",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "personel",
+                    "genitive": "personelu",
+                    "dative": "personelowi",
+                    "accusative": "personel",
+                    "instrumental": "personelem",
+                    "locative": "personelu",
+                    "vocative": "personelu"
+                },
+                "baseForm": "personel"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "-",
+                    "genitive": "-",
+                    "dative": "-",
+                    "accusative": "-",
+                    "instrumental": "-",
+                    "locative": "-",
+                    "vocative": "-"
+                },
+                "baseForm": "-"
+            }
+        }
+    },
+    {
+        "noun": "pająk",
+        "translation": "spider",
+        "gender": "Masculine",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "pająk",
+                    "genitive": "pająka",
+                    "dative": "pająkowi",
+                    "accusative": "pająka",
+                    "instrumental": "pająkiem",
+                    "locative": "pająku",
+                    "vocative": "pająku"
+                },
+                "baseForm": "pająk"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "pająki",
+                    "genitive": "pająków",
+                    "dative": "pająkom",
+                    "accusative": "pająki",
+                    "instrumental": "pająkami",
+                    "locative": "pająkach",
+                    "vocative": "pająki"
+                },
+                "baseForm": "pająk"
+            }
+        }
+    },
+    {
+        "noun": "pytanie",
+        "translation": "question",
+        "gender": "Neuter",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "pytanie",
+                    "genitive": "pytania",
+                    "dative": "pytaniu",
+                    "accusative": "pytanie",
+                    "instrumental": "pytaniem",
+                    "locative": "pytaniu",
+                    "vocative": "pytanie"
+                },
+                "baseForm": "pytani"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "pytania",
+                    "genitive": "pytań",
+                    "dative": "pytaniom",
+                    "accusative": "pytania",
+                    "instrumental": "pytaniami",
+                    "locative": "pytaniach",
+                    "vocative": "pytania"
+                },
+                "baseForm": "pyta"
+            }
+        }
+    },
+    {
+        "noun": "rolnik",
+        "translation": "farmer",
+        "gender": "Masculine",
+        "virility" : "virile",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "rolnik",
+                    "genitive": "rolnika",
+                    "dative": "rolnikowi",
+                    "accusative": "rolnika",
+                    "instrumental": "rolnikiem",
+                    "locative": "rolniku",
+                    "vocative": "rolniku"
+                },
+                "baseForm": "rolnik"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "rolnicy",
+                    "genitive": "rolników",
+                    "dative": "rolnikom",
+                    "accusative": "rolników",
+                    "instrumental": "rolnikami",
+                    "locative": "rolnikach",
+                    "vocative": "rolnicy"
+                },
+                "baseForm": "rolni"
+            }
+        }
+    }
+]

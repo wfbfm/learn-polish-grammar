@@ -1,0 +1,9 @@
+{
+    "nominative": "mianownik",
+    "genitive": "dopełniacz",
+    "dative": "celownik",
+    "accusative": "biernik",
+    "instrumental": "narzędnik",
+    "locative": "miejscownik",
+    "vocative": "wołacz"
+}
