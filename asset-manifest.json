@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/learn-polish-grammar/static/js/main.90714439.js",
+    "main.js": "/learn-polish-grammar/static/js/main.023ee10b.js",
     "static/media/bilingo-high-resolution-logo-white-transparent.svg": "/learn-polish-grammar/static/media/bilingo-high-resolution-logo-white-transparent.33e0dbb8b9b13189e5e75740545b286d.svg",
     "index.html": "/learn-polish-grammar/index.html",
-    "main.90714439.js.map": "/learn-polish-grammar/static/js/main.90714439.js.map"
+    "main.023ee10b.js.map": "/learn-polish-grammar/static/js/main.023ee10b.js.map"
   },
   "entrypoints": [
-    "static/js/main.90714439.js"
+    "static/js/main.023ee10b.js"
   ]
 }
