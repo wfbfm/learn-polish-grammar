@@ -28,7 +28,6 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
 
   const startExercise = useCallback((retryAdjective, retryNoun, retryCount) =>
   {
-    console.log("selected gender", selectedGender);
     if (retryAdjective)
     {
       setCurrentAdjective(retryAdjective);
@@ -38,6 +37,8 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
     }
     else
     {
+      const randomCount = possibleCounts[Math.floor(Math.random() * possibleCounts.length)]
+      setCurrentCount(randomCount);
       if (selectedGender && !["Any", "Select a gender"].includes(selectedGender))
       {
         const nounsWithSelectedGender = nouns.filter((noun) =>
@@ -46,22 +47,16 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
         })
         const randomNoun = nounsWithSelectedGender[Math.floor(Math.random() * nounsWithSelectedGender.length)];
         setCurrentNoun(randomNoun);
-        setCurrentGender(randomNoun.gender.toLowerCase());
-        console.log("Noun", randomNoun);
-        console.log("Gender", randomNoun.gender.toLowerCase());
+        randomCount === 'singular' ? setCurrentGender(randomNoun.gender.toLowerCase()) : setCurrentGender(randomNoun.virility ?? 'non-virile');
       }
       else
       {
         const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
         setCurrentNoun(randomNoun);
-        setCurrentGender(randomNoun.gender.toLowerCase());
+        randomCount === 'singular' ? setCurrentGender(randomNoun.gender.toLowerCase()) : setCurrentGender(randomNoun.virility ?? 'non-virile');
       }
       const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
       setCurrentAdjective(randomAdjective);
-      console.log("Adjective", randomAdjective);
-      // const randomCount = possibleCounts[Math.floor(Math.random()) * possibleCounts.length];
-      const randomCount = 'singular';
-      setCurrentCount(randomCount);
     }
     setUserInputAdjectives(Array(cases.length).fill(''));
     setAdjectiveResults(Array(cases.length).fill(''));

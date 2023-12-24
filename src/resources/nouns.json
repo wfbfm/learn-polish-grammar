@@ -251,6 +251,7 @@
         "noun": "chłopiec",
         "translation": "boy",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {
@@ -282,6 +283,7 @@
         "noun": "mężczyzna",
         "translation": "men",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {
@@ -344,6 +346,7 @@
         "noun": "aktor",
         "translation": "actor",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {
@@ -561,6 +564,7 @@
         "noun": "chłopak",
         "translation": "boy",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {
@@ -654,6 +658,7 @@
         "noun": "człowiek",
         "translation": "man",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {
@@ -871,6 +876,7 @@
         "noun": "inżynier",
         "translation": "engineer",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {
@@ -1178,37 +1184,6 @@
         }
     },
     {
-        "noun": "ludzie",
-        "translation": "man",
-        "gender": "Masculine",
-        "grammar": {
-            "singular": {
-                "declensions": {
-                    "nominative": "człowiek",
-                    "genitive": "człowieka",
-                    "dative": "człowiekowi",
-                    "accusative": "człowieka",
-                    "instrumental": "człowiekiem",
-                    "locative": "człowieku",
-                    "vocative": "człowieku!"
-                },
-                "baseForm": "człowiek"
-            },
-            "plural": {
-                "declensions": {
-                    "nominative": "ludzie",
-                    "genitive": "ludzi",
-                    "dative": "ludziom",
-                    "accusative": "ludzi",
-                    "instrumental": "ludźmi",
-                    "locative": "ludziach",
-                    "vocative": "ludzie!"
-                },
-                "baseForm": "lud"
-            }
-        }
-    },
-    {
         "noun": "mleko",
         "translation": "milk",
         "gender": "Neuter",
@@ -1365,8 +1340,9 @@
     },
     {
         "noun": "personel",
-        "translation": ":-(",
+        "translation": "staff",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {
@@ -1460,6 +1436,7 @@
         "noun": "rolnik",
         "translation": "farmer",
         "gender": "Masculine",
+        "virility" : "virile",
         "grammar": {
             "singular": {
                 "declensions": {

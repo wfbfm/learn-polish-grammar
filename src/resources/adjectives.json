@@ -490,36 +490,6 @@
         }
     },
     {
-        "adjective": "droga",
-        "translation": "road",
-        "grammar": {
-            "singular": {
-                "declensions": {
-                    "nominative": "droga",
-                    "genitive": "drogi",
-                    "dative": "drodze",
-                    "accusative": "drogę",
-                    "instrumental": "drogą",
-                    "locative": "drodze",
-                    "vocative": "drogo"
-                },
-                "baseForm": "dro"
-            },
-            "plural": {
-                "declensions": {
-                    "nominative": "drogi",
-                    "genitive": "dróg",
-                    "dative": "drogom",
-                    "accusative": "drogi",
-                    "instrumental": "drogami",
-                    "locative": "drogach",
-                    "vocative": "drogi"
-                },
-                "baseForm": "dr"
-            }
-        }
-    },
-    {
         "adjective": "duże",
         "translation": "big",
         "grammar": {
