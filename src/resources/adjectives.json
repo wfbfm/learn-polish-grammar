@@ -421,7 +421,7 @@
     },
     {
         "adjective": "ciemny",
-        "translation": "brown",
+        "translation": "dark",
         "grammar": {
             "singular": {
                 "masculine": {
@@ -639,7 +639,7 @@
                         "nominative": "nowy",
                         "genitive": "nowego",
                         "dative": "nowemu",
-                        "accusative": "nowy/nowego",
+                        "accusative": "nowy",
                         "instrumental": "nowym",
                         "locative": "nowym",
                         "vocative": "nowy"
@@ -709,7 +709,7 @@
                         "nominative": "nudny",
                         "genitive": "nudnego",
                         "dative": "nudnemu",
-                        "accusative": "nudny/nudnego",
+                        "accusative": "nudny",
                         "instrumental": "nudnym",
                         "locative": "nudnym",
                         "vocative": "nudny"
@@ -779,7 +779,7 @@
                         "nominative": "stary",
                         "genitive": "starego",
                         "dative": "staremu",
-                        "accusative": "stary/starego",
+                        "accusative": "stary",
                         "instrumental": "starym",
                         "locative": "starym",
                         "vocative": "stary"
@@ -849,7 +849,7 @@
                         "nominative": "zły",
                         "genitive": "złego",
                         "dative": "złemu",
-                        "accusative": "zły/złego",
+                        "accusative": "zły",
                         "instrumental": "złym",
                         "locative": "złym",
                         "vocative": "zły"

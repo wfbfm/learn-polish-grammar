@@ -27,13 +27,13 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
   const [isChecking, setIsChecking] = useState(false);
   const [isGiveUp, setIsGiveUp] = useState(false);
 
-  const startExercise = useCallback((retryAdjective, retryNoun, retryCount) =>
+  const startExercise = useCallback((retryAdjective, retryNoun, retryGender, retryCount) =>
   {
     if (retryAdjective)
     {
       setCurrentAdjective(retryAdjective);
       setCurrentNoun(retryNoun);
-      setCurrentGender(retryNoun.gender.toLowerCase());
+      setCurrentGender(retryGender);
       setCurrentCount(retryCount);
     }
     else
@@ -168,7 +168,7 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
 
   const retry = () =>
   {
-    startExercise(currentAdjective, currentNoun, currentCount);
+    startExercise(currentAdjective, currentNoun, currentGender, currentCount);
   };
 
   function removeAccents(input)
@@ -214,7 +214,16 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
   // Function to find the index of the first empty input
   const findFirstEmptyInputIndex = () =>
   {
-    return userInputNouns.findIndex((input) => input.trim() === '');
+    const emptyAdjectiveIndex = userInputAdjectives.findIndex((input) => input.trim() === '');
+    const emptyNounIndex = userInputNouns.findIndex((input) => input.trim() === '');
+    if (emptyNounIndex < emptyAdjectiveIndex)
+    {
+      return emptyNounIndex * 2 + 1;
+    }
+    else
+    {
+      return emptyAdjectiveIndex * 2;
+    }
   };
 
   const correctColour = useColorModeValue('green.200', 'green.900');
@@ -367,7 +376,7 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
                               }
                               bg={getBgColor(adjectiveResults[index])}
                               disabled={adjectiveResults[index] === 'correct' || isChecking}
-                              ref={(el) => (inputRefs[index] = el)}
+                              ref={(el) => (inputRefs[index * 2] = el)}
                             />
                             {adjectiveResults[index] === 'correct' ? (
                               <CheckCircleIcon color={correctColour}></CheckCircleIcon>
@@ -399,7 +408,7 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
                               }
                               bg={getBgColor(nounResults[index])}
                               disabled={nounResults[index] === 'correct' || isChecking}
-                              ref={(el) => (inputRefs[index] = el)}
+                              ref={(el) => (inputRefs[index * 2 + 1] = el)}
                             />
                             {nounResults[index] === 'correct' ? (
                               <CheckCircleIcon color={correctColour}></CheckCircleIcon>
