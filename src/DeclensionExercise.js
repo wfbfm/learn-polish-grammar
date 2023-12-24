@@ -4,7 +4,8 @@ import
   Box, Button, Flex, Input, Select, Heading, Text, Table, Tbody, Tr, Td, TableContainer, HStack, Alert, AlertIcon, Kbd, Spacer, Stat, StatLabel, StatNumber, StatHelpText, VStack, TableCaption,
   useColorModeValue,
   Icon,
-  Center
+  Center,
+  Badge
 } from '@chakra-ui/react'
 import { AddIcon, CheckCircleIcon, CheckIcon, CloseIcon, QuestionOutlineIcon, RepeatIcon, TimeIcon, WarningTwoIcon } from '@chakra-ui/icons';
 import caseMapping from './resources/caseMapping.json';
@@ -237,6 +238,39 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
     setSelectedGender(event.target.value);
   };
 
+  const getBadgeColorForCount = (count) =>
+  {
+    switch (count)
+    {
+      case 'singular':
+        return 'blue';
+      case 'plural':
+        return 'red';
+      default:
+        return 'grey';
+    }
+  };
+
+  const getBadgeColorForGender = (gender) =>
+  {
+    switch (gender)
+    {
+      case 'masculine':
+        return 'blue';
+      case 'feminine':
+        return 'pink';
+      case 'neuter':
+        return 'orange';
+      case 'virile':
+        return 'red';
+      case 'non-virile':
+        return 'purple';
+      default:
+        return 'grey';
+    }
+  };
+
+
   return (
     <Box>
       <Box>
@@ -299,11 +333,12 @@ const DeclensionExercise = ({ adjectives, nouns }) =>
           <Flex>
             <VStack>
               <HStack>
-                <Text fontSize='2xl' p='4'>
+                <Text fontSize='2xl' p='1'>
                   <b>{currentAdjective.grammar[currentCount][currentGender].declensions.nominative} {currentNoun.grammar[currentCount].declensions.nominative}</b> - {currentAdjective.translation} {currentNoun.translation}</Text>
+                <Badge variant='solid' colorScheme={getBadgeColorForCount(currentCount)}>{currentCount}</Badge>
+                <Badge variant='solid' colorScheme={getBadgeColorForGender(currentGender)}>{currentGender}</Badge>
               </HStack>
-              <Text>Decline as <i>{currentCount}</i></Text>
-              <TableContainer minW='700px' p='4'>
+              <TableContainer minW='700px' p='1'>
                 <Table variant='simple'>
                   <TableCaption>Tip: Press <Kbd>Enter</Kbd> to quickly move to the next word!</TableCaption>
                   <Tbody>
