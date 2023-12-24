@@ -4,25 +4,14 @@ import { useColorModeValue, Flex, Box, ChakraProvider, Tab, Tabs, TabList, TabPa
 import NavBar from "./NavBar";
 import ConjugationExercise from './ConjugationExercise';
 import theme from "./theme";
+import DeclensionExercise from "./DeclensionExercise";
+import verbs from './resources/verbs.json';
+import tenses from './resources/tenses.json';
+import adjectives from './resources/adjectives.json';
+import nouns from './resources/nouns.json';
 
 function App()
 {
-  const [verbs, setVerbs] = React.useState([]);
-  const [tenses, setTenses] = React.useState([]);
-
-  React.useEffect(() =>
-  {
-    fetch('./verbs.json')
-      .then((response) => response.json())
-      .then((data) => setVerbs(data))
-      .catch((error) => console.error('Error loading verb data:', error));
-
-    fetch('./tenses.json')
-      .then((response) => response.json())
-      .then((data) => setTenses(data))
-      .catch((error) => console.error('Error loading tense data:', error));
-  }, []);
-
   return (
     <>
       <NavBar></NavBar>
@@ -41,7 +30,7 @@ function App()
           <TabPanel>
             <Divider></Divider>
             <Box p='4'>
-              <Text>Coming soon 😊!</Text>
+              <DeclensionExercise adjectives={adjectives} nouns={nouns} />
             </Box>
           </TabPanel>
         </TabPanels>

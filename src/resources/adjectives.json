@@ -1,0 +1,942 @@
+[
+    {
+        "adjective": "dobry",
+        "translation": "good",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "dobry",
+                        "genitive": "dobrego",
+                        "dative": "dobremu",
+                        "accusative": "dobrego",
+                        "instrumental": "dobrym",
+                        "locative": "dobrym",
+                        "vocative": "dobry"
+                    },
+                    "baseForm": "dobr"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "dobra",
+                        "genitive": "dobrej",
+                        "dative": "dobrej",
+                        "accusative": "dobrą",
+                        "instrumental": "dobrą",
+                        "locative": "dobrej",
+                        "vocative": "dobra"
+                    },
+                    "baseForm": "dobr"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "dobre",
+                        "genitive": "dobrego",
+                        "dative": "dobremu",
+                        "accusative": "dobre",
+                        "instrumental": "dobrym",
+                        "locative": "dobrym",
+                        "vocative": "dobre"
+                    },
+                    "baseForm": "dobr"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "dobrzy",
+                        "genitive": "dobrych",
+                        "dative": "dobrym",
+                        "accusative": "dobrych",
+                        "instrumental": "dobrymi",
+                        "locative": "dobrych",
+                        "vocative": "dobrzy"
+                    },
+                    "baseForm": "dobr"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "dobre",
+                        "genitive": "dobrych",
+                        "dative": "dobrym",
+                        "accusative": "dobre",
+                        "instrumental": "dobrymi",
+                        "locative": "dobrych",
+                        "vocative": "dobre"
+                    },
+                    "baseForm": "dobr"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "ładny",
+        "translation": "pretty",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "ładny",
+                        "genitive": "ładnego",
+                        "dative": "ładnemu",
+                        "accusative": "ładnego",
+                        "instrumental": "ładnym",
+                        "locative": "ładnym",
+                        "vocative": "ładny"
+                    },
+                    "baseForm": "ładn"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "ładna",
+                        "genitive": "ładnej",
+                        "dative": "ładnej",
+                        "accusative": "ładną",
+                        "instrumental": "ładną",
+                        "locative": "ładnej",
+                        "vocative": "ładna"
+                    },
+                    "baseForm": "ładn"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "ładne",
+                        "genitive": "ładnego",
+                        "dative": "ładnemu",
+                        "accusative": "ładne",
+                        "instrumental": "ładnym",
+                        "locative": "ładnym",
+                        "vocative": "ładne"
+                    },
+                    "baseForm": "ładn"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "ładni",
+                        "genitive": "ładnych",
+                        "dative": "ładnym",
+                        "accusative": "ładnych",
+                        "instrumental": "ładnymi",
+                        "locative": "ładnych",
+                        "vocative": "ładni"
+                    },
+                    "baseForm": "ładn"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "ładne",
+                        "genitive": "ładnych",
+                        "dative": "ładnym",
+                        "accusative": "ładne",
+                        "instrumental": "ładnymi",
+                        "locative": "ładnych",
+                        "vocative": "ładne"
+                    },
+                    "baseForm": "ładn"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "miły",
+        "translation": "nice",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "miły",
+                        "genitive": "miłego",
+                        "dative": "miłemu",
+                        "accusative": "miłego",
+                        "instrumental": "miłym",
+                        "locative": "miłym",
+                        "vocative": "miły"
+                    },
+                    "baseForm": "mił"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "miła",
+                        "genitive": "miłej",
+                        "dative": "miłej",
+                        "accusative": "miłą",
+                        "instrumental": "miłą",
+                        "locative": "miłej",
+                        "vocative": "miła"
+                    },
+                    "baseForm": "mił"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "miłe",
+                        "genitive": "miłego",
+                        "dative": "miłemu",
+                        "accusative": "miłe",
+                        "instrumental": "miłym",
+                        "locative": "miłym",
+                        "vocative": "miłe"
+                    },
+                    "baseForm": "mił"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "mili",
+                        "genitive": "miłych",
+                        "dative": "miłym",
+                        "accusative": "miłych",
+                        "instrumental": "miłymi",
+                        "locative": "miłych",
+                        "vocative": "mili"
+                    },
+                    "baseForm": "mi"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "miłe",
+                        "genitive": "miłych",
+                        "dative": "miłym",
+                        "accusative": "miłe",
+                        "instrumental": "miłymi",
+                        "locative": "miłych",
+                        "vocative": "miłe"
+                    },
+                    "baseForm": "mił"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "biedna",
+        "translation": "poor",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "biedny",
+                        "genitive": "biednego",
+                        "dative": "biednemu",
+                        "accusative": "biednego",
+                        "instrumental": "biednym",
+                        "locative": "biednym",
+                        "vocative": "biedny"
+                    },
+                    "baseForm": "biedn"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "biedna",
+                        "genitive": "biednej",
+                        "dative": "biednej",
+                        "accusative": "biedną",
+                        "instrumental": "biedną",
+                        "locative": "biednej",
+                        "vocative": "biedna"
+                    },
+                    "baseForm": "biedn"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "biedne",
+                        "genitive": "biednego",
+                        "dative": "biednemu",
+                        "accusative": "biedne",
+                        "instrumental": "biednym",
+                        "locative": "biednym",
+                        "vocative": "biedne"
+                    },
+                    "baseForm": "biedn"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "biedni",
+                        "genitive": "biednych",
+                        "dative": "biednym",
+                        "accusative": "biednych",
+                        "instrumental": "biednymi",
+                        "locative": "biednych",
+                        "vocative": "biedni"
+                    },
+                    "baseForm": "biedn"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "biedne",
+                        "genitive": "biednych",
+                        "dative": "biednym",
+                        "accusative": "biedne",
+                        "instrumental": "biednymi",
+                        "locative": "biednych",
+                        "vocative": "biedne"
+                    },
+                    "baseForm": "biedn"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "brudno",
+        "translation": "dirty",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "brudny",
+                        "genitive": "brudnego",
+                        "dative": "brudnemu",
+                        "accusative": "brudnego",
+                        "instrumental": "brudnym",
+                        "locative": "brudnym",
+                        "vocative": "brudny"
+                    },
+                    "baseForm": "brudn"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "brudna",
+                        "genitive": "brudnej",
+                        "dative": "brudnej",
+                        "accusative": "brudną",
+                        "instrumental": "brudną",
+                        "locative": "brudnej",
+                        "vocative": "brudna"
+                    },
+                    "baseForm": "brudn"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "brudne",
+                        "genitive": "brudnego",
+                        "dative": "brudnemu",
+                        "accusative": "brudne",
+                        "instrumental": "brudnym",
+                        "locative": "brudnym",
+                        "vocative": "brudne"
+                    },
+                    "baseForm": "brudn"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "brudni",
+                        "genitive": "brudnych",
+                        "dative": "brudnym",
+                        "accusative": "brudnych",
+                        "instrumental": "brudnymi",
+                        "locative": "brudnych",
+                        "vocative": "brudni"
+                    },
+                    "baseForm": "brudn"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "brudne",
+                        "genitive": "brudnych",
+                        "dative": "brudnym",
+                        "accusative": "brudne",
+                        "instrumental": "brudnymi",
+                        "locative": "brudnych",
+                        "vocative": "brudne"
+                    },
+                    "baseForm": "brudn"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "brzydkie",
+        "translation": "ugly",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "brzydki",
+                        "genitive": "brzydkiego",
+                        "dative": "brzydkiemu",
+                        "accusative": "brzydkiego",
+                        "instrumental": "brzydkim",
+                        "locative": "brzydkim",
+                        "vocative": "brzydki"
+                    },
+                    "baseForm": "brzydki"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "brzydka",
+                        "genitive": "brzydkiej",
+                        "dative": "brzydkiej",
+                        "accusative": "brzydką",
+                        "instrumental": "brzydką",
+                        "locative": "brzydkiej",
+                        "vocative": "brzydka"
+                    },
+                    "baseForm": "brzydk"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "brzydkie",
+                        "genitive": "brzydkiego",
+                        "dative": "brzydkiemu",
+                        "accusative": "brzydkie",
+                        "instrumental": "brzydkim",
+                        "locative": "brzydkim",
+                        "vocative": "brzydkie"
+                    },
+                    "baseForm": "brzydki"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "brzydcy",
+                        "genitive": "brzydkich",
+                        "dative": "brzydkim",
+                        "accusative": "brzydkich",
+                        "instrumental": "brzydkimi",
+                        "locative": "brzydkich",
+                        "vocative": "brzydcy"
+                    },
+                    "baseForm": "brzyd"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "brzydkie",
+                        "genitive": "brzydkich",
+                        "dative": "brzydkim",
+                        "accusative": "brzydkie",
+                        "instrumental": "brzydkimi",
+                        "locative": "brzydkich",
+                        "vocative": "brzydkie"
+                    },
+                    "baseForm": "brzydki"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "ciemny",
+        "translation": "brown",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "ciemny",
+                        "genitive": "ciemnego",
+                        "dative": "ciemnemu",
+                        "accusative": "ciemnego",
+                        "instrumental": "ciemnym",
+                        "locative": "ciemnym",
+                        "vocative": "ciemny"
+                    },
+                    "baseForm": "ciemn"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "ciemna",
+                        "genitive": "ciemnej",
+                        "dative": "ciemnej",
+                        "accusative": "ciemną",
+                        "instrumental": "ciemną",
+                        "locative": "ciemnej",
+                        "vocative": "ciemna"
+                    },
+                    "baseForm": "ciemn"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "ciemne",
+                        "genitive": "ciemnego",
+                        "dative": "ciemnemu",
+                        "accusative": "ciemne",
+                        "instrumental": "ciemnym",
+                        "locative": "ciemnym",
+                        "vocative": "ciemne"
+                    },
+                    "baseForm": "ciemn"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "ciemni",
+                        "genitive": "ciemnych",
+                        "dative": "ciemnym",
+                        "accusative": "ciemnych",
+                        "instrumental": "ciemnymi",
+                        "locative": "ciemnych",
+                        "vocative": "ciemni"
+                    },
+                    "baseForm": "ciemn"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "ciemne",
+                        "genitive": "ciemnych",
+                        "dative": "ciemnym",
+                        "accusative": "ciemne",
+                        "instrumental": "ciemnymi",
+                        "locative": "ciemnych",
+                        "vocative": "ciemne"
+                    },
+                    "baseForm": "ciemn"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "droga",
+        "translation": "road",
+        "grammar": {
+            "singular": {
+                "declensions": {
+                    "nominative": "droga",
+                    "genitive": "drogi",
+                    "dative": "drodze",
+                    "accusative": "drogę",
+                    "instrumental": "drogą",
+                    "locative": "drodze",
+                    "vocative": "drogo"
+                },
+                "baseForm": "dro"
+            },
+            "plural": {
+                "declensions": {
+                    "nominative": "drogi",
+                    "genitive": "dróg",
+                    "dative": "drogom",
+                    "accusative": "drogi",
+                    "instrumental": "drogami",
+                    "locative": "drogach",
+                    "vocative": "drogi"
+                },
+                "baseForm": "dr"
+            }
+        }
+    },
+    {
+        "adjective": "duże",
+        "translation": "big",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "duży",
+                        "genitive": "dużego",
+                        "dative": "dużemu",
+                        "accusative": "dużego",
+                        "instrumental": "dużym",
+                        "locative": "dużym",
+                        "vocative": "duży"
+                    },
+                    "baseForm": "duż"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "duża",
+                        "genitive": "dużej",
+                        "dative": "dużej",
+                        "accusative": "dużą",
+                        "instrumental": "dużą",
+                        "locative": "dużej",
+                        "vocative": "duża"
+                    },
+                    "baseForm": "duż"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "duże",
+                        "genitive": "dużego",
+                        "dative": "dużemu",
+                        "accusative": "duże",
+                        "instrumental": "dużym",
+                        "locative": "dużym",
+                        "vocative": "duże"
+                    },
+                    "baseForm": "duż"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "duży",
+                        "genitive": "dużych",
+                        "dative": "dużym",
+                        "accusative": "dużych",
+                        "instrumental": "dużymi",
+                        "locative": "dużych",
+                        "vocative": "duży"
+                    },
+                    "baseForm": "duży"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "duże",
+                        "genitive": "dużych",
+                        "dative": "dużym",
+                        "accusative": "duże",
+                        "instrumental": "dużymi",
+                        "locative": "dużych",
+                        "vocative": "duże"
+                    },
+                    "baseForm": "duż"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "mały",
+        "translation": "small",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "mały",
+                        "genitive": "małego",
+                        "dative": "małemu",
+                        "accusative": "małego",
+                        "instrumental": "małym",
+                        "locative": "małym",
+                        "vocative": "mały"
+                    },
+                    "baseForm": "mał"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "mała",
+                        "genitive": "małej",
+                        "dative": "małej",
+                        "accusative": "małą",
+                        "instrumental": "małą",
+                        "locative": "małej",
+                        "vocative": "mała"
+                    },
+                    "baseForm": "mał"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "małe",
+                        "genitive": "małego",
+                        "dative": "małemu",
+                        "accusative": "małe",
+                        "instrumental": "małym",
+                        "locative": "małym",
+                        "vocative": "małe"
+                    },
+                    "baseForm": "mał"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "mali",
+                        "genitive": "małych",
+                        "dative": "małym",
+                        "accusative": "małych",
+                        "instrumental": "małymi",
+                        "locative": "małych",
+                        "vocative": "mali"
+                    },
+                    "baseForm": "ma"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "małe",
+                        "genitive": "małych",
+                        "dative": "małym",
+                        "accusative": "małe",
+                        "instrumental": "małymi",
+                        "locative": "małych",
+                        "vocative": "małe"
+                    },
+                    "baseForm": "mał"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "nowe",
+        "translation": "new",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "nowy",
+                        "genitive": "nowego",
+                        "dative": "nowemu",
+                        "accusative": "nowy/nowego",
+                        "instrumental": "nowym",
+                        "locative": "nowym",
+                        "vocative": "nowy"
+                    },
+                    "baseForm": "now"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "nowa",
+                        "genitive": "nowej",
+                        "dative": "nowej",
+                        "accusative": "nową",
+                        "instrumental": "nową",
+                        "locative": "nowej",
+                        "vocative": "nowa"
+                    },
+                    "baseForm": "now"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "nowe",
+                        "genitive": "nowego",
+                        "dative": "nowemu",
+                        "accusative": "nowe",
+                        "instrumental": "nowym",
+                        "locative": "nowym",
+                        "vocative": "nowe"
+                    },
+                    "baseForm": "now"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "nowi",
+                        "genitive": "nowych",
+                        "dative": "nowym",
+                        "accusative": "nowych",
+                        "instrumental": "nowymi",
+                        "locative": "nowych",
+                        "vocative": "nowi"
+                    },
+                    "baseForm": "now"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "nowe",
+                        "genitive": "nowych",
+                        "dative": "nowym",
+                        "accusative": "nowe",
+                        "instrumental": "nowymi",
+                        "locative": "nowych",
+                        "vocative": "nowe"
+                    },
+                    "baseForm": "now"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "nudna",
+        "translation": "boring",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "nudny",
+                        "genitive": "nudnego",
+                        "dative": "nudnemu",
+                        "accusative": "nudny/nudnego",
+                        "instrumental": "nudnym",
+                        "locative": "nudnym",
+                        "vocative": "nudny"
+                    },
+                    "baseForm": "nudn"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "nudna",
+                        "genitive": "nudnej",
+                        "dative": "nudnej",
+                        "accusative": "nudną",
+                        "instrumental": "nudną",
+                        "locative": "nudnej",
+                        "vocative": "nudna"
+                    },
+                    "baseForm": "nudn"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "nudne",
+                        "genitive": "nudnego",
+                        "dative": "nudnemu",
+                        "accusative": "nudne",
+                        "instrumental": "nudnym",
+                        "locative": "nudnym",
+                        "vocative": "nudne"
+                    },
+                    "baseForm": "nudn"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "nudni",
+                        "genitive": "nudnych",
+                        "dative": "nudnym",
+                        "accusative": "nudnych",
+                        "instrumental": "nudnymi",
+                        "locative": "nudnych",
+                        "vocative": "nudni"
+                    },
+                    "baseForm": "nudn"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "nudne",
+                        "genitive": "nudnych",
+                        "dative": "nudnym",
+                        "accusative": "nudne",
+                        "instrumental": "nudnymi",
+                        "locative": "nudnych",
+                        "vocative": "nudne"
+                    },
+                    "baseForm": "nudn"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "stary",
+        "translation": "old",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "stary",
+                        "genitive": "starego",
+                        "dative": "staremu",
+                        "accusative": "stary/starego",
+                        "instrumental": "starym",
+                        "locative": "starym",
+                        "vocative": "stary"
+                    },
+                    "baseForm": "star"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "stara",
+                        "genitive": "starej",
+                        "dative": "starej",
+                        "accusative": "starą",
+                        "instrumental": "starą",
+                        "locative": "starej",
+                        "vocative": "stara"
+                    },
+                    "baseForm": "star"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "stare",
+                        "genitive": "starego",
+                        "dative": "staremu",
+                        "accusative": "stare",
+                        "instrumental": "starym",
+                        "locative": "starym",
+                        "vocative": "stare"
+                    },
+                    "baseForm": "star"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "starzy",
+                        "genitive": "starych",
+                        "dative": "starym",
+                        "accusative": "starych",
+                        "instrumental": "starymi",
+                        "locative": "starych",
+                        "vocative": "starzy"
+                    },
+                    "baseForm": "star"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "stare",
+                        "genitive": "starych",
+                        "dative": "starym",
+                        "accusative": "stare",
+                        "instrumental": "starymi",
+                        "locative": "starych",
+                        "vocative": "stare"
+                    },
+                    "baseForm": "star"
+                }
+            }
+        }
+    },
+    {
+        "adjective": "źle",
+        "translation": "wrong",
+        "grammar": {
+            "singular": {
+                "masculine": {
+                    "declensions": {
+                        "nominative": "zły",
+                        "genitive": "złego",
+                        "dative": "złemu",
+                        "accusative": "zły/złego",
+                        "instrumental": "złym",
+                        "locative": "złym",
+                        "vocative": "zły"
+                    },
+                    "baseForm": "zł"
+                },
+                "feminine": {
+                    "declensions": {
+                        "nominative": "zła",
+                        "genitive": "złej",
+                        "dative": "złej",
+                        "accusative": "złą",
+                        "instrumental": "złą",
+                        "locative": "złej",
+                        "vocative": "zła"
+                    },
+                    "baseForm": "zł"
+                },
+                "neuter": {
+                    "declensions": {
+                        "nominative": "złe",
+                        "genitive": "złego",
+                        "dative": "złemu",
+                        "accusative": "złe",
+                        "instrumental": "złym",
+                        "locative": "złym",
+                        "vocative": "złe"
+                    },
+                    "baseForm": "zł"
+                }
+            },
+            "plural": {
+                "virile": {
+                    "declensions": {
+                        "nominative": "źli",
+                        "genitive": "złych",
+                        "dative": "złym",
+                        "accusative": "złych",
+                        "instrumental": "złymi",
+                        "locative": "złych",
+                        "vocative": "źli"
+                    },
+                    "baseForm": "ź"
+                },
+                "non-virile": {
+                    "declensions": {
+                        "nominative": "złe",
+                        "genitive": "złych",
+                        "dative": "złym",
+                        "accusative": "złe",
+                        "instrumental": "złymi",
+                        "locative": "złych",
+                        "vocative": "złe"
+                    },
+                    "baseForm": "zł"
+                }
+            }
+        }
+    }
+]
